@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>668A3EE4-D80E-4CCB-8786-9D38D78A86CD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LovingDevotion</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1402A5CF-9668-413A-914B-8BBDBAA88397</key>
+		<string>https://github.com/byumoa/LovingDevotion</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LovingDevotion.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1402A5CF-9668-413A-914B-8BBDBAA88397</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/byumoa/LovingDevotion</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1402A5CF-9668-413A-914B-8BBDBAA88397</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1402A5CF-9668-413A-914B-8BBDBAA88397</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LovingDevotion</string>
+		</dict>
+	</array>
+</dict>
+</plist>

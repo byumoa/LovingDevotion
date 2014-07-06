@@ -1,0 +1,2132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="SGViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" id="DjK-ES-X9r" userLabel="HeaderBlurDud">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" id="Ksf-Tw-7Rg" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SG_General_TopBar.png" id="ajQ-mo-DB2">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ygj-IJ-KWP">
+                                        <rect key="frame" x="0.0" y="14" width="140" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                        <state key="normal" image="SG_General_BackBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="SG_General_BackBtn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2D5-0f-vwG"/>
+                                        </connections>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="header_SacredGifts Home.png" id="pbp-Ua-Xkc">
+                                        <rect key="frame" x="256" y="20" width="256" height="41"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="vJA-Jz-DAr" userLabel="Footer">
+                                <rect key="frame" x="0.0" y="883" width="768" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_footer_bg.png" id="oeb-dd-xiC">
+                                        <rect key="frame" x="-17" y="0.0" width="804" height="161"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="04I-Sx-mhY">
+                                        <rect key="frame" x="505" y="-2" width="245" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="sg_home_feedbackbtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="sg_home_feedbackbtn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedFeedback:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyD-t2-V6h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g8j-P1-QfM">
+                                        <rect key="frame" x="17" y="-2" width="245" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="sg_home_donatebtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="sg_home_donatebtn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedDonate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqA-AX-Crj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="center" image="splash_donors.png" id="mre-GN-Ojo">
+                                <rect key="frame" x="0.0" y="386" width="768" height="638"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="center" image="splash_artists.png" id="Ca2-br-Pv0">
+                                <rect key="frame" x="456" y="721" width="312" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SG_Home_SplashLogo.png" id="Grd-WE-hAn">
+                                <rect key="frame" x="0.0" y="720" width="768" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" contentMode="center" image="SG_Home_SplashScreen.png" id="zKe-di-iZj">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="backBtn" destination="ygj-IJ-KWP" id="xk2-By-WQu"/>
+                        <outlet property="footerView" destination="vJA-Jz-DAr" id="vap-x7-JlY"/>
+                        <outlet property="headerBGImgView" destination="ajQ-mo-DB2" id="mG0-Sn-7vS"/>
+                        <outlet property="headerBlurDecoy" destination="DjK-ES-X9r" id="vYX-w7-piD"/>
+                        <outlet property="headerTitleImgView" destination="pbp-Ua-Xkc" id="6qk-Xd-zND"/>
+                        <outlet property="headerView" destination="Ksf-Tw-7Rg" id="ed3-ih-wMI"/>
+                        <outlet property="splash" destination="zKe-di-iZj" id="aR0-Tl-6DU"/>
+                        <outlet property="splashArtists" destination="Ca2-br-Pv0" id="fFf-AW-LuC"/>
+                        <outlet property="splashDonors" destination="mre-GN-Ojo" id="XRe-gC-A40"/>
+                        <outlet property="splashLogo" destination="Grd-WE-hAn" id="cfi-Hu-50c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="-244"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="U3q-qI-bVq">
+            <objects>
+                <viewController restorationIdentifier="SacredGifts Home" storyboardIdentifier="SacredGifts Home" wantsFullScreenLayout="YES" id="rWn-Ap-S9g" customClass="SGHomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w3m-kU-NRY">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home.png" id="0eO-3H-qLx">
+                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kzm-On-8yx">
+                                <rect key="frame" x="0.0" y="189" width="768" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_findbtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_home_findbtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="rWn-Ap-S9g" eventType="touchUpInside" id="vXO-P5-50S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e1S-K6-Raj">
+                                <rect key="frame" x="0.0" y="402" width="768" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_meetartistsbtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_home_meetartistsbtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="rWn-Ap-S9g" eventType="touchUpInside" id="FL3-g7-soF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kfF-Bv-6ev">
+                                <rect key="frame" x="0.0" y="615" width="768" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_exhibitionbtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_home_exhibitionbtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="rWn-Ap-S9g" eventType="touchUpInside" id="IeN-vl-706"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="0eO-3H-qLx" id="LTj-77-YXc"/>
+                        <outlet property="view" destination="w3m-kU-NRY" id="maj-Qq-dHf"/>
+                        <outletCollection property="blurredViews" destination="kzm-On-8yx" id="HJE-Xv-tyf"/>
+                        <outletCollection property="blurredViews" destination="e1S-K6-Raj" id="iSf-mO-9aL"/>
+                        <outletCollection property="blurredViews" destination="kfF-Bv-6ev" id="rOb-kO-h7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Luk-dA-5TZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="-195"/>
+        </scene>
+        <!--Hofman View Controller-->
+        <scene sceneID="Vj2-LF-bd6">
+            <objects>
+                <viewController restorationIdentifier="hofman" storyboardIdentifier="hofman" wantsFullScreenLayout="YES" id="jBG-xU-cwl" customClass="SGHofmanViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xia-wn-nqc">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home_blur.png" id="mCH-LF-c65">
+                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="zcQ-lH-V0e">
+                                <rect key="frame" x="0.0" y="62" width="768" height="962"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="artists_pages_hofmann_overlay.png" id="IcZ-cK-MCb">
+                                        <rect key="frame" x="0.0" y="96" width="769" height="1133"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ckk-2L-XRd">
+                                        <rect key="frame" x="668" y="126" width="71" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="speaker_btns__narration_btn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="speaker_btns__narration_btn-on.png"/>
+                                        <state key="highlighted" image="speaker_btns__narration_btn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedNarration:" destination="jBG-xU-cwl" eventType="touchUpInside" id="0TR-6r-mZh"/>
+                                        </connections>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="paintings_text.png" id="5go-9w-FRe">
+                                        <rect key="frame" x="36" y="1239" width="101" height="41"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="hTd-IF-HXc" userLabel="Hofmanns">
+                                        <rect key="frame" x="36" y="1278" width="712" height="328"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rnv-27-bXA">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_capture.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_capture-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="jBG-xU-cwl" eventType="touchUpInside" id="Vjm-jH-VKk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zra-ZP-XZ4">
+                                                <rect key="frame" x="366" y="0.0" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_gethsemane.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_gethsemane-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="jBG-xU-cwl" eventType="touchUpInside" id="axg-V2-cCk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8nb-ja-917">
+                                                <rect key="frame" x="244" y="0.0" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_ruler.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_ruler-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="jBG-xU-cwl" eventType="touchUpInside" id="27f-ce-759"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bFt-3g-oUd">
+                                                <rect key="frame" x="488" y="0.0" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_savior.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_savior-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="jBG-xU-cwl" eventType="touchUpInside" id="kSc-yl-d0n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="onh-qe-QKP">
+                                                <rect key="frame" x="122" y="0.0" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_temple.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_temple-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="jBG-xU-cwl" eventType="touchUpInside" id="aqU-3o-MO6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="mCH-LF-c65" id="I6c-zv-bJq"/>
+                        <outlet property="scrollView" destination="zcQ-lH-V0e" id="Zve-3F-Owc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1W-Xj-Ag3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="-136"/>
+        </scene>
+        <!--Painting Container View Controller-->
+        <scene sceneID="8OC-Kg-Gyd">
+            <objects>
+                <viewController restorationIdentifier="SacredGifts PaintingContainer" storyboardIdentifier="SacredGifts PaintingContainer" wantsFullScreenLayout="YES" id="11c-ez-SXP" customClass="SGPaintingContainerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hta-UW-5HZ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8J-Vg-9ON" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="-235"/>
+        </scene>
+        <!--FindA Painting View Controller-->
+        <scene sceneID="Uxd-LW-xna">
+            <objects>
+                <viewController restorationIdentifier="SacredGifts FindAPainting" storyboardIdentifier="SacredGifts FindAPainting" wantsFullScreenLayout="YES" id="S3D-aX-bvd" customClass="SGFindAPaintingViewController" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="myh-rR-qDe">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-findpainting.png" id="QEF-hW-NTs">
+                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="mbh-1H-Ona" userLabel="Schwartzs">
+                                <rect key="frame" x="442" y="184" width="244" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ohp-Ka-Rua">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_garden.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_garden-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="p4X-Zv-ka0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HkC-z7-AUY">
+                                        <rect key="frame" x="121" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_aalborg.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_aalborg-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="zz8-Xp-WMD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="eYn-ew-pgD" userLabel="Hofmanns">
+                                <rect key="frame" x="18" y="184" width="367" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hIH-f3-cfg">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_capture.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_capture-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="yYb-DW-VqP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LB6-f9-kdq">
+                                        <rect key="frame" x="0.0" y="164" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_gethsemane.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_gethsemane-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="cp7-2f-P4A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wnt-W7-PJz">
+                                        <rect key="frame" x="244" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_ruler.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_ruler-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="g2T-Gv-in3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wAJ-bc-iZp">
+                                        <rect key="frame" x="122" y="164" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_savior.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_savior-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="42G-5A-m26"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H6V-2V-auG">
+                                        <rect key="frame" x="122" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_temple.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_temple-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="XdF-bs-EW8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="DJu-R7-OZp" userLabel="Blochs">
+                                <rect key="frame" x="20" y="553" width="728" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kl8-Lo-wAm">
+                                        <rect key="frame" x="484" y="165" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_burial.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_burial-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="ZlX-sS-peb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="06O-dG-EDb">
+                                        <rect key="frame" x="605" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_children.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_children-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="RbB-UO-iE1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Exb-14-wSK">
+                                        <rect key="frame" x="121" y="165" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_cleansing.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_cleansing-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="jlh-oc-LtY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oBR-dk-Qk0">
+                                        <rect key="frame" x="121" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_consolator.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_consolator-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="cw5-AY-HoD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rK6-j0-QdI">
+                                        <rect key="frame" x="363" y="165" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_cross.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_cross-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="RW4-dd-JdK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h00-UY-OqH">
+                                        <rect key="frame" x="242" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_emmaus.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_emmaus-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="XE0-ia-UvN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lSe-Tt-saM">
+                                        <rect key="frame" x="0.0" y="165" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_healing.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_healing-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="kAx-uQ-g4T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hJn-RF-pAO">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_mocking.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_mocking-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="Ath-hl-Ubl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WrI-dx-OTI">
+                                        <rect key="frame" x="605" y="165" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_resurrection.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_resurrection-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="Dzd-Ka-ta0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UAw-00-yTn">
+                                        <rect key="frame" x="363" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_shepherds.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_shepherds-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="gAN-ev-wIx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="USZ-Eg-JcK">
+                                        <rect key="frame" x="242" y="165" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_denial.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_denial-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="Igr-Kq-W4a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="88f-CB-IqD">
+                                        <rect key="frame" x="484" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="painting_thumb_sermon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_sermon-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="2V2-dF-Ggt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_label_bloch.png" id="6LV-Za-7nh">
+                                <rect key="frame" x="18" y="522" width="244" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_label_hofmann.png" id="VJ7-mL-pMe">
+                                <rect key="frame" x="18" y="153" width="244" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_label_schwartz.png" id="6WE-e3-Alr">
+                                <rect key="frame" x="442" y="153" width="244" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tX9-st-bfy">
+                                <rect key="frame" x="20" y="159" width="165" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchedArtist:" destination="S3D-aX-bvd" eventType="touchUpInside" id="2NK-Er-6OJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gaP-7K-EY3">
+                                <rect key="frame" x="442" y="159" width="161" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchedArtist:" destination="S3D-aX-bvd" eventType="touchUpInside" id="L7K-3a-gbW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="amr-fh-Ucv">
+                                <rect key="frame" x="18" y="528" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchedArtist:" destination="S3D-aX-bvd" eventType="touchUpInside" id="Ydk-4V-4xd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="QEF-hW-NTs" id="bUL-f2-bfa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPG-bt-khs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834" y="-235"/>
+        </scene>
+        <!--Meet The Artists View Controller-->
+        <scene sceneID="WzT-8Z-BUq">
+            <objects>
+                <viewController restorationIdentifier="SacredGifts MeetTheArtists" storyboardIdentifier="SacredGifts MeetTheArtists" wantsFullScreenLayout="YES" id="x7a-eH-1TN" customClass="SGMeetTheArtistsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RNK-YD-rBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-meetartists.png" id="Gf6-Rc-1k1">
+                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ESv-V8-rCO">
+                                <rect key="frame" x="0.0" y="482" width="768" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_blochbtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_home_blochbtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="JlH-nY-HgW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I54-Zz-A5v">
+                                <rect key="frame" x="0.0" y="116" width="768" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_hoffmanbtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_home_hoffmanbtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="i94-vt-zQU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CBc-NW-NKD">
+                                <rect key="frame" x="0.0" y="299" width="768" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_schwartzbtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_home_schwartzbtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="Wgk-F9-zHR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c1z-s4-Q6q">
+                                <rect key="frame" x="0.0" y="665" width="768" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_timelinebtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_home_timelinebtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="RRQ-4p-Iil"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="Gf6-Rc-1k1" id="y0j-1g-Is8"/>
+                        <outletCollection property="blurredViews" destination="ESv-V8-rCO" id="UyC-d9-IkW"/>
+                        <outletCollection property="blurredViews" destination="I54-Zz-A5v" id="FCk-v4-DmK"/>
+                        <outletCollection property="blurredViews" destination="CBc-NW-NKD" id="W4R-Kh-FT2"/>
+                        <outletCollection property="blurredViews" destination="c1z-s4-Q6q" id="zwt-sg-z3t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vat-ZX-hpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="-195"/>
+        </scene>
+        <!--About The Exhibition View Controller-->
+        <scene sceneID="yuB-Df-6F5">
+            <objects>
+                <viewController restorationIdentifier="SacredGifts AboutTheExhibition" storyboardIdentifier="SacredGifts AboutTheExhibition" wantsFullScreenLayout="YES" id="idu-wO-YB6" customClass="SGAboutTheExhibitionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JqO-8s-eke">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-exhibition.png" id="1Ue-Ca-a7e">
+                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="9324" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Whn-1f-3jF">
+                                <rect key="frame" x="0.0" y="189" width="768" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_originsbtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_home_originsbtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="A7a-NA-3Jx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="864" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zjD-Fl-7iI">
+                                <rect key="frame" x="0.0" y="402" width="768" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_filmbtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_home_filmbtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="G1y-Cy-5Cz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="456" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HcG-w8-2FS">
+                                <rect key="frame" x="0.0" y="615" width="768" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_reservationbtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_home_reservationbtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="fO5-vN-xE8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="1Ue-Ca-a7e" id="sUB-LN-ZoD"/>
+                        <outletCollection property="blurredViews" destination="Whn-1f-3jF" id="jzQ-NI-AXs"/>
+                        <outletCollection property="blurredViews" destination="HcG-w8-2FS" id="h0L-tH-oj4"/>
+                        <outletCollection property="blurredViews" destination="zjD-Fl-7iI" id="joi-uo-nNs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upi-qV-PHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="-155"/>
+        </scene>
+        <!--Painting View Controller-->
+        <scene sceneID="BGv-Jj-T43">
+            <objects>
+                <viewController restorationIdentifier="SacredGifts Painting" storyboardIdentifier="SacredGifts Painting" wantsFullScreenLayout="YES" id="4y1-Fu-WWq" customClass="SGPaintingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TwP-o8-tQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VdB-kg-beo" userLabel="PaintingImgView" customClass="SGPaintingImageView">
+                                <rect key="frame" x="0.0" y="66" width="768" height="892"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8uu-xi-fyc" appends="YES" id="cEH-zh-qxz"/>
+                                    <outletCollection property="gestureRecognizers" destination="ZV3-Kv-dqN" appends="YES" id="nSd-f1-aqO"/>
+                                </connections>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" id="bc8-CD-nQS" userLabel="Temple Buttons View">
+                                <rect key="frame" x="230" y="132" width="309" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7eN-k3-BOD">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="sg_temple_btn_1880.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="sg_temple_btn_1880-on.png"/>
+                                        <state key="highlighted" image="sg_temple_btn_1880-on.png"/>
+                                        <connections>
+                                            <action selector="pressedTempleToggle:" destination="4y1-Fu-WWq" eventType="touchUpInside" id="Fd1-rO-tmz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Dl-fj-9gZ">
+                                        <rect key="frame" x="159" y="0.0" width="150" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="sg_temple_btn_later.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="sg_temple_btn_later-on.png"/>
+                                        <state key="highlighted" image="sg_temple_btn_later-on.png"/>
+                                        <connections>
+                                            <action selector="pressedTempleToggle:" destination="4y1-Fu-WWq" eventType="touchUpInside" id="KY9-yN-yKb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="qR1-fw-PT0" userLabel="FooterView">
+                                <rect key="frame" x="0.0" y="954" width="768" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SG_General_ModuleButtonBar.png" id="hcc-V7-qlf" userLabel="FooterImg">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="p4a-6Y-5K9">
+                                        <rect key="frame" x="668" y="0.0" width="100" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="SG_General_Painting_ShareBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="SG_General_Painting_ShareBtn-on.png"/>
+                                        <state key="highlighted" image="SG_General_Painting_ShareBtn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedModuleBtn:" destination="4y1-Fu-WWq" eventType="touchUpInside" id="b5O-bz-dX5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="footerView" destination="qR1-fw-PT0" id="qe0-Bk-vWI"/>
+                        <outlet property="paintingImageView" destination="VdB-kg-beo" id="iKZ-SE-Oxe"/>
+                        <outlet property="shareBtn" destination="p4a-6Y-5K9" id="lbe-iP-QJZ"/>
+                        <outlet property="templeBtn1880" destination="7eN-k3-BOD" id="Pqx-Xu-4Gj"/>
+                        <outlet property="templeBtnLater" destination="8Dl-fj-9gZ" id="srv-qE-HVJ"/>
+                        <outlet property="templeButtonsView" destination="bc8-CD-nQS" id="ULP-zU-0Cr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ObG-bp-XU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="8uu-xi-fyc">
+                    <connections>
+                        <action selector="swipeRecognized:" destination="4y1-Fu-WWq" id="JLj-6S-dvl"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="ZV3-Kv-dqN">
+                    <connections>
+                        <action selector="swipeRecognized:" destination="4y1-Fu-WWq" id="Dhq-3J-O6m"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1794" y="-182"/>
+        </scene>
+        <!--Tombstone Overlay View Controller-->
+        <scene sceneID="Pf1-fy-jtR">
+            <objects>
+                <viewController restorationIdentifier="tombstone" storyboardIdentifier="tombstone" id="nHH-xu-ogh" customClass="SGTombstoneOverlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S2I-X6-tPC" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="114"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="114"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7wS-qT-saf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2528" y="437"/>
+        </scene>
+        <!--Summary Overlay View Controller-->
+        <scene sceneID="e9N-v8-aZb">
+            <objects>
+                <viewController restorationIdentifier="summary" storyboardIdentifier="summary" id="wQF-Fi-40D" customClass="SGSummaryOverlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mRA-g8-ZvB" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="524"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GbN-bJ-tu2">
+                                <rect key="frame" x="677" y="20" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="speaker_btns__narration_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="speaker_btns__narration_btn-on.png"/>
+                                <state key="highlighted" image="speaker_btns__narration_btn-on.png"/>
+                                <connections>
+                                    <action selector="pressedNarration:" destination="wQF-Fi-40D" eventType="touchUpInside" id="UMX-rL-S4P"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VmQ-5f-g1Z">
+                                <rect key="frame" x="66" y="479" width="250" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SG_General_painting-castleBtn-Bloch.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="SG_General_painting-castleBtn-Bloch-on.png"/>
+                                <connections>
+                                    <action selector="pressedCastle:" destination="wQF-Fi-40D" eventType="touchUpInside" id="4jr-vr-2dZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="524"/>
+                    <connections>
+                        <outlet property="castleBtn" destination="VmQ-5f-g1Z" id="CXI-Ep-Ycv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNh-x6-hsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2583" y="80"/>
+        </scene>
+        <!--Music Overlay View Controller-->
+        <scene sceneID="f2i-UZ-Q7R">
+            <objects>
+                <viewController restorationIdentifier="music" storyboardIdentifier="music" id="9nI-4S-Qna" customClass="SGMusicOverlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VZr-XD-eeZ" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="278"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar.png" id="g5H-MS-52i">
+                                <rect key="frame" x="100" y="221" width="635" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar_Overlay.png" id="hXV-lf-BbQ">
+                                <rect key="frame" x="100" y="221" width="0.0" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Ey-Se-eNL">
+                                <rect key="frame" x="11" y="187" width="96" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SG_General_Music_PlayPause-on.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="SG_General_Music_PlayPause.png"/>
+                                <connections>
+                                    <action selector="pressedPlayPause:" destination="9nI-4S-Qna" eventType="touchUpInside" id="Q3O-BK-czg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="278"/>
+                    <connections>
+                        <outlet property="playOverlay" destination="hXV-lf-BbQ" id="TFr-nA-kf6"/>
+                        <outlet property="playPauseButton" destination="4Ey-Se-eNL" id="LA1-zZ-Ll9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFU-g6-Ogu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2754" y="480"/>
+        </scene>
+        <!--Childrens Overlay View Controller-->
+        <scene sceneID="7kj-5c-EQf">
+            <objects>
+                <viewController restorationIdentifier="childrens" storyboardIdentifier="childrens" id="R97-2Z-edN" customClass="SGChildrensOverlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iW5-Ox-6f2" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="892"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="center" id="mDA-F7-Mhn" customClass="ScratchableView">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="892"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="childrens_bloch_prompt.png" id="f1V-uC-RwT">
+                                        <rect key="frame" x="-28" y="844" width="825" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="892"/>
+                    <connections>
+                        <outlet property="instructionPrompt" destination="f1V-uC-RwT" id="wOr-6c-TAk"/>
+                        <outlet property="scratchableView" destination="mDA-F7-Mhn" id="AnA-i0-nLO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPd-we-w8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2696" y="-188"/>
+        </scene>
+        <!--Gift Overlay View Controller-->
+        <scene sceneID="HjJ-QA-JCS">
+            <objects>
+                <viewController restorationIdentifier="gift" storyboardIdentifier="gift" id="mbo-aK-ZTE" customClass="SGGiftOverlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Foc-kY-8IB" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="400"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9y-RY-da3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2819" y="414"/>
+        </scene>
+        <!--Persepectives Overlay View Controller-->
+        <scene sceneID="DZE-8h-2cY">
+            <objects>
+                <viewController restorationIdentifier="perspectives" storyboardIdentifier="perspectives" id="1dS-zG-iXX" customClass="SGPersepectivesOverlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Akh-Jk-sxB" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="400"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3q-g6-eVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889" y="488"/>
+        </scene>
+        <!--Panorama Overlay View Controller-->
+        <scene sceneID="w2W-Pc-s8Y">
+            <objects>
+                <viewController restorationIdentifier="panorama" storyboardIdentifier="panorama" id="zb2-l7-MYK" customClass="SGPanoramaOverlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nRg-Hd-p9Q" customClass="SGEAGLView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="leV-Fj-L5c">
+                                <rect key="frame" x="0.0" y="963" width="768" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zd1-M5-yD1">
+                                <rect key="frame" x="615" y="91" width="62" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SG_General_Module_CloseBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="SG_General_Module_CloseBtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedClose:" destination="zb2-l7-MYK" eventType="touchUpInside" id="jos-lv-4WH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.818390877016129" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="zd1-M5-yD1" id="Gmn-jg-kp1"/>
+                        <outlet property="infoStripImgView" destination="leV-Fj-L5c" id="irF-4O-2Uk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlk-JO-MzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3780" y="-77"/>
+        </scene>
+        <!--Video Overlay View Controller-->
+        <scene sceneID="Fs4-gJ-dle">
+            <objects>
+                <viewController restorationIdentifier="video" storyboardIdentifier="video" id="Vy2-fL-KCd" customClass="SGVideoOverlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v9i-OL-lDl" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VH0-LL-KwJ">
+                                <rect key="frame" x="0.0" y="45" width="768" height="432"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="62E-CR-Mk7">
+                                <rect key="frame" x="0.0" y="45" width="768" height="432"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedPlayPause:" destination="Vy2-fL-KCd" eventType="touchUpInside" id="3uO-dg-6ap"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar.png" id="kMj-l1-heC">
+                                <rect key="frame" x="98" y="961" width="635" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar_Overlay.png" id="EX2-Ku-XJK">
+                                <rect key="frame" x="98" y="961" width="1" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pR6-73-u8v">
+                                <rect key="frame" x="9" y="927" width="96" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SG_General_Music_PlayPause.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="SG_General_Music_PlayPause-on.png"/>
+                                <connections>
+                                    <action selector="pressedPlayPause:" destination="Vy2-fL-KCd" eventType="touchUpInside" id="mvX-kI-Nlo"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SG_General_Media_Playhead.png" id="v83-CX-YKT" customClass="SGMediaPlayhead">
+                                <rect key="frame" x="78" y="946" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Vy2-fL-KCd" id="nEl-1P-9zQ"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <outlet property="freezeFrame" destination="VH0-LL-KwJ" id="Mgi-k7-z9Y"/>
+                        <outlet property="mediaPlayhead" destination="v83-CX-YKT" id="Nc2-nK-gPR"/>
+                        <outlet property="playOverlay" destination="EX2-Ku-XJK" id="9pH-iJ-z0q"/>
+                        <outlet property="playPauseButton" destination="pR6-73-u8v" id="Ua4-QQ-wBC"/>
+                        <outlet property="playUnderlay" destination="kMj-l1-heC" id="Gdm-QA-ASq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQu-iu-iIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3734" y="-136"/>
+        </scene>
+        <!--Social View Controller-->
+        <scene sceneID="aYW-CF-Y7g">
+            <objects>
+                <viewController restorationIdentifier="social" storyboardIdentifier="social" id="n9h-Kx-tEQ" customClass="SGSocialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kvi-4e-csW" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="236"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AUD-OZ-vkS">
+                                <rect key="frame" x="376" y="39" width="244" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SG_General_Share_fb.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="SG_General_Share_fb-on.png"/>
+                                <connections>
+                                    <action selector="pressedSocialBtn:" destination="n9h-Kx-tEQ" eventType="touchUpInside" id="DGh-uY-ikw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ori-R2-Dtk">
+                                <rect key="frame" x="376" y="97" width="244" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SG_General_Share_tw.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="SG_General_Share_tw-on.png"/>
+                                <connections>
+                                    <action selector="pressedSocialBtn:" destination="n9h-Kx-tEQ" eventType="touchUpInside" id="FTm-Lq-RAv"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oIt-eA-odc">
+                                <rect key="frame" x="376" y="152" width="244" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SG_General_Share_email.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="SG_General_Share_email-on.png"/>
+                                <connections>
+                                    <action selector="pressedSocialBtn:" destination="n9h-Kx-tEQ" eventType="touchUpInside" id="BA1-5F-Ies"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Acm-bY-uZo">
+                                <rect key="frame" x="583" y="39" width="244" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SG_General_Share_thanks.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="SG_General_Share_thanks-on.png"/>
+                                <connections>
+                                    <action selector="pressedSocialBtn:" destination="n9h-Kx-tEQ" eventType="touchUpInside" id="YHi-z9-eaH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aalborg.png" id="Sjw-ua-Ere">
+                                <rect key="frame" x="18" y="36" width="319" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Nf-Oi-9cm">
+                                <rect key="frame" x="643" y="195" width="250" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_general_Share_signout.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="sg_general_Share_signout.png"/>
+                                <connections>
+                                    <action selector="pressedSignOut:" destination="n9h-Kx-tEQ" eventType="touchUpInside" id="p2U-wT-7QE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="236"/>
+                    <connections>
+                        <outlet property="paintingThumbnail" destination="Sjw-ua-Ere" id="ah1-0k-tZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6KJ-T6-uSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2631" y="420"/>
+        </scene>
+        <!--Schwartz View Controller-->
+        <scene sceneID="PKt-4M-xKP">
+            <objects>
+                <viewController restorationIdentifier="schwartz" storyboardIdentifier="schwartz" wantsFullScreenLayout="YES" id="vkt-vk-LdG" customClass="SGSchwartzViewController" sceneMemberID="viewController">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="KB8-Rl-OOd">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home_blur.png" id="Ld5-MX-NYR">
+                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="Ekf-vs-Rsn">
+                                <rect key="frame" x="0.0" y="62" width="768" height="962"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="artists_pages_schwartz_overlay.png" id="7nQ-4B-Qa3">
+                                        <rect key="frame" x="0.0" y="96" width="768" height="1115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d6d-Wx-beA">
+                                        <rect key="frame" x="668" y="126" width="71" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="speaker_btns__narration_btn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="speaker_btns__narration_btn-on.png"/>
+                                        <state key="highlighted" image="speaker_btns__narration_btn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedNarration:" destination="vkt-vk-LdG" eventType="touchUpInside" id="6Vy-ah-Cyx"/>
+                                        </connections>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="paintings_text.png" id="gRv-M4-hVO">
+                                        <rect key="frame" x="39" y="1220" width="101" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="kP7-fI-MZr" userLabel="Schwartzs">
+                                        <rect key="frame" x="39" y="1255" width="244" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="q0p-IR-86n">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_garden.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_garden-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="vkt-vk-LdG" eventType="touchUpInside" id="mXx-Kf-giR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lr6-qf-SlC">
+                                                <rect key="frame" x="121" y="0.0" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_aalborg.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_aalborg-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="vkt-vk-LdG" eventType="touchUpInside" id="Jh5-GX-dfj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="Ld5-MX-NYR" id="hMZ-Ye-Zhy"/>
+                        <outlet property="scrollView" destination="Ekf-vs-Rsn" id="7Xa-SQ-pGA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kA3-sm-dXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="-77"/>
+        </scene>
+        <!--Bloch View Controller-->
+        <scene sceneID="xxs-WI-hnk">
+            <objects>
+                <viewController restorationIdentifier="bloch" storyboardIdentifier="bloch" wantsFullScreenLayout="YES" id="kwW-sc-41B" customClass="SGBlochViewController" sceneMemberID="viewController">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="YPJ-Jy-GnP">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home_blur.png" id="UIH-Jo-nG4">
+                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="ycS-7P-AwM">
+                                <rect key="frame" x="0.0" y="62" width="768" height="962"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="artists_pages_bloch_overlay.png" id="nYs-UR-Zbq">
+                                        <rect key="frame" x="0.0" y="96" width="768" height="1074"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h94-0a-9Ax">
+                                        <rect key="frame" x="668" y="126" width="71" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="speaker_btns__narration_btn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="speaker_btns__narration_btn-on.png"/>
+                                        <state key="highlighted" image="speaker_btns__narration_btn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedNarration:" destination="kwW-sc-41B" eventType="touchUpInside" id="hTf-Cw-yle"/>
+                                        </connections>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="paintings_text.png" id="Cwj-zO-f5Q">
+                                        <rect key="frame" x="33" y="1171" width="101" height="41"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="fmS-Dv-eTN" userLabel="Blochs">
+                                        <rect key="frame" x="32" y="1163" width="728" height="371"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4rE-gX-Tw0">
+                                                <rect key="frame" x="605" y="42" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_children.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_children-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="qGf-kX-RPn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Ok-qq-YRa">
+                                                <rect key="frame" x="121" y="42" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_consolator.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_consolator-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="ZVT-MS-GEX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VgE-n8-lBL">
+                                                <rect key="frame" x="242" y="42" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_emmaus.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_emmaus-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="1ek-Me-e1P"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CXk-sc-rL2">
+                                                <rect key="frame" x="0.0" y="42" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_mocking.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_mocking-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="8bZ-Di-r0a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q5t-Dw-caX">
+                                                <rect key="frame" x="484" y="42" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_sermon.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_sermon-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="geL-zw-6yD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I4s-0m-mxE">
+                                                <rect key="frame" x="363" y="42" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_shepherds.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_shepherds-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="w6h-BH-o1f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Qt-oK-whw">
+                                                <rect key="frame" x="484" y="207" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_burial.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_burial-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="7mU-VP-upm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="D4q-N1-Dgy">
+                                                <rect key="frame" x="121" y="207" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_cleansing.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_cleansing-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="W8g-cR-38X"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="frW-Ki-udA">
+                                                <rect key="frame" x="363" y="207" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_cross.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_cross-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="XMh-m9-qyX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g7r-MV-q82">
+                                                <rect key="frame" x="0.0" y="207" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_healing.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_healing-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="6IJ-Th-cIn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DD6-yI-1OJ">
+                                                <rect key="frame" x="605" y="207" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_resurrection.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_resurrection-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="SGa-to-iu1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EKE-Qk-rvJ">
+                                                <rect key="frame" x="242" y="207" width="123" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="painting_thumb_denial.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" image="painting_thumb_denial-on.png"/>
+                                                <connections>
+                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="0zI-GI-y58"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="saU-vB-di2">
+                                        <rect key="frame" x="0.0" y="1109" width="319" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="SG_General_painting-castleBtn-Bloch.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="SG_General_painting-castleBtn-Bloch-on.png"/>
+                                        <connections>
+                                            <action selector="pressedCastle:" destination="kwW-sc-41B" eventType="touchUpInside" id="OFz-S9-eHe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="UIH-Jo-nG4" id="K2e-gQ-axr"/>
+                        <outlet property="scrollView" destination="ycS-7P-AwM" id="vJ3-of-eUq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5i-t3-lov" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="152"/>
+        </scene>
+        <!--Parent View Controller-->
+        <scene sceneID="9GC-qj-ULx">
+            <objects>
+                <viewController restorationIdentifier="scan" storyboardIdentifier="scan" id="lxg-Au-don" customClass="ARParentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9J3-QE-f19">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2jm-0J-9uC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faw-K1-Ad7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-449" y="1296"/>
+        </scene>
+        <!--Donate View Controller-->
+        <scene sceneID="xqe-Bd-oXr">
+            <objects>
+                <viewController restorationIdentifier="donate" storyboardIdentifier="donate" id="ftq-32-kEI" customClass="SGDonateViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="et8-1E-oh1">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_museumDonate.png" id="NmV-OO-r3T">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uN5-mX-3Jz">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchedAnywhere:" destination="ftq-32-kEI" eventType="touchUpInside" id="zor-NN-vOj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6L-Jk-mgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="1340"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="DFb-82-qrc">
+            <objects>
+                <viewController restorationIdentifier="web" storyboardIdentifier="web" id="KHn-YW-mRs" customClass="SGWebViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="Le8-43-FpC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="koA-RZ-kc3">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="867-Gq-8KU">
+                                        <rect key="frame" x="727" y="0.0" width="41" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="SG_General_Module_CloseBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="SG_General_Module_CloseBtn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedClose:" destination="KHn-YW-mRs" eventType="touchUpInside" id="BQd-jc-c6N"/>
+                                        </connections>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SG_General_header_thanks.png" id="fRt-ig-Pzy">
+                                        <rect key="frame" x="284" y="0.0" width="200" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="vkD-Go-1QN">
+                                <rect key="frame" x="0.0" y="954" width="768" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Er9-Sb-VQb">
+                                        <rect key="frame" x="663" y="0.0" width="102" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="SG_General_window_closeBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="SG_General_window_closeBtn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedClose:" destination="KHn-YW-mRs" eventType="touchUpInside" id="1YM-xg-SZa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <webView contentMode="scaleToFill" id="06T-i5-Y6L">
+                                <rect key="frame" x="0.0" y="41" width="768" height="913"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KHn-YW-mRs" id="wdD-9f-Zog"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" id="f4q-ih-m0x">
+                                <rect key="frame" x="374" y="488" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="f4q-ih-m0x" id="9dh-ju-A1J"/>
+                        <outlet property="webHeaderImgView" destination="fRt-ig-Pzy" id="aXu-02-mer"/>
+                        <outlet property="webView" destination="06T-i5-Y6L" id="sVm-94-m22"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5O-vc-nh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="1307"/>
+        </scene>
+        <!--Text Overlay View Controller-->
+        <scene sceneID="QJq-bj-8aB">
+            <objects>
+                <viewController restorationIdentifier="text" storyboardIdentifier="text" id="Dqd-Cv-NFI" customClass="SGTextOverlayViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="wXd-DP-4pW" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="114"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="114"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZN-Rw-lzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2486" y="378"/>
+        </scene>
+        <!--Narration Overlay View Controller-->
+        <scene sceneID="7cd-eu-E8V">
+            <objects>
+                <viewController restorationIdentifier="narration" storyboardIdentifier="narration" id="dhc-Li-d9a" customClass="SGNarrationOverlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5G7-pf-Gvg" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="278"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar.png" id="M97-QK-A5V">
+                                <rect key="frame" x="258" y="221" width="477" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar_Overlay.png" id="jmm-CE-Jad">
+                                <rect key="frame" x="258" y="221" width="0.0" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eYk-zX-kjK">
+                                <rect key="frame" x="169" y="187" width="96" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SG_General_Music_PlayPause.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="SG_General_Music_PlayPause-on.png"/>
+                                <connections>
+                                    <action selector="pressedPlayPause:" destination="dhc-Li-d9a" eventType="touchUpInside" id="jKM-mD-aBH"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SG_General_Media_Playhead.png" id="M7S-e7-iq8" customClass="SGMediaPlayhead">
+                                <rect key="frame" x="238" y="206" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dhc-Li-d9a" id="8lw-UE-rDG"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="278"/>
+                    <connections>
+                        <outlet property="playOverlay" destination="jmm-CE-Jad" id="Gox-47-NiH"/>
+                        <outlet property="playPauseButton" destination="eYk-zX-kjK" id="XWh-m1-JyR"/>
+                        <outlet property="playUnderlay" destination="M97-QK-A5V" id="GLa-lz-akl"/>
+                        <outlet property="playhead" destination="M7S-e7-iq8" id="r83-gm-aW1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Syu-gM-nxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3028" y="789"/>
+        </scene>
+        <!--Highlights View Controller-->
+        <scene sceneID="qg0-Ty-BHF">
+            <objects>
+                <viewController restorationIdentifier="highlights" storyboardIdentifier="highlights" id="Zfx-9u-qPD" customClass="SGHighlightsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V3c-v8-ibk" customClass="SGOverlayView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="400"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfa-h9-hsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2959" y="554"/>
+        </scene>
+        <!--Story Of The Exhibition View Controller-->
+        <scene sceneID="44V-WG-Tw2">
+            <objects>
+                <viewController restorationIdentifier="SacredGifts StoryOfTheExhibition" storyboardIdentifier="SacredGifts StoryOfTheExhibition" wantsFullScreenLayout="YES" id="fQ9-Kj-Hgd" customClass="SGStoryOfTheExhibitionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kja-Fb-G2H">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="sg_home_bg-home_blur.png" id="NSo-DL-M96">
+                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="5sz-nv-nkX">
+                                <rect key="frame" x="0.0" y="62" width="768" height="962"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="exhibition_story_overlay.png" id="2rL-33-6Wu">
+                                        <rect key="frame" x="0.0" y="96" width="768" height="921"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="exhibition_donors_overlay.png" id="2Tv-IO-Sb4">
+                                        <rect key="frame" x="0.0" y="1040" width="768" height="758"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="exhibition_credit_overlay.png" id="DnA-Ao-ipR">
+                                        <rect key="frame" x="0.0" y="1820" width="768" height="798"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="NSo-DL-M96" id="AC6-S7-bS5"/>
+                        <outlet property="scrollView" destination="5sz-nv-nkX" id="c6E-FP-vtQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0k-7J-fNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="70"/>
+        </scene>
+        <!--Facebook View Controller-->
+        <scene sceneID="kaT-PN-j3K">
+            <objects>
+                <viewController restorationIdentifier="facebook" storyboardIdentifier="facebook" id="Plh-XN-9ab" customClass="SGFacebookViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="0MF-g3-AX5">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Kqa-dV-UPt">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HSA-rS-HIx">
+                                        <rect key="frame" x="727" y="0.0" width="41" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="SG_General_Module_CloseBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="SG_General_Module_CloseBtn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedClose:" destination="Plh-XN-9ab" eventType="touchUpInside" id="2KI-xK-o5F"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="uUZ-zf-tBQ">
+                                <rect key="frame" x="0.0" y="954" width="768" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KPn-WH-tw9">
+                                        <rect key="frame" x="663" y="0.0" width="102" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="SG_General_window_closeBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="SG_General_window_closeBtn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedClose:" destination="Plh-XN-9ab" eventType="touchUpInside" id="sXs-ej-FBN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <webView contentMode="scaleToFill" id="SnL-ar-bYJ">
+                                <rect key="frame" x="0.0" y="41" width="768" height="913"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Plh-XN-9ab" id="DPa-Q9-j5a"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" id="sI9-dy-9qm">
+                                <rect key="frame" x="374" y="488" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="sI9-dy-9qm" id="f5M-Wr-1oA"/>
+                        <outlet property="webview" destination="SnL-ar-bYJ" id="4Yn-Om-eGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gY8-s6-uzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="1436"/>
+        </scene>
+        <!--Intro Movie View Controller-->
+        <scene sceneID="N9H-xD-tbF">
+            <objects>
+                <viewController restorationIdentifier="SacredGifts IntroMovie" storyboardIdentifier="SacredGifts IntroMovie" id="CHv-eh-pmv" customClass="SGIntroMovieViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Jf-jS-Szu">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Urx-N6-ebt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2094" y="1436"/>
+        </scene>
+        <!--Timeline View Controller-->
+        <scene sceneID="pXy-Li-dhJ">
+            <objects>
+                <viewController restorationIdentifier="timeline" storyboardIdentifier="timeline" id="U9m-uu-YE8" customClass="SGTimelineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pfV-tZ-p9A">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="oRN-DB-yUV">
+                                <rect key="frame" x="0.0" y="-60" width="768" height="956"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" image="timeline_assets_dates.png" id="9ZQ-JX-3Dd">
+                                        <rect key="frame" x="-400" y="481" width="6176" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WKp-93-fwf">
+                                <rect key="frame" x="-16" y="954" width="148" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="timeline_assets_hofmannBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="timeline_assets_hofmannBtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedTimelineToggle:" destination="U9m-uu-YE8" eventType="touchUpInside" id="Lro-vT-bwg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eIU-3e-u6r">
+                                <rect key="frame" x="140" y="954" width="129" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="timeline_assets_schwartzBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="timeline_assets_schwartzBtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedTimelineToggle:" destination="U9m-uu-YE8" eventType="touchUpInside" id="hNA-Ca-kVi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VwU-O8-pND">
+                                <rect key="frame" x="277" y="954" width="97" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="timeline_assets_blochBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="timeline_assets_blochBtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedTimelineToggle:" destination="U9m-uu-YE8" eventType="touchUpInside" id="eGR-ML-wKb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rfN-ak-G7Y">
+                                <rect key="frame" x="382" y="954" width="162" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="timeline_assets_worldBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="timeline_assets_worldBtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedTimelineToggle:" destination="U9m-uu-YE8" eventType="touchUpInside" id="pCU-H0-6hv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C5O-fh-pWR">
+                                <rect key="frame" x="552" y="954" width="232" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="timeline_assets_churchBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="timeline_assets_churchBtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedTimelineToggle:" destination="U9m-uu-YE8" eventType="touchUpInside" id="k9Z-BN-n2d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="datesImageView" destination="9ZQ-JX-3Dd" id="gwL-WA-mwO"/>
+                        <outlet property="scrollView" destination="oRN-DB-yUV" id="Meb-qF-ceL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTp-Ec-qaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2924" y="1436"/>
+        </scene>
+        <!--Twitter View Controller-->
+        <scene sceneID="J9A-1F-I2H">
+            <objects>
+                <viewController restorationIdentifier="twitter" storyboardIdentifier="twitter" id="vRB-K8-eWS" customClass="SGTwitterViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="cEy-Md-X0Y">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="fPQ-Zo-EDl">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VpG-TI-xCK">
+                                        <rect key="frame" x="727" y="0.0" width="41" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="SG_General_Module_CloseBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="SG_General_Module_CloseBtn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedClose:" destination="vRB-K8-eWS" eventType="touchUpInside" id="HkA-6E-ilJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="a0f-Yv-2Dg">
+                                <rect key="frame" x="0.0" y="954" width="768" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XIs-lP-vq0">
+                                        <rect key="frame" x="663" y="0.0" width="102" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="SG_General_window_closeBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="SG_General_window_closeBtn-on.png"/>
+                                        <connections>
+                                            <action selector="pressedClose:" destination="vRB-K8-eWS" eventType="touchUpInside" id="X9w-b6-l1t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <webView contentMode="scaleToFill" id="wc4-No-AOT">
+                                <rect key="frame" x="0.0" y="41" width="768" height="913"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vRB-K8-eWS" id="IQe-NB-V7W"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" id="rMz-kX-tNF">
+                                <rect key="frame" x="374" y="488" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="rMz-kX-tNF" id="XXm-2c-T6o"/>
+                        <outlet property="webview" destination="wc4-No-AOT" id="CM8-1o-yUy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qE-k7-gKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="1370"/>
+        </scene>
+        <!--Sermon Composition View Controller-->
+        <scene sceneID="0Bg-p0-xfq">
+            <objects>
+                <viewController restorationIdentifier="sermonAR" storyboardIdentifier="sermonAR" id="AtL-5t-ATN" customClass="SGARSermonCompositionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ROa-Mz-u0h">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d3j-Ht-6lf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mit-W7-dZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="1409"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SG_General_BackBtn-on.png" width="122" height="41"/>
+        <image name="SG_General_BackBtn.png" width="122" height="41"/>
+        <image name="SG_General_Media_Playbar.png" width="387" height="9"/>
+        <image name="SG_General_Media_Playbar_Overlay.png" width="387" height="9"/>
+        <image name="SG_General_Media_Playhead.png" width="40" height="40"/>
+        <image name="SG_General_ModuleButtonBar.png" width="768" height="70"/>
+        <image name="SG_General_Module_CloseBtn-on.png" width="41" height="41"/>
+        <image name="SG_General_Module_CloseBtn.png" width="41" height="41"/>
+        <image name="SG_General_Music_PlayPause-on.png" width="42" height="42"/>
+        <image name="SG_General_Music_PlayPause.png" width="41" height="42"/>
+        <image name="SG_General_Painting_ShareBtn-on.png" width="100" height="70"/>
+        <image name="SG_General_Painting_ShareBtn.png" width="100" height="70"/>
+        <image name="SG_General_Share_email-on.png" width="244" height="41"/>
+        <image name="SG_General_Share_email.png" width="244" height="41"/>
+        <image name="SG_General_Share_fb-on.png" width="244" height="41"/>
+        <image name="SG_General_Share_fb.png" width="244" height="41"/>
+        <image name="SG_General_Share_thanks-on.png" width="245" height="41"/>
+        <image name="SG_General_Share_thanks.png" width="244" height="41"/>
+        <image name="SG_General_Share_tw-on.png" width="244" height="41"/>
+        <image name="SG_General_Share_tw.png" width="244" height="41"/>
+        <image name="SG_General_TopBar.png" width="768" height="62"/>
+        <image name="SG_General_header_thanks.png" width="200" height="41"/>
+        <image name="SG_General_painting-castleBtn-Bloch-on.png" width="250" height="41"/>
+        <image name="SG_General_painting-castleBtn-Bloch.png" width="250" height="41"/>
+        <image name="SG_General_window_closeBtn-on.png" width="102" height="70"/>
+        <image name="SG_General_window_closeBtn.png" width="102" height="70"/>
+        <image name="SG_Home_SplashLogo.png" width="768" height="240"/>
+        <image name="SG_Home_SplashScreen.png" width="768" height="1024"/>
+        <image name="aalborg.png" width="800" height="410"/>
+        <image name="artists_pages_bloch_overlay.png" width="768" height="1074"/>
+        <image name="artists_pages_hofmann_overlay.png" width="768" height="1133"/>
+        <image name="artists_pages_schwartz_overlay.png" width="768" height="1115"/>
+        <image name="childrens_bloch_prompt.png" width="768" height="48"/>
+        <image name="exhibition_credit_overlay.png" width="768" height="799"/>
+        <image name="exhibition_donors_overlay.png" width="768" height="759"/>
+        <image name="exhibition_story_overlay.png" width="768" height="921"/>
+        <image name="header_SacredGifts Home.png" width="256" height="41"/>
+        <image name="painting_thumb_aalborg-on.png" width="123" height="164"/>
+        <image name="painting_thumb_aalborg.png" width="123" height="164"/>
+        <image name="painting_thumb_burial-on.png" width="123" height="164"/>
+        <image name="painting_thumb_burial.png" width="123" height="164"/>
+        <image name="painting_thumb_capture-on.png" width="123" height="164"/>
+        <image name="painting_thumb_capture.png" width="123" height="164"/>
+        <image name="painting_thumb_children-on.png" width="123" height="164"/>
+        <image name="painting_thumb_children.png" width="123" height="164"/>
+        <image name="painting_thumb_cleansing-on.png" width="123" height="164"/>
+        <image name="painting_thumb_cleansing.png" width="123" height="164"/>
+        <image name="painting_thumb_consolator-on.png" width="123" height="164"/>
+        <image name="painting_thumb_consolator.png" width="123" height="164"/>
+        <image name="painting_thumb_cross-on.png" width="123" height="164"/>
+        <image name="painting_thumb_cross.png" width="123" height="164"/>
+        <image name="painting_thumb_denial-on.png" width="123" height="164"/>
+        <image name="painting_thumb_denial.png" width="123" height="164"/>
+        <image name="painting_thumb_emmaus-on.png" width="123" height="164"/>
+        <image name="painting_thumb_emmaus.png" width="123" height="164"/>
+        <image name="painting_thumb_garden-on.png" width="123" height="164"/>
+        <image name="painting_thumb_garden.png" width="123" height="164"/>
+        <image name="painting_thumb_gethsemane-on.png" width="123" height="164"/>
+        <image name="painting_thumb_gethsemane.png" width="123" height="164"/>
+        <image name="painting_thumb_healing-on.png" width="123" height="164"/>
+        <image name="painting_thumb_healing.png" width="123" height="164"/>
+        <image name="painting_thumb_mocking-on.png" width="123" height="164"/>
+        <image name="painting_thumb_mocking.png" width="123" height="164"/>
+        <image name="painting_thumb_resurrection-on.png" width="123" height="164"/>
+        <image name="painting_thumb_resurrection.png" width="123" height="164"/>
+        <image name="painting_thumb_ruler-on.png" width="123" height="164"/>
+        <image name="painting_thumb_ruler.png" width="123" height="164"/>
+        <image name="painting_thumb_savior-on.png" width="123" height="164"/>
+        <image name="painting_thumb_savior.png" width="123" height="164"/>
+        <image name="painting_thumb_sermon-on.png" width="123" height="164"/>
+        <image name="painting_thumb_sermon.png" width="123" height="164"/>
+        <image name="painting_thumb_shepherds-on.png" width="123" height="164"/>
+        <image name="painting_thumb_shepherds.png" width="123" height="164"/>
+        <image name="painting_thumb_temple-on.png" width="123" height="164"/>
+        <image name="painting_thumb_temple.png" width="123" height="164"/>
+        <image name="paintings_text.png" width="101" height="41"/>
+        <image name="sg_general_Share_signout.png" width="244" height="41"/>
+        <image name="sg_home_bg-exhibition.png" width="804" height="1060"/>
+        <image name="sg_home_bg-findpainting.png" width="804" height="1060"/>
+        <image name="sg_home_bg-home.png" width="804" height="1060"/>
+        <image name="sg_home_bg-home_blur.png" width="804" height="1060"/>
+        <image name="sg_home_bg-meetartists.png" width="804" height="1060"/>
+        <image name="sg_home_blochbtn-on.png" width="768" height="175"/>
+        <image name="sg_home_blochbtn.png" width="768" height="175"/>
+        <image name="sg_home_donatebtn-on.png" width="245" height="123"/>
+        <image name="sg_home_donatebtn.png" width="245" height="123"/>
+        <image name="sg_home_exhibitionbtn-on.png" width="768" height="205"/>
+        <image name="sg_home_exhibitionbtn.png" width="768" height="205"/>
+        <image name="sg_home_feedbackbtn-on.png" width="245" height="123"/>
+        <image name="sg_home_feedbackbtn.png" width="245" height="123"/>
+        <image name="sg_home_filmbtn-on.png" width="768" height="205"/>
+        <image name="sg_home_filmbtn.png" width="768" height="205"/>
+        <image name="sg_home_findbtn-on.png" width="768" height="205"/>
+        <image name="sg_home_findbtn.png" width="768" height="205"/>
+        <image name="sg_home_footer_bg.png" width="804" height="161"/>
+        <image name="sg_home_hoffmanbtn-on.png" width="768" height="175"/>
+        <image name="sg_home_hoffmanbtn.png" width="768" height="175"/>
+        <image name="sg_home_label_bloch.png" width="244" height="41"/>
+        <image name="sg_home_label_hofmann.png" width="244" height="41"/>
+        <image name="sg_home_label_schwartz.png" width="244" height="41"/>
+        <image name="sg_home_meetartistsbtn-on.png" width="768" height="205"/>
+        <image name="sg_home_meetartistsbtn.png" width="768" height="205"/>
+        <image name="sg_home_museumDonate.png" width="768" height="1024"/>
+        <image name="sg_home_originsbtn-on.png" width="768" height="205"/>
+        <image name="sg_home_originsbtn.png" width="768" height="205"/>
+        <image name="sg_home_reservationbtn-on.png" width="768" height="205"/>
+        <image name="sg_home_reservationbtn.png" width="768" height="205"/>
+        <image name="sg_home_schwartzbtn-on.png" width="768" height="175"/>
+        <image name="sg_home_schwartzbtn.png" width="768" height="175"/>
+        <image name="sg_home_timelinebtn-on.png" width="768" height="175"/>
+        <image name="sg_home_timelinebtn.png" width="768" height="175"/>
+        <image name="sg_temple_btn_1880-on.png" width="151" height="48"/>
+        <image name="sg_temple_btn_1880.png" width="151" height="48"/>
+        <image name="sg_temple_btn_later-on.png" width="150" height="48"/>
+        <image name="sg_temple_btn_later.png" width="150" height="48"/>
+        <image name="speaker_btns__narration_btn-on.png" width="71" height="71"/>
+        <image name="speaker_btns__narration_btn.png" width="71" height="71"/>
+        <image name="splash_artists.png" width="312" height="303"/>
+        <image name="splash_donors.png" width="768" height="638"/>
+        <image name="timeline_assets_blochBtn-on.png" width="97" height="70"/>
+        <image name="timeline_assets_blochBtn.png" width="97" height="70"/>
+        <image name="timeline_assets_churchBtn-on.png" width="232" height="70"/>
+        <image name="timeline_assets_churchBtn.png" width="232" height="70"/>
+        <image name="timeline_assets_dates.png" width="6176" height="31"/>
+        <image name="timeline_assets_hofmannBtn-on.png" width="148" height="70"/>
+        <image name="timeline_assets_hofmannBtn.png" width="148" height="70"/>
+        <image name="timeline_assets_schwartzBtn-on.png" width="129" height="70"/>
+        <image name="timeline_assets_schwartzBtn.png" width="129" height="70"/>
+        <image name="timeline_assets_worldBtn-on.png" width="162" height="70"/>
+        <image name="timeline_assets_worldBtn.png" width="162" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
