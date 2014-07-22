@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -45,7 +45,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" id="vJA-Jz-DAr" userLabel="Footer">
+                            <view hidden="YES" contentMode="scaleToFill" id="vJA-Jz-DAr" userLabel="Footer">
                                 <rect key="frame" x="0.0" y="883" width="768" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -127,37 +127,31 @@
                                 <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kzm-On-8yx">
-                                <rect key="frame" x="0.0" y="189" width="768" height="205"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sg_home_findbtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="sg_home_findbtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedBtn:" destination="rWn-Ap-S9g" eventType="touchUpInside" id="vXO-P5-50S"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e1S-K6-Raj">
-                                <rect key="frame" x="0.0" y="402" width="768" height="205"/>
+                                <rect key="frame" x="0.0" y="217" width="768" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sg_home_meetartistsbtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" image="sg_home_meetartistsbtn.png"/>
                                 <state key="highlighted" image="sg_home_meetartistsbtn-on.png"/>
                                 <connections>
                                     <action selector="pressedBtn:" destination="rWn-Ap-S9g" eventType="touchUpInside" id="FL3-g7-soF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kfF-Bv-6ev">
-                                <rect key="frame" x="0.0" y="615" width="768" height="205"/>
+                                <rect key="frame" x="0.0" y="547" width="768" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sg_home_exhibitionbtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" image="sg_home_exhibitionbtn.png"/>
                                 <state key="highlighted" image="sg_home_exhibitionbtn-on.png"/>
                                 <connections>
                                     <action selector="pressedBtn:" destination="rWn-Ap-S9g" eventType="touchUpInside" id="IeN-vl-706"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kzm-On-8yx">
+                                <rect key="frame" x="0.0" y="372" width="768" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sg_home_findbtn.png"/>
+                                <state key="highlighted" image="sg_home_findbtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="rWn-Ap-S9g" eventType="touchUpInside" id="vXO-P5-50S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -167,9 +161,6 @@
                     <connections>
                         <outlet property="background" destination="0eO-3H-qLx" id="LTj-77-YXc"/>
                         <outlet property="view" destination="w3m-kU-NRY" id="maj-Qq-dHf"/>
-                        <outletCollection property="blurredViews" destination="kzm-On-8yx" id="HJE-Xv-tyf"/>
-                        <outletCollection property="blurredViews" destination="e1S-K6-Raj" id="iSf-mO-9aL"/>
-                        <outletCollection property="blurredViews" destination="kfF-Bv-6ev" id="rOb-kO-h7Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Luk-dA-5TZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2079,22 +2070,22 @@
         <image name="sg_home_blochbtn.png" width="768" height="175"/>
         <image name="sg_home_donatebtn-on.png" width="245" height="123"/>
         <image name="sg_home_donatebtn.png" width="245" height="123"/>
-        <image name="sg_home_exhibitionbtn-on.png" width="768" height="205"/>
-        <image name="sg_home_exhibitionbtn.png" width="768" height="205"/>
+        <image name="sg_home_exhibitionbtn-on.png" width="768" height="225"/>
+        <image name="sg_home_exhibitionbtn.png" width="769" height="225"/>
         <image name="sg_home_feedbackbtn-on.png" width="245" height="123"/>
         <image name="sg_home_feedbackbtn.png" width="245" height="123"/>
         <image name="sg_home_filmbtn-on.png" width="768" height="205"/>
         <image name="sg_home_filmbtn.png" width="768" height="205"/>
-        <image name="sg_home_findbtn-on.png" width="768" height="205"/>
-        <image name="sg_home_findbtn.png" width="768" height="205"/>
+        <image name="sg_home_findbtn-on.png" width="768" height="224"/>
+        <image name="sg_home_findbtn.png" width="768" height="224"/>
         <image name="sg_home_footer_bg.png" width="804" height="161"/>
         <image name="sg_home_hoffmanbtn-on.png" width="768" height="175"/>
         <image name="sg_home_hoffmanbtn.png" width="768" height="175"/>
         <image name="sg_home_label_bloch.png" width="244" height="41"/>
         <image name="sg_home_label_hofmann.png" width="244" height="41"/>
         <image name="sg_home_label_schwartz.png" width="244" height="41"/>
-        <image name="sg_home_meetartistsbtn-on.png" width="768" height="205"/>
-        <image name="sg_home_meetartistsbtn.png" width="768" height="205"/>
+        <image name="sg_home_meetartistsbtn-on.png" width="768" height="226"/>
+        <image name="sg_home_meetartistsbtn.png" width="768" height="226"/>
         <image name="sg_home_museumDonate.png" width="768" height="1024"/>
         <image name="sg_home_originsbtn-on.png" width="768" height="205"/>
         <image name="sg_home_originsbtn.png" width="768" height="205"/>
