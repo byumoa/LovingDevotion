@@ -48,7 +48,7 @@ const NSString* kfacebookURLresurrection = @"http://on.fb.me/1hvr8Bn";
 
 const int kTotalPaintings = 20;
 NSString* const kPaintingNames[] = {
-    @"capture",
+    @"butter1",
     @"temple",
     @"ruler",
     @"gethsemane",

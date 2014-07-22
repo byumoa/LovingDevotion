@@ -557,6 +557,7 @@
 		61D606801844B8E10090C77A /* sg_home_museumDonate.png in Resources */ = {isa = PBXBuildFile; fileRef = 61D6067E1844B8E10090C77A /* sg_home_museumDonate.png */; };
 		61D606811844B8E10090C77A /* sg_home_museumDonate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61D6067F1844B8E10090C77A /* sg_home_museumDonate@2x.png */; };
 		61D606841844BA510090C77A /* SGDonateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D606831844BA510090C77A /* SGDonateViewController.m */; };
+		61DC6DF1197EC9870044E0EB /* KrishnaButter.png in Resources */ = {isa = PBXBuildFile; fileRef = 61DC6DF0197EC9870044E0EB /* KrishnaButter.png */; };
 		61E163831859B4AB0076F73A /* header_aalborg.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E163451859B4AB0076F73A /* header_aalborg.png */; };
 		61E163841859B4AB0076F73A /* header_aalborg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E163461859B4AB0076F73A /* header_aalborg@2x.png */; };
 		61E163851859B4AB0076F73A /* header_SacredGifts AboutTheExhibition.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E163471859B4AB0076F73A /* header_SacredGifts AboutTheExhibition.png */; };
@@ -1247,6 +1248,7 @@
 		61D6067F1844B8E10090C77A /* sg_home_museumDonate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sg_home_museumDonate@2x.png"; sourceTree = "<group>"; };
 		61D606821844BA510090C77A /* SGDonateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDonateViewController.h; sourceTree = "<group>"; };
 		61D606831844BA510090C77A /* SGDonateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDonateViewController.m; sourceTree = "<group>"; };
+		61DC6DF0197EC9870044E0EB /* KrishnaButter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KrishnaButter.png; sourceTree = "<group>"; };
 		61E163451859B4AB0076F73A /* header_aalborg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_aalborg.png; sourceTree = "<group>"; };
 		61E163461859B4AB0076F73A /* header_aalborg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header_aalborg@2x.png"; sourceTree = "<group>"; };
 		61E163471859B4AB0076F73A /* header_SacredGifts AboutTheExhibition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header_SacredGifts AboutTheExhibition.png"; sourceTree = "<group>"; };
@@ -1760,6 +1762,7 @@
 		61CD50A5180C242500D28921 /* GeneralResources */ = {
 			isa = PBXGroup;
 			children = (
+				61DC6DF0197EC9870044E0EB /* KrishnaButter.png */,
 				61E163441859B4AB0076F73A /* Headers */,
 				61C8C02318512F5600003608 /* timeline */,
 				61C8C01C18504AB000003608 /* blackTopBar@2x.png */,
@@ -2419,6 +2422,7 @@
 				61072A291822658400E8D7A2 /* summary_pause_btn.png in Resources */,
 				61CD5230180C242500D28921 /* SG_General_Media_Playhead-on@2x.png in Resources */,
 				61CD526B180C242500D28921 /* SG_General_Painting_MusicBtn-on.png in Resources */,
+				61DC6DF1197EC9870044E0EB /* KrishnaButter.png in Resources */,
 				61E163931859B4AB0076F73A /* header_consolator.png in Resources */,
 				61CD52A4180C242500D28921 /* painting_thumb_burial.png in Resources */,
 				61E163B91859B4AB0076F73A /* header_shepherds.png in Resources */,
