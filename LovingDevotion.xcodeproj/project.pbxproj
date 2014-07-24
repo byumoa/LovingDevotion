@@ -554,6 +554,9 @@
 		61CD534C180C2C1B00D28921 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61CD534B180C2C1B00D28921 /* Images.xcassets */; };
 		61CD534E180C2C3000D28921 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD534D180C2C3000D28921 /* GLKit.framework */; };
 		61CD5350180C3E9400D28921 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD534F180C3E9400D28921 /* MediaPlayer.framework */; };
+		61CDF95F1981AC8300FD849E /* fluting_krishna1.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CDF95C1981AC8300FD849E /* fluting_krishna1.png */; };
+		61CDF9601981AC8300FD849E /* radha1.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CDF95D1981AC8300FD849E /* radha1.png */; };
+		61CDF9611981AC8300FD849E /* vishnu_attendants1.png in Resources */ = {isa = PBXBuildFile; fileRef = 61CDF95E1981AC8300FD849E /* vishnu_attendants1.png */; };
 		61D606801844B8E10090C77A /* sg_home_museumDonate.png in Resources */ = {isa = PBXBuildFile; fileRef = 61D6067E1844B8E10090C77A /* sg_home_museumDonate.png */; };
 		61D606811844B8E10090C77A /* sg_home_museumDonate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61D6067F1844B8E10090C77A /* sg_home_museumDonate@2x.png */; };
 		61D606841844BA510090C77A /* SGDonateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D606831844BA510090C77A /* SGDonateViewController.m */; };
@@ -1244,6 +1247,9 @@
 		61CD534B180C2C1B00D28921 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ImageTargets/Images.xcassets; sourceTree = "<group>"; };
 		61CD534D180C2C3000D28921 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		61CD534F180C3E9400D28921 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		61CDF95C1981AC8300FD849E /* fluting_krishna1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fluting_krishna1.png; sourceTree = "<group>"; };
+		61CDF95D1981AC8300FD849E /* radha1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radha1.png; sourceTree = "<group>"; };
+		61CDF95E1981AC8300FD849E /* vishnu_attendants1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vishnu_attendants1.png; sourceTree = "<group>"; };
 		61D6067E1844B8E10090C77A /* sg_home_museumDonate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sg_home_museumDonate.png; sourceTree = "<group>"; };
 		61D6067F1844B8E10090C77A /* sg_home_museumDonate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sg_home_museumDonate@2x.png"; sourceTree = "<group>"; };
 		61D606821844BA510090C77A /* SGDonateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDonateViewController.h; sourceTree = "<group>"; };
@@ -1762,6 +1768,9 @@
 		61CD50A5180C242500D28921 /* GeneralResources */ = {
 			isa = PBXGroup;
 			children = (
+				61CDF95C1981AC8300FD849E /* fluting_krishna1.png */,
+				61CDF95D1981AC8300FD849E /* radha1.png */,
+				61CDF95E1981AC8300FD849E /* vishnu_attendants1.png */,
 				61DC6DF0197EC9870044E0EB /* KrishnaButter.png */,
 				61E163441859B4AB0076F73A /* Headers */,
 				61C8C02318512F5600003608 /* timeline */,
@@ -2653,11 +2662,13 @@
 				61735B35183233EE0000D837 /* SG_General_header_feedback@2x.png in Resources */,
 				61C8C10A18512F5600003608 /* popup8.png in Resources */,
 				61E163A61859B4AB0076F73A /* header_hofman@2x.png in Resources */,
+				61CDF9601981AC8300FD849E /* radha1.png in Resources */,
 				61CD527E180C242500D28921 /* SG_General_Painting_SummaryBtn-on.png in Resources */,
 				61CD52B7180C242500D28921 /* painting_thumb_cross-on@2x.png in Resources */,
 				61CD5296180C242500D28921 /* SG_General_Share_thanks.png in Resources */,
 				61CD5281180C242500D28921 /* SG_General_Painting_SummaryBtn@2x.png in Resources */,
 				61C8C0D818512F5600003608 /* popup12.png in Resources */,
+				61CDF95F1981AC8300FD849E /* fluting_krishna1.png in Resources */,
 				61C8C12A18512F5600003608 /* timeline_mocking@2x.png in Resources */,
 				618713B2182F0956005BC973 /* SG_General_Module_Overlay_Bloch.png in Resources */,
 				61CD51EF180C242500D28921 /* sg_home_donatebtn@2x.png in Resources */,
@@ -2722,6 +2733,7 @@
 				61CD5279180C242500D28921 /* SG_General_Painting_ShareBtn.png in Resources */,
 				61CD52E2180C242500D28921 /* painting_thumb_shepherds-on.png in Resources */,
 				61CD50A4180C240400D28921 /* PaintingResources in Resources */,
+				61CDF9611981AC8300FD849E /* vishnu_attendants1.png in Resources */,
 				61CD5277180C242500D28921 /* SG_General_Painting_ShareBtn-on.png in Resources */,
 				61CD5287180C242500D28921 /* SG_General_TopBar@2x.png in Resources */,
 				61CD51E7180C242500D28921 /* Default.png in Resources */,

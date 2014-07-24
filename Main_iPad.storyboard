@@ -309,12 +309,34 @@
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hIH-f3-cfg">
                                         <rect key="frame" x="0.0" y="0.0" width="123" height="164"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="KrishnaButter.png">
+                                        <state key="normal" image="fluting_krishna1.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted" image="painting_thumb_capture-on.png"/>
                                         <connections>
                                             <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="yYb-DW-VqP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="E84-d8-ETy">
+                                        <rect key="frame" x="131" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="radha1.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_capture-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="ZGd-uz-Xjq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NEx-cv-di8">
+                                        <rect key="frame" x="262" y="0.0" width="123" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="vishnu_attendants1.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="painting_thumb_capture-on.png"/>
+                                        <connections>
+                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="FXU-PO-vuK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1727,7 +1749,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="KrishnaButter.png" width="100" height="116"/>
         <image name="SG_General_BackBtn-on.png" width="122" height="41"/>
         <image name="SG_General_BackBtn.png" width="122" height="41"/>
         <image name="SG_General_Media_Playbar.png" width="387" height="9"/>
@@ -1763,6 +1784,7 @@
         <image name="exhibition_credit_overlay.png" width="768" height="799"/>
         <image name="exhibition_donors_overlay.png" width="768" height="759"/>
         <image name="exhibition_story_overlay.png" width="768" height="921"/>
+        <image name="fluting_krishna1.png" width="100" height="116"/>
         <image name="header_SacredGifts Home.png" width="256" height="41"/>
         <image name="painting_thumb_aalborg-on.png" width="123" height="164"/>
         <image name="painting_thumb_aalborg.png" width="123" height="164"/>
@@ -1803,6 +1825,7 @@
         <image name="painting_thumb_temple-on.png" width="123" height="164"/>
         <image name="painting_thumb_temple.png" width="123" height="164"/>
         <image name="paintings_text.png" width="101" height="41"/>
+        <image name="radha1.png" width="100" height="116"/>
         <image name="sg_general_Share_signout.png" width="244" height="41"/>
         <image name="sg_home_bg-exhibition.png" width="804" height="1060"/>
         <image name="sg_home_bg-findpainting.png" width="804" height="1060"/>
@@ -1853,6 +1876,7 @@
         <image name="timeline_assets_schwartzBtn.png" width="129" height="70"/>
         <image name="timeline_assets_worldBtn-on.png" width="162" height="70"/>
         <image name="timeline_assets_worldBtn.png" width="162" height="70"/>
+        <image name="vishnu_attendants1.png" width="100" height="116"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
