@@ -66,21 +66,7 @@ const CGPoint kSplashLogoStartPoint = {384,840};
     _splash.alpha = 1;
     
     [self.view bringSubviewToFront:self.splash];
-    [self.view bringSubviewToFront:self.splashLogo];
-    [self.view bringSubviewToFront:self.splashArtists];
     [self.view bringSubviewToFront:self.splashDonors];
-    
-    self.splashLogo.center = kSplashLogoStartPoint;
-    self.splashLogo.alpha = 1;
-    CGPoint center = self.splashLogo.center;
-    center.x -= 100;
-    [UIView animateWithDuration:1 animations:^{
-        self.splashLogo.center = center;
-    }];
-    
-    [UIView animateWithDuration:1.0 delay:0.5 options:UIViewAnimationOptionCurveLinear animations:^{
-        self.splashArtists.alpha = 1;
-    } completion:nil];
     
     _donorsTimer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(fadeInDonors:) userInfo:nil repeats:NO];
     _splashTimer = [NSTimer scheduledTimerWithTimeInterval:63 target:self selector:@selector(fadeSplash:) userInfo:nil repeats:NO];
@@ -107,9 +93,7 @@ const CGPoint kSplashLogoStartPoint = {384,840};
     
     [UIView animateWithDuration:0.25 animations:^{
         self.splash.alpha = 0;
-        self.splashArtists.alpha = 0;
         self.splashDonors.alpha = 0;
-        self.splashLogo.alpha = 0;
     }];
 }
 
