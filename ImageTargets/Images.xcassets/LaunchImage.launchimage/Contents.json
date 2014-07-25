@@ -20,7 +20,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "SG_Home_SplashScreen.png",
+      "filename" : "ld_home__layout_01_home.png",
       "scale" : "1x"
     },
     {
@@ -35,7 +35,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "SG_Home_SplashScreen@2x.png",
+      "filename" : "ld_home__layout_01_home-1.png",
       "scale" : "2x"
     },
     {
@@ -68,7 +68,7 @@
       "orientation" : "portrait",
       "idiom" : "ipad",
       "extent" : "to-status-bar",
-      "filename" : "Default.png",
+      "filename" : "ld_home__layout_01_home-2.png",
       "scale" : "1x"
     },
     {

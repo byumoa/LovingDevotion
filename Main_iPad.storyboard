@@ -78,11 +78,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="center" image="splash_donors.png" id="mre-GN-Ojo">
-                                <rect key="frame" x="0.0" y="386" width="768" height="638"/>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="center" image="ld_home__layout_02_donors.png" id="mre-GN-Ojo">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" contentMode="center" image="SG_Home_SplashScreen.png" id="zKe-di-iZj">
+                            <imageView opaque="NO" clipsSubviews="YES" contentMode="center" image="ld_home__layout_01_home.png" id="zKe-di-iZj">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1691,7 +1691,6 @@
         <image name="SG_General_painting-castleBtn-Bloch.png" width="250" height="41"/>
         <image name="SG_General_window_closeBtn-on.png" width="102" height="70"/>
         <image name="SG_General_window_closeBtn.png" width="102" height="70"/>
-        <image name="SG_Home_SplashScreen.png" width="768" height="1024"/>
         <image name="aalborg.png" width="800" height="410"/>
         <image name="about_exhibition.png" width="804" height="1060"/>
         <image name="artists_pages_bloch_overlay.png" width="768" height="1074"/>
@@ -1704,6 +1703,8 @@
         <image name="exhibition_story_overlay.png" width="768" height="921"/>
         <image name="fluting_krishna1.png" width="100" height="116"/>
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
+        <image name="ld_home__layout_01_home.png" width="768" height="1024"/>
+        <image name="ld_home__layout_02_donors.png" width="768" height="1024"/>
         <image name="painting_thumb_aalborg-on.png" width="123" height="164"/>
         <image name="painting_thumb_aalborg.png" width="123" height="164"/>
         <image name="painting_thumb_burial-on.png" width="123" height="164"/>
@@ -1766,7 +1767,6 @@
         <image name="sg_temple_btn_later.png" width="150" height="48"/>
         <image name="speaker_btns__narration_btn-on.png" width="71" height="71"/>
         <image name="speaker_btns__narration_btn.png" width="71" height="71"/>
-        <image name="splash_donors.png" width="768" height="638"/>
         <image name="timeline_assets_blochBtn-on.png" width="97" height="70"/>
         <image name="timeline_assets_blochBtn.png" width="97" height="70"/>
         <image name="timeline_assets_churchBtn-on.png" width="232" height="70"/>

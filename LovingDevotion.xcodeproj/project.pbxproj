@@ -98,6 +98,8 @@
 		61735B63183249A30000D837 /* temple.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B4E183249A30000D837 /* temple.png */; };
 		618607B81982AB4300A1EBD9 /* about_exhibition.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607B51982AB4300A1EBD9 /* about_exhibition.png */; };
 		618607B91982AB4300A1EBD9 /* bhakti.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607B71982AB4300A1EBD9 /* bhakti.png */; };
+		618607BC1982CD3E00A1EBD9 /* ld_home__layout_01_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607BA1982CD3E00A1EBD9 /* ld_home__layout_01_home.png */; };
+		618607BD1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607BB1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png */; };
 		618628E2184E882C00060319 /* SGTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618628E1184E882C00060319 /* SGTwitterViewController.m */; };
 		618645A7181AD11E00195384 /* SGHighlightsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618645A6181AD11E00195384 /* SGHighlightsViewController.m */; };
 		618645AC181AEEB700195384 /* childrens_btn-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 618645A8181AEEB700195384 /* childrens_btn-on.png */; };
@@ -703,6 +705,8 @@
 		61735B4E183249A30000D837 /* temple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = temple.png; sourceTree = "<group>"; };
 		618607B51982AB4300A1EBD9 /* about_exhibition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_exhibition.png; sourceTree = "<group>"; };
 		618607B71982AB4300A1EBD9 /* bhakti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bhakti.png; sourceTree = "<group>"; };
+		618607BA1982CD3E00A1EBD9 /* ld_home__layout_01_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_home__layout_01_home.png; sourceTree = "<group>"; };
+		618607BB1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_home__layout_02_donors.png; sourceTree = "<group>"; };
 		618628E0184E882C00060319 /* SGTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTwitterViewController.h; sourceTree = "<group>"; };
 		618628E1184E882C00060319 /* SGTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTwitterViewController.m; sourceTree = "<group>"; };
 		618645A5181AD11E00195384 /* SGHighlightsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHighlightsViewController.h; sourceTree = "<group>"; };
@@ -1692,6 +1696,8 @@
 		61CD50A5180C242500D28921 /* GeneralResources */ = {
 			isa = PBXGroup;
 			children = (
+				618607BA1982CD3E00A1EBD9 /* ld_home__layout_01_home.png */,
+				618607BB1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png */,
 				618607B41982AB4300A1EBD9 /* about */,
 				618607B61982AB4300A1EBD9 /* learn_more */,
 				61CDF95C1981AC8300FD849E /* fluting_krishna1.png */,
@@ -2393,6 +2399,7 @@
 				61CD524C180C242500D28921 /* SG_General_ModuleButtonBar@2x.png in Resources */,
 				61CD52DC180C242500D28921 /* painting_thumb_savior.png in Resources */,
 				61C8C0B618512F5600003608 /* timeline_assets_blochBtn-on@2x.png in Resources */,
+				618607BC1982CD3E00A1EBD9 /* ld_home__layout_01_home.png in Resources */,
 				61C8C0C518512F5600003608 /* timeline_assets_schwartzBtn.png in Resources */,
 				61E5430B1832B1A3001ECC04 /* SG_General_painting-castleBtn-Bloch-on.png in Resources */,
 				61C8C0E018512F5600003608 /* popup16.png in Resources */,
@@ -2691,6 +2698,7 @@
 				61CD5225180C242500D28921 /* sg_home_schwartzbtn-on@2x.png in Resources */,
 				61C8C0E318512F5600003608 /* popup17@2x.png in Resources */,
 				61CD52CE180C242500D28921 /* painting_thumb_mocking-on.png in Resources */,
+				618607BD1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png in Resources */,
 				61C8C12C18512F5600003608 /* timeline_resurrection@2x.png in Resources */,
 				61CD5236180C242500D28921 /* SG_General_Music_PlayPause@2x.png in Resources */,
 				614E3CA0180DF631002E875B /* speaker_btns__narration_btn.png in Resources */,
