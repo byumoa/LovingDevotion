@@ -367,64 +367,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-meetartists.png" id="Gf6-Rc-1k1">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Gf6-Rc-1k1">
                                 <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ESv-V8-rCO">
-                                <rect key="frame" x="0.0" y="482" width="768" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sg_home_blochbtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="sg_home_blochbtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="JlH-nY-HgW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I54-Zz-A5v">
-                                <rect key="frame" x="0.0" y="116" width="768" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sg_home_hoffmanbtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="sg_home_hoffmanbtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="i94-vt-zQU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CBc-NW-NKD">
-                                <rect key="frame" x="0.0" y="299" width="768" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sg_home_schwartzbtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="sg_home_schwartzbtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="Wgk-F9-zHR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c1z-s4-Q6q">
-                                <rect key="frame" x="0.0" y="665" width="768" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sg_home_timelinebtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="sg_home_timelinebtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="RRQ-4p-Iil"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="background" destination="Gf6-Rc-1k1" id="y0j-1g-Is8"/>
-                        <outletCollection property="blurredViews" destination="ESv-V8-rCO" id="UyC-d9-IkW"/>
-                        <outletCollection property="blurredViews" destination="I54-Zz-A5v" id="FCk-v4-DmK"/>
-                        <outletCollection property="blurredViews" destination="CBc-NW-NKD" id="W4R-Kh-FT2"/>
-                        <outletCollection property="blurredViews" destination="c1z-s4-Q6q" id="zwt-sg-z3t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vat-ZX-hpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1831,9 +1783,6 @@
         <image name="sg_home_bg-findpainting.png" width="804" height="1060"/>
         <image name="sg_home_bg-home.png" width="804" height="1060"/>
         <image name="sg_home_bg-home_blur.png" width="1" height="1"/>
-        <image name="sg_home_bg-meetartists.png" width="804" height="1060"/>
-        <image name="sg_home_blochbtn-on.png" width="768" height="175"/>
-        <image name="sg_home_blochbtn.png" width="768" height="175"/>
         <image name="sg_home_donatebtn-on.png" width="245" height="123"/>
         <image name="sg_home_donatebtn.png" width="245" height="123"/>
         <image name="sg_home_exhibitionbtn-on.png" width="768" height="225"/>
@@ -1845,8 +1794,6 @@
         <image name="sg_home_findbtn-on.png" width="768" height="224"/>
         <image name="sg_home_findbtn.png" width="768" height="224"/>
         <image name="sg_home_footer_bg.png" width="804" height="161"/>
-        <image name="sg_home_hoffmanbtn-on.png" width="768" height="175"/>
-        <image name="sg_home_hoffmanbtn.png" width="768" height="175"/>
         <image name="sg_home_meetartistsbtn-on.png" width="768" height="226"/>
         <image name="sg_home_meetartistsbtn.png" width="768" height="226"/>
         <image name="sg_home_museumDonate.png" width="768" height="1024"/>
@@ -1854,10 +1801,6 @@
         <image name="sg_home_originsbtn.png" width="768" height="205"/>
         <image name="sg_home_reservationbtn-on.png" width="768" height="205"/>
         <image name="sg_home_reservationbtn.png" width="768" height="205"/>
-        <image name="sg_home_schwartzbtn-on.png" width="768" height="175"/>
-        <image name="sg_home_schwartzbtn.png" width="768" height="175"/>
-        <image name="sg_home_timelinebtn-on.png" width="768" height="175"/>
-        <image name="sg_home_timelinebtn.png" width="768" height="175"/>
         <image name="sg_temple_btn_1880-on.png" width="151" height="48"/>
         <image name="sg_temple_btn_1880.png" width="151" height="48"/>
         <image name="sg_temple_btn_later-on.png" width="150" height="48"/>
