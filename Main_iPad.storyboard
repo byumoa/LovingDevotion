@@ -1769,7 +1769,7 @@
         <image name="SG_General_Share_thanks.png" width="244" height="41"/>
         <image name="SG_General_Share_tw-on.png" width="244" height="41"/>
         <image name="SG_General_Share_tw.png" width="244" height="41"/>
-        <image name="SG_General_TopBar.png" width="768" height="62"/>
+        <image name="SG_General_TopBar.png" width="1" height="1"/>
         <image name="SG_General_header_thanks.png" width="200" height="41"/>
         <image name="SG_General_painting-castleBtn-Bloch-on.png" width="250" height="41"/>
         <image name="SG_General_painting-castleBtn-Bloch.png" width="250" height="41"/>
@@ -1785,7 +1785,7 @@
         <image name="exhibition_donors_overlay.png" width="768" height="759"/>
         <image name="exhibition_story_overlay.png" width="768" height="921"/>
         <image name="fluting_krishna1.png" width="100" height="116"/>
-        <image name="header_SacredGifts Home.png" width="256" height="41"/>
+        <image name="header_SacredGifts Home.png" width="1" height="1"/>
         <image name="painting_thumb_aalborg-on.png" width="123" height="164"/>
         <image name="painting_thumb_aalborg.png" width="123" height="164"/>
         <image name="painting_thumb_burial-on.png" width="123" height="164"/>
@@ -1830,7 +1830,7 @@
         <image name="sg_home_bg-exhibition.png" width="804" height="1060"/>
         <image name="sg_home_bg-findpainting.png" width="804" height="1060"/>
         <image name="sg_home_bg-home.png" width="804" height="1060"/>
-        <image name="sg_home_bg-home_blur.png" width="804" height="1060"/>
+        <image name="sg_home_bg-home_blur.png" width="1" height="1"/>
         <image name="sg_home_bg-meetartists.png" width="804" height="1060"/>
         <image name="sg_home_blochbtn-on.png" width="768" height="175"/>
         <image name="sg_home_blochbtn.png" width="768" height="175"/>
