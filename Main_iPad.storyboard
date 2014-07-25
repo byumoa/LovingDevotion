@@ -367,7 +367,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Gf6-Rc-1k1">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bhakti.png" id="Gf6-Rc-1k1">
                                 <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -391,52 +391,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-exhibition.png" id="1Ue-Ca-a7e">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="about_exhibition.png" id="1Ue-Ca-a7e">
                                 <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" tag="9324" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Whn-1f-3jF">
-                                <rect key="frame" x="0.0" y="189" width="768" height="205"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sg_home_originsbtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="sg_home_originsbtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="A7a-NA-3Jx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="864" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zjD-Fl-7iI">
-                                <rect key="frame" x="0.0" y="402" width="768" height="205"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sg_home_filmbtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="sg_home_filmbtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="G1y-Cy-5Cz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="456" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HcG-w8-2FS">
-                                <rect key="frame" x="0.0" y="615" width="768" height="205"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sg_home_reservationbtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="sg_home_reservationbtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="fO5-vN-xE8"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="background" destination="1Ue-Ca-a7e" id="sUB-LN-ZoD"/>
-                        <outletCollection property="blurredViews" destination="Whn-1f-3jF" id="jzQ-NI-AXs"/>
-                        <outletCollection property="blurredViews" destination="HcG-w8-2FS" id="h0L-tH-oj4"/>
-                        <outletCollection property="blurredViews" destination="zjD-Fl-7iI" id="joi-uo-nNs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upi-qV-PHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1729,9 +1693,11 @@
         <image name="SG_General_window_closeBtn.png" width="102" height="70"/>
         <image name="SG_Home_SplashScreen.png" width="768" height="1024"/>
         <image name="aalborg.png" width="800" height="410"/>
+        <image name="about_exhibition.png" width="804" height="1060"/>
         <image name="artists_pages_bloch_overlay.png" width="768" height="1074"/>
         <image name="artists_pages_hofmann_overlay.png" width="768" height="1133"/>
         <image name="artists_pages_schwartz_overlay.png" width="768" height="1115"/>
+        <image name="bhakti.png" width="804" height="1060"/>
         <image name="childrens_bloch_prompt.png" width="768" height="48"/>
         <image name="exhibition_credit_overlay.png" width="768" height="799"/>
         <image name="exhibition_donors_overlay.png" width="768" height="759"/>
@@ -1779,7 +1745,6 @@
         <image name="paintings_text.png" width="101" height="41"/>
         <image name="radha1.png" width="100" height="116"/>
         <image name="sg_general_Share_signout.png" width="244" height="41"/>
-        <image name="sg_home_bg-exhibition.png" width="804" height="1060"/>
         <image name="sg_home_bg-findpainting.png" width="804" height="1060"/>
         <image name="sg_home_bg-home.png" width="804" height="1060"/>
         <image name="sg_home_bg-home_blur.png" width="1" height="1"/>
@@ -1789,18 +1754,12 @@
         <image name="sg_home_exhibitionbtn.png" width="769" height="225"/>
         <image name="sg_home_feedbackbtn-on.png" width="245" height="123"/>
         <image name="sg_home_feedbackbtn.png" width="245" height="123"/>
-        <image name="sg_home_filmbtn-on.png" width="768" height="205"/>
-        <image name="sg_home_filmbtn.png" width="768" height="205"/>
         <image name="sg_home_findbtn-on.png" width="768" height="224"/>
         <image name="sg_home_findbtn.png" width="768" height="224"/>
         <image name="sg_home_footer_bg.png" width="804" height="161"/>
         <image name="sg_home_meetartistsbtn-on.png" width="768" height="226"/>
         <image name="sg_home_meetartistsbtn.png" width="768" height="226"/>
         <image name="sg_home_museumDonate.png" width="768" height="1024"/>
-        <image name="sg_home_originsbtn-on.png" width="768" height="205"/>
-        <image name="sg_home_originsbtn.png" width="768" height="205"/>
-        <image name="sg_home_reservationbtn-on.png" width="768" height="205"/>
-        <image name="sg_home_reservationbtn.png" width="768" height="205"/>
         <image name="sg_temple_btn_1880-on.png" width="151" height="48"/>
         <image name="sg_temple_btn_1880.png" width="151" height="48"/>
         <image name="sg_temple_btn_later-on.png" width="150" height="48"/>

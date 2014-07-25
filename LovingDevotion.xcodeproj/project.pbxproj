@@ -96,6 +96,8 @@
 		61735B61183249A30000D837 /* shepherds.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B4C183249A30000D837 /* shepherds.png */; };
 		61735B62183249A30000D837 /* temple-ny.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B4D183249A30000D837 /* temple-ny.png */; };
 		61735B63183249A30000D837 /* temple.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B4E183249A30000D837 /* temple.png */; };
+		618607B81982AB4300A1EBD9 /* about_exhibition.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607B51982AB4300A1EBD9 /* about_exhibition.png */; };
+		618607B91982AB4300A1EBD9 /* bhakti.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607B71982AB4300A1EBD9 /* bhakti.png */; };
 		618628E2184E882C00060319 /* SGTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618628E1184E882C00060319 /* SGTwitterViewController.m */; };
 		618645A7181AD11E00195384 /* SGHighlightsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618645A6181AD11E00195384 /* SGHighlightsViewController.m */; };
 		618645AC181AEEB700195384 /* childrens_btn-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 618645A8181AEEB700195384 /* childrens_btn-on.png */; };
@@ -699,6 +701,8 @@
 		61735B4C183249A30000D837 /* shepherds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shepherds.png; sourceTree = "<group>"; };
 		61735B4D183249A30000D837 /* temple-ny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "temple-ny.png"; sourceTree = "<group>"; };
 		61735B4E183249A30000D837 /* temple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = temple.png; sourceTree = "<group>"; };
+		618607B51982AB4300A1EBD9 /* about_exhibition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_exhibition.png; sourceTree = "<group>"; };
+		618607B71982AB4300A1EBD9 /* bhakti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bhakti.png; sourceTree = "<group>"; };
 		618628E0184E882C00060319 /* SGTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTwitterViewController.h; sourceTree = "<group>"; };
 		618628E1184E882C00060319 /* SGTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTwitterViewController.m; sourceTree = "<group>"; };
 		618645A5181AD11E00195384 /* SGHighlightsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHighlightsViewController.h; sourceTree = "<group>"; };
@@ -1456,6 +1460,22 @@
 			path = sharing;
 			sourceTree = "<group>";
 		};
+		618607B41982AB4300A1EBD9 /* about */ = {
+			isa = PBXGroup;
+			children = (
+				618607B51982AB4300A1EBD9 /* about_exhibition.png */,
+			);
+			path = about;
+			sourceTree = "<group>";
+		};
+		618607B61982AB4300A1EBD9 /* learn_more */ = {
+			isa = PBXGroup;
+			children = (
+				618607B71982AB4300A1EBD9 /* bhakti.png */,
+			);
+			path = learn_more;
+			sourceTree = "<group>";
+		};
 		61865DC3180F511A004CE494 /* AudioManagers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1672,6 +1692,8 @@
 		61CD50A5180C242500D28921 /* GeneralResources */ = {
 			isa = PBXGroup;
 			children = (
+				618607B41982AB4300A1EBD9 /* about */,
+				618607B61982AB4300A1EBD9 /* learn_more */,
 				61CDF95C1981AC8300FD849E /* fluting_krishna1.png */,
 				61CDF95D1981AC8300FD849E /* radha1.png */,
 				61CDF95E1981AC8300FD849E /* vishnu_attendants1.png */,
@@ -2363,6 +2385,7 @@
 				61072A2B1822658400E8D7A2 /* summary_play_btn.png in Resources */,
 				61C8C0CD18512F5600003608 /* timeline_assets_artistBtn.png in Resources */,
 				61CD5234180C242500D28921 /* SG_General_Music_PlayPause-on@2x.png in Resources */,
+				618607B91982AB4300A1EBD9 /* bhakti.png in Resources */,
 				61C8C0C618512F5600003608 /* timeline_assets_schwartzBtn@2x.png in Resources */,
 				618713C2182F10AA005BC973 /* SG_General_Module_OverlayHalf_Bloch@2x.png in Resources */,
 				61CD5226180C242500D28921 /* sg_home_schwartzbtn.png in Resources */,
@@ -2461,6 +2484,7 @@
 				61C8C0B518512F5600003608 /* timeline_assets_blochBtn-on.png in Resources */,
 				61CD523A180C242500D28921 /* SG_General_BackBtn@2x.png in Resources */,
 				618713C8182F10AA005BC973 /* SG_General_Module_OverlayHalf@2x.png in Resources */,
+				618607B81982AB4300A1EBD9 /* about_exhibition.png in Resources */,
 				61E850E8183AC98D00D6EB08 /* SG_Home_SplashLogo@2x.png in Resources */,
 				61735B51183249A30000D837 /* capture.png in Resources */,
 				61CD51E2180C242500D28921 /* sg_home_bg-meetartists.png in Resources */,
