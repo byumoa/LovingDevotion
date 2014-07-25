@@ -20,7 +20,8 @@
 
 NSString* const kEmailAutofill = @"Enjoying the painting by %@ while using the Sacred Gifts app from the BYU Museum of Art. %@";
 NSString* const kTwitterAutofill = @"Viewing this painting while using the @BYUmoa’s #sacredgifts app.";
-NSString* const kFacebookAutofill = @"Viewing this painting by %@ and feeling grateful while using the #sacredgifts app from the BYU Museum of Art.";
+//NSString* const kFacebookAutofill = @"Viewing this painting by %@ and feeling grateful while using the #sacredgifts app from the BYU Museum of Art.";
+NSString* const kFacebookAutofill = @"Enjoying this example of #lovingdevotion at the BYU Museum of Art.";
 
 NSString* const kAppStoreURL = @"https://itunes.apple.com/us/app/sacred-gifts-brigham-young/id723165787?ls=1&mt=8";
 NSString* const kTwitterPrefillTweet = @"https://twitter.com/intent/tweet?text=Viewing this %@ painting & feeling grateful @BYUMOA’s #sacredgifts %@";
@@ -62,30 +63,28 @@ int const kOverlayHeight = 236;
     {
         case SocialMediaTypeFacebook:
         {
+            NSString* autofillStr = kFacebookAutofill;
             
-//            NSString* artist = [self calcArtistForPaintingStr:self.paintingName];
-//            NSString* autofillStr = [NSString stringWithFormat:kFacebookAutofill, artist];
-//            
-//            SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-//            [socialSheet setInitialText:autofillStr];
-//            [socialSheet addImage:thumbnail];
+            SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+            [socialSheet setInitialText:autofillStr];
+            [socialSheet addImage:thumbnail];
 //            [socialSheet addURL:[NSURL URLWithString:kAppStoreURL]];
-//            [self presentViewController:socialSheet animated:YES completion:^{}];
-//            
-//            mediaType = @"facebook";
-            [self doInMuseumFBPostWithImage:thumbnail];
+            [self presentViewController:socialSheet animated:YES completion:^{}];
+            
+            mediaType = @"facebook";
+//            [self doInMuseumFBPostWithImage:thumbnail];
         }
             break;
         case SocialMediaTypeTwitter:
         {
-//            SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-//            [socialSheet setInitialText:(NSString*)kTwitterAutofill];
-//            [socialSheet addImage:thumbnail];
+            SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+            [socialSheet setInitialText:(NSString*)kTwitterAutofill];
+            [socialSheet addImage:thumbnail];
 //            [socialSheet addURL:[NSURL URLWithString:kAppStoreURL]];
-//            [self presentViewController:socialSheet animated:YES completion:^{}];
-//            
-//            mediaType = @"twitter";
-            [self doInMuseumTWPostWithImage:thumbnail];
+            [self presentViewController:socialSheet animated:YES completion:^{}];
+            
+            mediaType = @"twitter";
+//            [self doInMuseumTWPostWithImage:thumbnail];
         }
             break;
         case SocialMediaTypeEmail:

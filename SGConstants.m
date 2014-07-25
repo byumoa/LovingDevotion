@@ -26,8 +26,8 @@ const NSString* kControllerIDHofmantr = @"hofman";
 const NSString* kControllerIDPanoramaStr = @"panorama";
 
 NSString* const kfacebookURLFlute = @"http://on.fb.me/1mNINSp";
-const NSString* kfacebookURLRadha = @"http://on.fb.me/1t5keIR ";
-const NSString* kfacebookURLVishnuAttendants = @"http://on.fb.me/1nDmNOF ";
+const NSString* kfacebookURLRadha = @"http://on.fb.me/1t5keIR";
+const NSString* kfacebookURLVishnuAttendants = @"http://on.fb.me/1nDmNOF";
 
 const int kTotalPaintings = 3;
 NSString* const kPaintingNames[] = {

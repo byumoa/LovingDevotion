@@ -797,7 +797,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AUD-OZ-vkS">
-                                <rect key="frame" x="376" y="39" width="244" height="41"/>
+                                <rect key="frame" x="376" y="97" width="244" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="SG_General_Share_fb.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -807,7 +807,7 @@
                                     <action selector="pressedSocialBtn:" destination="n9h-Kx-tEQ" eventType="touchUpInside" id="DGh-uY-ikw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ori-R2-Dtk">
+                            <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ori-R2-Dtk">
                                 <rect key="frame" x="376" y="97" width="244" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="SG_General_Share_tw.png">
@@ -829,7 +829,7 @@
                                     <action selector="pressedSocialBtn:" destination="n9h-Kx-tEQ" eventType="touchUpInside" id="BA1-5F-Ies"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Acm-bY-uZo">
+                            <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Acm-bY-uZo">
                                 <rect key="frame" x="583" y="39" width="244" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="SG_General_Share_thanks.png">
