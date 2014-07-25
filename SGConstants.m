@@ -25,49 +25,15 @@ const NSString* kControllerIDSchwartzStr = @"schwartz";
 const NSString* kControllerIDHofmantr = @"hofman";
 const NSString* kControllerIDPanoramaStr = @"panorama";
 
-NSString* const kfacebookURLcapture = @"http://on.fb.me/18A5YPP";
-const NSString* kfacebookURLtemple = @"http://on.fb.me/1g2vMX4";
-const NSString* kfacebookURLtempleGermany = @"http://on.fb.me/187FlBe";
-const NSString* kfacebookURLruler = @"http://on.fb.me/1au6N6Z";
-const NSString* kfacebookURLgethsemane = @"http://on.fb.me/1gB9yc6";
-const NSString* kfacebookURLsavior = @"http://on.fb.me/1eLaxFo";
-const NSString* kfacebookURLgarden = @"http://on.fb.me/1hvqZxR";
-const NSString* kfacebookURLaalborg = @"http://on.fb.me/1jgrfzT";
-const NSString* kfacebookURLmocking = @"http://on.fb.me/1jgt28a";
-const NSString* kfacebookURLconsolator = @"http://on.fb.me/1bcuRPY";
-const NSString* kfacebookURLemmaus = @"http://on.fb.me/1k5Z9VK";
-const NSString* kfacebookURLshepherds = @"http://on.fb.me/1bd9KMv";
-const NSString* kfacebookURLsermon = @"http://on.fb.me/18A6nlh";
-const NSString* kfacebookURLchildren = @"http://on.fb.me/19eETfz";
-const NSString* kfacebookURLhealing = @"http://on.fb.me/1au6zg5";
-const NSString* kfacebookURLcleansing = @"http://on.fb.me/1cj5zQp";
-const NSString* kfacebookURLdenial = @"http://on.fb.me/1bFVnTF";
-const NSString* kfacebookURLcross = @"http://on.fb.me/1dNm8Hy";
-const NSString* kfacebookURLburial = @"http://on.fb.me/187Ey3g";
-const NSString* kfacebookURLresurrection = @"http://on.fb.me/1hvr8Bn";
+NSString* const kfacebookURLFlute = @"http://on.fb.me/1mNINSp";
+const NSString* kfacebookURLRadha = @"http://on.fb.me/1t5keIR ";
+const NSString* kfacebookURLVishnuAttendants = @"http://on.fb.me/1nDmNOF ";
 
-const int kTotalPaintings = 20;
+const int kTotalPaintings = 3;
 NSString* const kPaintingNames[] = {
     @"fluting_krishna1",
     @"radha1",
     @"vishnu_attendants1",
-    @"gethsemane",
-    @"savior",
-    @"garden",
-    @"aalborg",
-    @"mocking",
-    @"consolator",
-    @"emmaus",
-    @"castle",
-    @"shepherds",
-    @"sermon",
-    @"children",
-    @"healing",
-    @"cleansing",
-    @"denial",
-    @"cross",
-    @"burial",
-    @"resurrection",
 };
 
 const int kTotalPaintingsBloch = 13;

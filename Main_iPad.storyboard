@@ -305,38 +305,6 @@
                             <view contentMode="scaleToFill" id="eYn-ew-pgD" userLabel="Hofmanns">
                                 <rect key="frame" x="18" y="184" width="367" height="328"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hIH-f3-cfg">
-                                        <rect key="frame" x="0.0" y="0.0" width="123" height="164"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="fluting_krishna1.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="yYb-DW-VqP"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="E84-d8-ETy">
-                                        <rect key="frame" x="131" y="0.0" width="123" height="164"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="radha1.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="ZGd-uz-Xjq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NEx-cv-di8">
-                                        <rect key="frame" x="262" y="0.0" width="123" height="164"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="vishnu_attendants1.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="FXU-PO-vuK"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="DJu-R7-OZp" userLabel="Blochs">
@@ -344,6 +312,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hIH-f3-cfg">
+                                <rect key="frame" x="192" y="164" width="123" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="fluting_krishna1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="yYb-DW-VqP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="E84-d8-ETy">
+                                <rect key="frame" x="323" y="164" width="123" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="radha1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="ZGd-uz-Xjq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NEx-cv-di8">
+                                <rect key="frame" x="454" y="164" width="123" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="vishnu_attendants1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="FXU-PO-vuK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1700,8 +1698,8 @@
         <image name="exhibition_story_overlay.png" width="768" height="921"/>
         <image name="fluting_krishna1.png" width="100" height="116"/>
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
-        <image name="ld_home__layout_01_home.png" width="768" height="1024"/>
-        <image name="ld_home__layout_02_donors.png" width="768" height="1024"/>
+        <image name="ld_home__layout_01_home.png" width="804" height="1060"/>
+        <image name="ld_home__layout_02_donors.png" width="804" height="1060"/>
         <image name="painting_thumb_aalborg-on.png" width="123" height="164"/>
         <image name="painting_thumb_aalborg.png" width="123" height="164"/>
         <image name="painting_thumb_burial-on.png" width="123" height="164"/>
