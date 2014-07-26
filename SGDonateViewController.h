@@ -6,9 +6,9 @@
 //
 //
 
-#import "GAITrackedViewController.h"
+//#import "GAITrackedViewController.h"
 
-@interface SGDonateViewController : GAITrackedViewController
+@interface SGDonateViewController : UIViewController// GAITrackedViewController
 
 - (IBAction)touchedAnywhere:(id)sender;
 

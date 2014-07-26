@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    self.screenName = @"donate: museum";
+//    self.screenName = @"donate: museum";
 }
 
 - (NSUInteger)supportedInterfaceOrientations{

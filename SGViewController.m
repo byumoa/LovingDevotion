@@ -9,8 +9,8 @@
 #import "SGViewController.h"
 #import "SGHomeViewController.h"
 #import "SGConstants.h"
-#import "GAI.h"
-#import "GAIFields.h"
+//#import "GAI.h"
+//#import "GAIFields.h"
 #import "SGConvenienceFunctionsManager.h"
 #import "SGPaintingContainerViewController.h"
 #import "SGPaintingViewController.h"
@@ -73,9 +73,9 @@ const CGPoint kSplashLogoStartPoint = {384,840};
     
     [SGConvenienceFunctionsManager facebookLogout];
     
-    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-    [tracker set:kGAISessionControl
-           value:@"start"];
+//    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+//    [tracker set:kGAISessionControl
+//           value:@"start"];
 }
 
 -(void)fadeInDonors:(NSTimer *)timer

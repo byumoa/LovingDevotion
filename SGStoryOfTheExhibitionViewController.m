@@ -22,7 +22,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.scrollView.contentSize = _scrollContentSize;
-    self.screenName = @"story of the exhibition";
+//    self.screenName = @"story of the exhibition";
 }
 
 @end

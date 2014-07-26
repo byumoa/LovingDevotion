@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Wells Fargo. All rights reserved.
 //
 
-#import "GAITrackedViewController.h"
+//#import "GAITrackedViewController.h"
 #import "SGConstants.h"
 
 @class SGOverlayViewController;
@@ -20,7 +20,7 @@
 
 @end
 
-@interface SGOverlayViewController : GAITrackedViewController
+@interface SGOverlayViewController : UIViewController// GAITrackedViewController
 {
     NSString* _bgImagePath;
     CGPoint _centerPos;

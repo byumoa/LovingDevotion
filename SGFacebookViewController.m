@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    self.screenName = @"facebook";
+//    self.screenName = @"facebook";
 }
 
 - (NSUInteger)supportedInterfaceOrientations{

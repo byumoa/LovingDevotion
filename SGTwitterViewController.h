@@ -6,9 +6,9 @@
 //
 //
 
-#import "GAITrackedViewController.h"
+//#import "GAITrackedViewController.h"
 
-@interface SGTwitterViewController : GAITrackedViewController <UIWebViewDelegate>
+@interface SGTwitterViewController : UIViewController /*GAITrackedViewController*/ <UIWebViewDelegate>
 {
     BOOL _hasLoaded;
     NSString* _currentTwitterPage;

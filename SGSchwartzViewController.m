@@ -19,7 +19,7 @@
     [super loadView];
     
     _scrollContentSize = CGSizeMake(768, 1470);
-    self.screenName = @"schwartz bio";
+//    self.screenName = @"schwartz bio";
 }
 
 -(void)viewDidLoad

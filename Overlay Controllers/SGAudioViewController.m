@@ -59,7 +59,7 @@
 -(void)configureAudioWithPath:(NSString *)rootFolderPath
 {
     self.rootFolderPath = rootFolderPath;
-    self.screenName = [NSString stringWithFormat:@"%@: %@", self.paintingName, [SGConvenienceFunctionsManager getStringForModule:self.moduleType]];
+//    self.screenName = [NSString stringWithFormat:@"%@: %@", self.paintingName, [SGConvenienceFunctionsManager getStringForModule:self.moduleType]];
 }
 
 - (IBAction)pressedPlayPause:(id)sender{}

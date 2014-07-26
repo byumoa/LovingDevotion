@@ -87,7 +87,7 @@ NSString* const kTempleDefaultKey = @"templeVersion";
 //            paintingStr = lastPainting;
 //    }
     
-    self.screenName = [NSString stringWithFormat:@"painting: %@", paintingStr];
+//    self.screenName = [NSString stringWithFormat:@"painting: %@", paintingStr];
     
     //Main Painting
     _paintingNameStr = paintingStr;
@@ -475,8 +475,8 @@ static BOOL chromeHidden = NO;
                 [self.view insertSubview:self.overlayController.view belowSubview:self.footerView];
                 [self.overlayController addBackgroundImgWithPath:overlayPath];
                 [((SGVideoOverlayViewController*)self.overlayController) playPerspectiveMovieWithRootFolderPath:overlayDir];
-                self.overlayController.screenName = [NSString stringWithFormat:@"%@: gifts video", paintingStr];
-            }      
+//                self.overlayController.screenName = [NSString stringWithFormat:@"%@: gifts video", paintingStr];
+            }
             else if( audioPath )
             {
                 self.overlayController = [self.storyboard instantiateViewControllerWithIdentifier:kNarrationStr];
@@ -485,7 +485,7 @@ static BOOL chromeHidden = NO;
                 [self.view insertSubview:self.overlayController.view belowSubview:self.footerView];
                 [self.overlayController addBackgroundImgWithPath:overlayPath];
                 [((SGNarrationOverlayViewController*)self.overlayController) configureAudioWithPath:overlayDir];
-                self.overlayController.screenName = [NSString stringWithFormat:@"%@: gifts audio", paintingStr];
+//                self.overlayController.screenName = [NSString stringWithFormat:@"%@: gifts audio", paintingStr];
             }
             else
             {
@@ -494,7 +494,7 @@ static BOOL chromeHidden = NO;
                 self.overlayController.rootFolderPath = overlayDir;
                 [self.view insertSubview:self.overlayController.view belowSubview:self.footerView];
                 [self.overlayController addBackgroundImgWithPath:overlayPath];
-                self.overlayController.screenName = [NSString stringWithFormat:@"%@: gifts text", paintingStr];
+//                self.overlayController.screenName = [NSString stringWithFormat:@"%@: gifts text", paintingStr];
             }
             
             self.overlayController.moduleType = kModuleTypeGifts;
@@ -513,7 +513,7 @@ static BOOL chromeHidden = NO;
             }];
             
             self.overlayController.paintingName = _paintingNameStr;
-            self.overlayController.screenName = [NSString stringWithFormat:@"%@: childrens", paintingStr];
+//            self.overlayController.screenName = [NSString stringWithFormat:@"%@: childrens", paintingStr];
         }
             break;
         case kModuleTypeHighlights:

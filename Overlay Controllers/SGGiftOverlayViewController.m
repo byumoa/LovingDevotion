@@ -35,15 +35,15 @@
     if( videoPath )
     {
         [self configureVideoWithPath:videoPath];
-        self.screenName = [NSString stringWithFormat:@"%@: video gift", self.paintingName];
+//        self.screenName = [NSString stringWithFormat:@"%@: video gift", self.paintingName];
     }
     else if ( audioPath )
     {
         [self configureAudioWithPath:audioPath];
-        self.screenName = [NSString stringWithFormat:@"%@: audio gift", self.paintingName];
+//        self.screenName = [NSString stringWithFormat:@"%@: audio gift", self.paintingName];
     }
-    else
-        self.screenName = [NSString stringWithFormat:@"%@: text gift", self.paintingName];
+//    else
+//        self.screenName = [NSString stringWithFormat:@"%@: text gift", self.paintingName];
 }
 
 - (void)configureVideoWithPath:(NSString *)path

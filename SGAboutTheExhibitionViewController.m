@@ -20,7 +20,7 @@ const int kNavigationReservations = 456;
 {
     _blurImageName = @"sg_home_bg-exhibition_blur.png";
     [super viewDidLoad];
-    self.screenName = @"about the exhibition";
+//    self.screenName = @"about the exhibition";
 }
 
 - (IBAction)pressedBtn:(UIButton *)sender

@@ -35,7 +35,7 @@
 {
     [super configureWithPath:folderPath];
     [self animateButtonsOn];
-    self.screenName = [NSString stringWithFormat:@"%@: %@", self.paintingName, [SGConvenienceFunctionsManager getStringForModule:self.moduleType]];
+//    self.screenName = [NSString stringWithFormat:@"%@: %@", self.paintingName, [SGConvenienceFunctionsManager getStringForModule:self.moduleType]];
 }
 
 -(void)animateButtonsOn
@@ -73,7 +73,7 @@
     //[super pressedHighlightBtn:sender];
     SGOverlayViewController* childGAIViewController = [super pressedHighlightBtn:sender];
     NSString* moduleStr = [SGConvenienceFunctionsManager getStringForModule:childGAIViewController.moduleType];
-    childGAIViewController.screenName = [NSString stringWithFormat:@"%@: highlights %@", self.paintingName, moduleStr];
+//    childGAIViewController.screenName = [NSString stringWithFormat:@"%@: highlights %@", self.paintingName, moduleStr];
     
     NSString* btnFolderPath = [NSString stringWithFormat:@"%@/%@_%i", self.rootFolderPath, _moduleTypeStr, sender.tag];
     NSString* highlightImgPath = [[NSBundle mainBundle] pathForResource:@"highlight" ofType:@"png" inDirectory:btnFolderPath];

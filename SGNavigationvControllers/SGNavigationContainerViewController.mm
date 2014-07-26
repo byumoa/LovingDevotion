@@ -11,8 +11,8 @@
 #import "SGContentViewController.h"
 #import "SGPaintingViewController.h"
 #import "SGWebViewController.h"
-#import "GAI.h"
-#import "GAIDictionaryBuilder.h"
+//#import "GAI.h"
+//#import "GAIDictionaryBuilder.h"
 #import "SGDonateViewController.h"
 
 const int kDonateAlertViewTag = 1;
@@ -62,7 +62,7 @@ const int kDonateAlertViewTag = 1;
 #pragma mark webview
 - (IBAction)pressedDonate:(UIButton *)sender
 {
-    [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"ui_action" action:@"button_press" label:@"donate" value:nil] build]];
+//    [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"ui_action" action:@"button_press" label:@"donate" value:nil] build]];
     //For App Store
     
     UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Donate" message:@"Share your gift of gratitude by supporting the Sacred Gifts exhibition and the Brigham Young University Museum of Art. Thank you!" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
@@ -87,7 +87,7 @@ const int kDonateAlertViewTag = 1;
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
     [self dismissWebview];
     
-    [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"webview" action:@"error" label:@"no internet connection" value:nil] build]];
+//    [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"webview" action:@"error" label:@"no internet connection" value:nil] build]];
     
     UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"We could not reach the internet at this time" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];

@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    self.screenName = @"twitter";
+//    self.screenName = @"twitter";
 }
 
 -(void)pressedClose:(UIButton *)sender

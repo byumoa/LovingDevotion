@@ -10,8 +10,8 @@
 #import <Social/Social.h>
 #import "SGFacebookViewController.h"
 #import "SGTwitterViewController.h"
-#import "GAI.h"
-#import "GAIDictionaryBuilder.h"
+//#import "GAI.h"
+//#import "GAIDictionaryBuilder.h"
 #import "SGConvenienceFunctionsManager.h"
 
 #import "SGWebViewController.h"
@@ -117,8 +117,8 @@ int const kOverlayHeight = 236;
             break;
     }
     
-    if( ((UIButton*)sender).tag != 4)
-        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"ui_action" action:@"button_press" label:mediaType value:nil] build]];
+//    if( ((UIButton*)sender).tag != 4)
+//        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"ui_action" action:@"button_press" label:mediaType value:nil] build]];
 }
 
 - (IBAction)pressedSignOut:(id)sender

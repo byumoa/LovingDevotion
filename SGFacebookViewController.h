@@ -6,9 +6,9 @@
 //
 //
 
-#import "GAITrackedViewController.h"
+//#import "GAITrackedViewController.h"
 
-@interface SGFacebookViewController : GAITrackedViewController <UIWebViewDelegate>
+@interface SGFacebookViewController : UIViewController /*GAITrackedViewController*/ <UIWebViewDelegate>
 {
     BOOL _hasLoaded;
     NSString* _currentFacebookPage;

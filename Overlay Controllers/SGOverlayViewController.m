@@ -54,7 +54,7 @@
     if( self.closeButton )
     self.closeButton.center = CGPointMake(self.view.frame.size.width - 20, 20);
     
-    self.screenName = [NSString stringWithFormat:@"%@: %@", self.paintingName, [SGConvenienceFunctionsManager getStringForModule:self.moduleType]];
+//    self.screenName = [NSString stringWithFormat:@"%@: %@", self.paintingName, [SGConvenienceFunctionsManager getStringForModule:self.moduleType]];
 }
 
 - (void)viewDidLoad
