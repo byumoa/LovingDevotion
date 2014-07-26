@@ -85,12 +85,14 @@
 -(void)contentController:(UIViewController *)contentController addBlurBackingForView:(UIView *)view
 {
     UIView* blurBacking = [[SGBlurManager sharedManager] blurBackingForView:view];
+    blurBacking.hidden = YES;
     if( [view isKindOfClass:[SGOverlayView class]])
         ((SGOverlayView*)view).myBlurredBacking = blurBacking;
     
     [self.currentContentController.view insertSubview:blurBacking belowSubview:view];
-    if( [self.currentContentController respondsToSelector:@selector(parallaxViews)])
+    if( [self.currentContentController respondsToSelector:@selector(parallaxViews)]){
         [self.currentContentController.parallaxViews addObject:blurBacking.subviews[0]];
+    }
 }
 
 -(void)contentController:(UIViewController *)contentController removeBlurBacking:(UIView *)view{}

@@ -15,4 +15,5 @@
 @property (nonatomic) BOOL isDown;
 - (void)animateDownWithDelay: (float)delay;
 - (void)animateUpWithDelay: (float)delay;
+- (void)setupAnimations;
 @end

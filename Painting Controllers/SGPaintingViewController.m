@@ -324,6 +324,11 @@ static BOOL chromeHidden = NO;
 {
     NSString *paintingPath = [[NSBundle mainBundle] pathForResource:@"MainPainting" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@", kPaintingResourcesStr, paintingName]];
     self.paintingImageView.image = [UIImage imageWithContentsOfFile:paintingPath];
+    //Temporary
+    if( [paintingName isEqualToString:@"radha1"] ){
+        NSLog(@"radha1!");
+        [self.paintingImageView setupAnimations];
+    }
     self.paintingImageView.delegate = self;
 }
 
