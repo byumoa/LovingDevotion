@@ -13,7 +13,11 @@
 @interface SGPaintingImageView : UIImageView
 @property (weak, nonatomic) UIViewController<SGPaintingImageViewDelegate>* delegate;
 @property (nonatomic) BOOL isDown;
+//temp
+@property (nonatomic) BOOL isRadha;
+- (void)setupAnimations;
+
+
 - (void)animateDownWithDelay: (float)delay;
 - (void)animateUpWithDelay: (float)delay;
-- (void)setupAnimations;
 @end

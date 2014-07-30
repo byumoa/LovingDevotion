@@ -68,6 +68,7 @@
 		618607B91982AB4300A1EBD9 /* bhakti.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607B71982AB4300A1EBD9 /* bhakti.png */; };
 		618607BC1982CD3E00A1EBD9 /* ld_home__layout_01_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607BA1982CD3E00A1EBD9 /* ld_home__layout_01_home.png */; };
 		618607BD1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607BB1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png */; };
+		618626F419880B98004F7CE7 /* LDTurnAroundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 618626F319880B98004F7CE7 /* LDTurnAroundImageView.m */; };
 		618628E2184E882C00060319 /* SGTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618628E1184E882C00060319 /* SGTwitterViewController.m */; };
 		618645A7181AD11E00195384 /* SGHighlightsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618645A6181AD11E00195384 /* SGHighlightsViewController.m */; };
 		618645AC181AEEB700195384 /* childrens_btn-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 618645A8181AEEB700195384 /* childrens_btn-on.png */; };
@@ -337,6 +338,8 @@
 		618607B71982AB4300A1EBD9 /* bhakti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bhakti.png; sourceTree = "<group>"; };
 		618607BA1982CD3E00A1EBD9 /* ld_home__layout_01_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_home__layout_01_home.png; sourceTree = "<group>"; };
 		618607BB1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_home__layout_02_donors.png; sourceTree = "<group>"; };
+		618626F219880B98004F7CE7 /* LDTurnAroundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTurnAroundImageView.h; sourceTree = "<group>"; };
+		618626F319880B98004F7CE7 /* LDTurnAroundImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTurnAroundImageView.m; sourceTree = "<group>"; };
 		618628E0184E882C00060319 /* SGTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTwitterViewController.h; sourceTree = "<group>"; };
 		618628E1184E882C00060319 /* SGTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTwitterViewController.m; sourceTree = "<group>"; };
 		618645A5181AD11E00195384 /* SGHighlightsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHighlightsViewController.h; sourceTree = "<group>"; };
@@ -669,6 +672,8 @@
 				61C8C13D1851A6A900003608 /* SGTimelineEntry.h */,
 				61C8C13E1851A6A900003608 /* SGTimelineEntry.m */,
 				6132D57B1861006F00D764FA /* SGPaintingImageViewDelegate.h */,
+				618626F219880B98004F7CE7 /* LDTurnAroundImageView.h */,
+				618626F319880B98004F7CE7 /* LDTurnAroundImageView.m */,
 			);
 			name = SacredGifts;
 			sourceTree = "<group>";
@@ -1381,6 +1386,7 @@
 				61CD5305180C24FD00D28921 /* SGFingerPaintView.m in Sources */,
 				61CD5307180C24FD00D28921 /* SGMusicOverlayViewController.m in Sources */,
 				610554F6182A782C0030CCC3 /* SGButtonOnPaintingViewController.m in Sources */,
+				618626F419880B98004F7CE7 /* LDTurnAroundImageView.m in Sources */,
 				61CD530D180C24FD00D28921 /* SGSummaryOverlayViewController.m in Sources */,
 				61CD531A180C250800D28921 /* SGPaintingViewController.m in Sources */,
 				61865DCF180F5A90004CE494 /* SGAbstractAudioManager.m in Sources */,

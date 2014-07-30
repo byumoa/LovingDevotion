@@ -16,23 +16,11 @@ const int inset = 20;
     int _currentIndex;
     int _startingIndex;
 }
-
 - (void)tapRecognized: (UITapGestureRecognizer*)recognizer;
 
 @end
 
 @implementation SGPaintingImageView
-
--(id)initWithCoder:(NSCoder *)aDecoder
-{
-    if( self = [super initWithCoder:aDecoder])
-    {
-        UITapGestureRecognizer* recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapRecognized:)];
-        [self addGestureRecognizer:recognizer];
-    }
-    
-    return self;
-}
 
 - (void)setupAnimations
 {
@@ -43,8 +31,19 @@ const int inset = 20;
         [animationFrames addObject: [UIImage imageWithContentsOfFile:imagePath]];
     }
     self.animationImages = animationFrames;
-    self.animationDuration = 2;
-    [self startAnimating];
+//    self.animationDuration = 2;
+//    [self startAnimating];
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    if( self = [super initWithCoder:aDecoder])
+    {
+        UITapGestureRecognizer* recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapRecognized:)];
+        [self addGestureRecognizer:recognizer];
+    }
+    
+    return self;
 }
 
 -(void)tapRecognized:(UITapGestureRecognizer *)recognizer
@@ -75,12 +74,16 @@ const int inset = 20;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"touchesBegan");
+    if( !self.isRadha ) return;
+
     _startingPt = [(UITouch*)[touches anyObject] locationInView:self];
     _startingIndex = _currentIndex;
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    if( !self.isRadha ) return;
     int currentDelta = _startingPt.x - [(UITouch*)[touches anyObject] locationInView:self].x;
     _currentIndex = _startingIndex + currentDelta/10;
     

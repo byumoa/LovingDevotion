@@ -19,7 +19,7 @@
     BOOL _tombstoneShown;
 }
 
-@property (weak, nonatomic) IBOutlet SGPaintingImageView *paintingImageView;
+@property (strong, nonatomic) IBOutlet SGPaintingImageView *paintingImageView;
 @property (strong, nonatomic) SGOverlayViewController* overlayController;
 @property (weak, nonatomic) id<SGContentControllerDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UIView *footerView;

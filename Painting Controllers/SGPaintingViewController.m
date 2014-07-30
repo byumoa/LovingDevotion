@@ -19,6 +19,7 @@
 #import "SGConvenienceFunctionsManager.h"
 #import "SGNavigationContainerViewController.h"
 #import "SGPaintingContainerViewController.h"
+#import "LDTurnAroundImageView.h"
 
 const int kFooterBtnOffset = 140;
 const int kFooterBtnY = 35;
@@ -235,7 +236,11 @@ static BOOL chromeHidden = NO;
 
 - (IBAction)swipeRecognized:(UISwipeGestureRecognizer *)sender
 {
+    NSLog(@"swipeRecognized");
     if( !_tombstoneShown || UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) return;
+    
+    CGPoint loc = [sender locationInView:self.view ];
+    if( loc.x > 100 && loc.x < 668 ) return;
     
     NSString* swipeDir = sender.direction == UISwipeGestureRecognizerDirectionRight ? (NSString*)kAnimTypeSwipeRight : (NSString*)kAnimTypeSwipeLeft;
     int nextPaintingIndex = self.currentPaintingIndex + (sender.direction == UISwipeGestureRecognizerDirectionRight ? -1 : 1);
@@ -323,12 +328,17 @@ static BOOL chromeHidden = NO;
 -(void)addMainPainting:(NSString*)paintingName
 {
     NSString *paintingPath = [[NSBundle mainBundle] pathForResource:@"MainPainting" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@", kPaintingResourcesStr, paintingName]];
-    self.paintingImageView.image = [UIImage imageWithContentsOfFile:paintingPath];
-    //Temporary
+    
     if( [paintingName isEqualToString:@"radha1"] ){
-        NSLog(@"radha1!");
+//        self.paintingImageView = [[LDTurnAroundImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:paintingPath]];
+        self.paintingImageView.image = [UIImage imageWithContentsOfFile:paintingPath];
         [self.paintingImageView setupAnimations];
+        self.paintingImageView.isRadha = YES;
     }
+    else{
+        self.paintingImageView.image = [UIImage imageWithContentsOfFile:paintingPath];
+    }
+    
     self.paintingImageView.delegate = self;
 }
 
