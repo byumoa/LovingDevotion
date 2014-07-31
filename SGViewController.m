@@ -72,7 +72,7 @@ const CGPoint kSplashLogoStartPoint = {384,840};
     [self.view bringSubviewToFront:self.titleDonorFlip];
 
     _donorsTimer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(fadeInDonors:) userInfo:nil repeats:NO];
-    _splashTimer = [NSTimer scheduledTimerWithTimeInterval:63 target:self selector:@selector(fadeSplash:) userInfo:nil repeats:NO];
+    _splashTimer = [NSTimer scheduledTimerWithTimeInterval:13 target:self selector:@selector(fadeSplash:) userInfo:nil repeats:NO];
 
     [SGConvenienceFunctionsManager facebookLogout];
     
