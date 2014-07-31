@@ -68,6 +68,7 @@ int const kOverlayHeight = 236;
             SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
             [socialSheet setInitialText:autofillStr];
             [socialSheet addImage:thumbnail];
+            [socialSheet addURL:[NSURL URLWithString:[SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName]]];
 //            [socialSheet addURL:[NSURL URLWithString:kAppStoreURL]];
             [self presentViewController:socialSheet animated:YES completion:^{}];
             
@@ -80,6 +81,7 @@ int const kOverlayHeight = 236;
             SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
             [socialSheet setInitialText:(NSString*)kTwitterAutofill];
             [socialSheet addImage:thumbnail];
+            [socialSheet addURL:[NSURL URLWithString:[SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName]]];
 //            [socialSheet addURL:[NSURL URLWithString:kAppStoreURL]];
             [self presentViewController:socialSheet animated:YES completion:^{}];
             
