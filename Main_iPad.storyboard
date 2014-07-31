@@ -78,13 +78,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="center" image="ld_home__layout_02_donors.png" id="mre-GN-Ojo">
+                            <imageView opaque="NO" clipsSubviews="YES" contentMode="center" image="sg_home_bg-home.png" id="zKe-di-iZj">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" contentMode="center" image="ld_home__layout_01_home.png" id="zKe-di-iZj">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ld_home_home_title.png" id="f2D-bt-ZDi">
+                                <rect key="frame" x="98" y="293" width="571" height="427"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -98,7 +98,7 @@
                         <outlet property="headerTitleImgView" destination="pbp-Ua-Xkc" id="6qk-Xd-zND"/>
                         <outlet property="headerView" destination="Ksf-Tw-7Rg" id="ed3-ih-wMI"/>
                         <outlet property="splash" destination="zKe-di-iZj" id="aR0-Tl-6DU"/>
-                        <outlet property="splashDonors" destination="mre-GN-Ojo" id="XRe-gC-A40"/>
+                        <outlet property="titleDonorFlip" destination="f2D-bt-ZDi" id="3on-0m-Jlh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1698,8 +1698,7 @@
         <image name="exhibition_story_overlay.png" width="768" height="921"/>
         <image name="fluting_krishna1.png" width="100" height="116"/>
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
-        <image name="ld_home__layout_01_home.png" width="804" height="1060"/>
-        <image name="ld_home__layout_02_donors.png" width="804" height="1060"/>
+        <image name="ld_home_home_title.png" width="542" height="429"/>
         <image name="painting_thumb_aalborg-on.png" width="123" height="164"/>
         <image name="painting_thumb_aalborg.png" width="123" height="164"/>
         <image name="painting_thumb_burial-on.png" width="123" height="164"/>
