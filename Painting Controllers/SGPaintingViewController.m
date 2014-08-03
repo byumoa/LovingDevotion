@@ -236,28 +236,54 @@ static BOOL chromeHidden = NO;
 
 - (IBAction)swipeRecognized:(UISwipeGestureRecognizer *)sender
 {
+    // log that the method was called
     NSLog(@"swipeRecognized");
+    
+    // if the tombstone is NOT show OR the app is landscape, return
     if( !_tombstoneShown || UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) return;
     
+    // record the users point
     CGPoint loc = [sender locationInView:self.view ];
+    // if the users horizontal location is greater than 100 or less than 668, return
+    
+    // TODO: ask ontairio what this is for
     if( loc.x > 100 && loc.x < 668 ) return;
     
+    // create the string swipeDir
+    // equal to swipe direction
+    //  if the swipe is right, the string is equal to kAnimTypeSwipeRight
+    //  if thw swipe is left, the string is equal to kAnimTypeSwipeLeft
     NSString* swipeDir = sender.direction == UISwipeGestureRecognizerDirectionRight ? (NSString*)kAnimTypeSwipeRight : (NSString*)kAnimTypeSwipeLeft;
+    
+    // Create the int nextPaintingIndex
+    // equal to current painting index + (if the direction is right, -1; if left, 1)
     int nextPaintingIndex = self.currentPaintingIndex + (sender.direction == UISwipeGestureRecognizerDirectionRight ? -1 : 1);
+    
+    // TODO: Ask Ontario if this has been repurposed into the LD app
     if( [_paintingNameStr isEqualToString:@"temple-ny"] ) nextPaintingIndex++;
     
+    // total painting = kTotalPaintings in SGConstants.m
     int totalPaintings = kTotalPaintings;
+    
+    // TODO: Ask Ontario is this has been repurposed into the LD app
     if( [self.fromArtist isEqualToString:@"bloch"])
         totalPaintings = kTotalPaintingsBloch;
     else if( [self.fromArtist isEqualToString:@"schwartz"])
         totalPaintings = kTotalPaintingsSchwartz;
     else if( [self.fromArtist isEqualToString:@"hofmann"])
         totalPaintings = kTotalPaintingsHofmann;
+    
+    // If the nextpaintingindex(line257) is less than 0 then the nextPaintingIndex += totalPaintings (line 263)
     if( nextPaintingIndex < 0 )
         nextPaintingIndex += totalPaintings;
+    
+    // the nextPaintingIndex = nextpainting index % totalpaintings
     nextPaintingIndex %= totalPaintings;
     
+    //nextPaintingName = the string from the kPaintingNames array with the next painting's index
     NSString* nextPaintingName = (NSString*)kPaintingNames[nextPaintingIndex];
+    
+    //TODO: has this code been repurposed?
     if( [self.fromArtist isEqualToString:@"bloch"])
         nextPaintingName = (NSString*)kPaintingNamesBloch[nextPaintingIndex];
     else if( [self.fromArtist isEqualToString:@"schwartz"])
@@ -265,10 +291,25 @@ static BOOL chromeHidden = NO;
     else if( [self.fromArtist isEqualToString:@"hofmann"])
         nextPaintingName = (NSString*)kPaintingNamesHofmann[nextPaintingIndex];
     
+    //TODO: What is this delegate statement doing?
     ((SGNavigationContainerViewController*)((SGPaintingContainerViewController*)self.delegate).delegate).hasSwiped = YES;
     
+    //TODO: What is this statement doing?
     SGPaintingViewController* paintingViewController = (SGPaintingViewController*)[self.delegate transitionFromController:self toPaintingNamed:nextPaintingName fromButtonRect:CGRectZero withAnimType:swipeDir];
+    
+    //TODO: has this been repurposed
     paintingViewController.fromArtist = self.fromArtist;
+}
+
+-(void)handlePinch:(UIPinchGestureRecognizer *)recognizer{
+    recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
+    recognizer.scale = 1;
+}
+
+-(void)handlePan:(UIPanGestureRecognizer *)recognizer{
+    CGPoint translation = [recognizer translationInView:self.view];
+    recognizer.view.center = CGPointMake(recognizer.view.center.x+translation.x, recognizer.view.center.y+translation.y);
+    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
 }
 
 -(void)addFooterButtonsForPainting:(NSString *)paintingNameStr

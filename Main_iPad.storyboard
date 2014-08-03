@@ -415,8 +415,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="8uu-xi-fyc" appends="YES" id="cEH-zh-qxz"/>
-                                    <outletCollection property="gestureRecognizers" destination="ZV3-Kv-dqN" appends="YES" id="nSd-f1-aqO"/>
+                                    <outletCollection property="gestureRecognizers" destination="anW-pf-wTc" appends="YES" id="QAY-rG-Is4"/>
+                                    <outletCollection property="gestureRecognizers" destination="BM6-Va-Mij" appends="YES" id="YVN-Lr-iJ7"/>
                                 </connections>
                             </imageView>
                             <view hidden="YES" contentMode="scaleToFill" id="bc8-CD-nQS" userLabel="Temple Buttons View">
@@ -475,6 +475,26 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <imageView alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3jZ-w2-JLg">
+                                <rect key="frame" x="653" y="66" width="115" height="892"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bDW-45-6aq" appends="YES" id="ssY-WP-u4n"/>
+                                    <outletCollection property="gestureRecognizers" destination="mch-51-zpd" appends="YES" id="d6B-Q8-Xcq"/>
+                                </connections>
+                            </imageView>
+                            <imageView alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2GW-9a-29F">
+                                <rect key="frame" x="0.0" y="66" width="115" height="892"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bDW-45-6aq" appends="YES" id="Rfh-pQ-90F"/>
+                                    <outletCollection property="gestureRecognizers" destination="mch-51-zpd" appends="YES" id="ucw-Ry-hhy"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -486,19 +506,31 @@
                         <outlet property="templeBtn1880" destination="7eN-k3-BOD" id="Pqx-Xu-4Gj"/>
                         <outlet property="templeBtnLater" destination="8Dl-fj-9gZ" id="srv-qE-HVJ"/>
                         <outlet property="templeButtonsView" destination="bc8-CD-nQS" id="ULP-zU-0Cr"/>
+                        <outlet property="transitionFromLeft" destination="2GW-9a-29F" id="31l-Tl-ffj"/>
+                        <outlet property="transitionFromRight" destination="3jZ-w2-JLg" id="9cv-vU-Pnj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ObG-bp-XU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="8uu-xi-fyc">
+                <swipeGestureRecognizer direction="right" id="bDW-45-6aq">
                     <connections>
-                        <action selector="swipeRecognized:" destination="4y1-Fu-WWq" id="JLj-6S-dvl"/>
+                        <action selector="swipeRecognized:" destination="4y1-Fu-WWq" id="B0y-3V-bRl"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="ZV3-Kv-dqN">
+                <swipeGestureRecognizer direction="right" id="mch-51-zpd">
                     <connections>
-                        <action selector="swipeRecognized:" destination="4y1-Fu-WWq" id="Dhq-3J-O6m"/>
+                        <action selector="swipeRecognized:" destination="4y1-Fu-WWq" id="NXD-Mm-j1L"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <pinchGestureRecognizer id="anW-pf-wTc">
+                    <connections>
+                        <action selector="handlePinch:" destination="4y1-Fu-WWq" id="pD3-zJ-bm6"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="BM6-Va-Mij">
+                    <connections>
+                        <action selector="handlePan:" destination="4y1-Fu-WWq" id="kkk-zQ-2ad"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1794" y="-182"/>
         </scene>
