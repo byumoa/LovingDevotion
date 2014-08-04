@@ -40,6 +40,7 @@
 
 -(void)animateButtonsOn
 {
+    NSLog(@"animateButtonsOn _buttons.count: %i", _buttons.count);
     for( int i = 0; i < _buttons.count; i++ )
     {
         UIButton* button = _buttons[i];
