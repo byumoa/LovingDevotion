@@ -32,6 +32,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *templeBtnLater;
 @property (weak, nonatomic) IBOutlet UIButton *shareBtn;
 @property (nonatomic, strong) NSString* fromArtist;
+@property (nonatomic, weak) IBOutlet UIView* middleView;
 
 -(void)configWithPaintingName:(NSString *)paintingStr;
 - (void)addTombstoneDelayed: (NSTimer*)timer;

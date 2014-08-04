@@ -375,6 +375,7 @@ static BOOL chromeHidden = NO;
         self.paintingImageView.image = [UIImage imageWithContentsOfFile:paintingPath];
         [self.paintingImageView setupAnimations];
         self.paintingImageView.isRadha = YES;
+        self.middleView.hidden = YES;
     }
     else{
         self.paintingImageView.image = [UIImage imageWithContentsOfFile:paintingPath];

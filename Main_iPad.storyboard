@@ -512,6 +512,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="footerView" destination="qR1-fw-PT0" id="qe0-Bk-vWI"/>
+                        <outlet property="middleView" destination="qY1-M7-eRZ" id="jnH-WB-LWp"/>
                         <outlet property="paintingImageView" destination="VdB-kg-beo" id="iKZ-SE-Oxe"/>
                         <outlet property="shareBtn" destination="p4a-6Y-5K9" id="lbe-iP-QJZ"/>
                         <outlet property="templeBtn1880" destination="7eN-k3-BOD" id="Pqx-Xu-4Gj"/>
