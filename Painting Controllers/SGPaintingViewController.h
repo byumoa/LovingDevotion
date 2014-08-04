@@ -32,8 +32,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *templeBtnLater;
 @property (weak, nonatomic) IBOutlet UIButton *shareBtn;
 @property (nonatomic, strong) NSString* fromArtist;
-@property (weak, nonatomic) IBOutlet UIImageView *transitionFromLeft;
-@property (weak, nonatomic) IBOutlet UIImageView *transitionFromRight;
 
 -(void)configWithPaintingName:(NSString *)paintingStr;
 - (void)addTombstoneDelayed: (NSTimer*)timer;

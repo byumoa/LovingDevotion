@@ -244,10 +244,10 @@ static BOOL chromeHidden = NO;
     
     // record the users point
     CGPoint loc = [sender locationInView:self.view ];
-    // if the users horizontal location is greater than 100 or less than 668, return
     
+    // if the users horizontal location is greater than 100 or less than 668, return
     // TODO: ask ontairio what this is for
-    if( loc.x > 100 && loc.x < 668 ) return;
+//    if( loc.x > 100 && loc.x < 668 ) return;
     
     // create the string swipeDir
     // equal to swipe direction

@@ -475,26 +475,37 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <imageView alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3jZ-w2-JLg">
-                                <rect key="frame" x="653" y="66" width="115" height="892"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" id="rvf-ri-BRF" userLabel="LeftView">
+                                <rect key="frame" x="0.0" y="66" width="115" height="887"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="bDW-45-6aq" appends="YES" id="ssY-WP-u4n"/>
-                                    <outletCollection property="gestureRecognizers" destination="mch-51-zpd" appends="YES" id="d6B-Q8-Xcq"/>
+                                    <outletCollection property="gestureRecognizers" destination="mch-51-zpd" appends="YES" id="bZL-sI-PRU"/>
                                 </connections>
-                            </imageView>
-                            <imageView alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2GW-9a-29F">
-                                <rect key="frame" x="0.0" y="66" width="115" height="892"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="qY1-M7-eRZ" userLabel="MiddleView">
+                                <rect key="frame" x="115" y="66" width="538" height="887"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="bDW-45-6aq" appends="YES" id="Rfh-pQ-90F"/>
-                                    <outletCollection property="gestureRecognizers" destination="mch-51-zpd" appends="YES" id="ucw-Ry-hhy"/>
+                                    <outletCollection property="gestureRecognizers" destination="mch-51-zpd" appends="YES" id="ED7-dz-Bai"/>
+                                    <outletCollection property="gestureRecognizers" destination="bDW-45-6aq" appends="YES" id="unH-pE-5Ms"/>
+                                    <outletCollection property="gestureRecognizers" destination="anW-pf-wTc" appends="YES" id="If2-LK-Wmd"/>
+                                    <outletCollection property="gestureRecognizers" destination="BM6-Va-Mij" appends="YES" id="6zU-SR-fQ2"/>
                                 </connections>
-                            </imageView>
+                            </view>
+                            <view contentMode="scaleToFill" id="Bhf-Ub-YIS" userLabel="RightView">
+                                <rect key="frame" x="653" y="68" width="115" height="887"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.9764262798099641" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bDW-45-6aq" appends="YES" id="YhY-gI-aiI"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -506,19 +517,17 @@
                         <outlet property="templeBtn1880" destination="7eN-k3-BOD" id="Pqx-Xu-4Gj"/>
                         <outlet property="templeBtnLater" destination="8Dl-fj-9gZ" id="srv-qE-HVJ"/>
                         <outlet property="templeButtonsView" destination="bc8-CD-nQS" id="ULP-zU-0Cr"/>
-                        <outlet property="transitionFromLeft" destination="2GW-9a-29F" id="31l-Tl-ffj"/>
-                        <outlet property="transitionFromRight" destination="3jZ-w2-JLg" id="9cv-vU-Pnj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ObG-bp-XU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="bDW-45-6aq">
-                    <connections>
-                        <action selector="swipeRecognized:" destination="4y1-Fu-WWq" id="B0y-3V-bRl"/>
-                    </connections>
-                </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="mch-51-zpd">
                     <connections>
                         <action selector="swipeRecognized:" destination="4y1-Fu-WWq" id="NXD-Mm-j1L"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="bDW-45-6aq">
+                    <connections>
+                        <action selector="swipeRecognized:" destination="4y1-Fu-WWq" id="B0y-3V-bRl"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <pinchGestureRecognizer id="anW-pf-wTc">
@@ -526,13 +535,13 @@
                         <action selector="handlePinch:" destination="4y1-Fu-WWq" id="pD3-zJ-bm6"/>
                     </connections>
                 </pinchGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="BM6-Va-Mij">
+                <panGestureRecognizer enabled="NO" minimumNumberOfTouches="1" id="BM6-Va-Mij">
                     <connections>
                         <action selector="handlePan:" destination="4y1-Fu-WWq" id="kkk-zQ-2ad"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1794" y="-182"/>
+            <point key="canvasLocation" x="1859" y="-165"/>
         </scene>
         <!--Tombstone Overlay View Controller-->
         <scene sceneID="Pf1-fy-jtR">
