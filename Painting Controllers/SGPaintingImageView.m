@@ -75,6 +75,8 @@ const int inset = 20;
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     NSLog(@"touchesBegan");
+    
+    //If
     if( !self.isRadha ) return;
 
     _startingPt = [(UITouch*)[touches anyObject] locationInView:self];
