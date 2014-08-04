@@ -68,7 +68,7 @@
     if( [self.paintingName isEqualToString:@"sermon"] && sender.tag == 3){
         [self loadComposition];
         return;
-}
+    }
     
     NSString* btnFolderPath = [NSString stringWithFormat:@"%@perspectives_%i", self.rootFolderPath, sender.tag];
     NSString* panoPath = [[NSBundle mainBundle] pathForResource:@"pano_b" ofType:@"jpg" inDirectory:btnFolderPath];
@@ -83,6 +83,16 @@
 //        [self loadAudioWithFolderPath:btnFolderPath].screenName = [NSString stringWithFormat:@"%@: persp audio", self.paintingName];
 //    else
 //        [self loadTextWithFolderPath:btnFolderPath].screenName = [NSString stringWithFormat:@"%@: persp text", self.paintingName];
+    
+    if( panoPath )
+        [self loadPanoramaWithFolderPath:btnFolderPath];
+    else if( videoPath )
+        [self loadVideoWithFolderPath:btnFolderPath];
+    else if( audioPath )
+        [self loadAudioWithFolderPath:btnFolderPath];
+    else
+        [self loadTextWithFolderPath:btnFolderPath];
+    
 }
 
 -(void)loadComposition
