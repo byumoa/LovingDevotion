@@ -236,9 +236,6 @@ static BOOL chromeHidden = NO;
 
 - (IBAction)swipeRecognized:(UISwipeGestureRecognizer *)sender
 {
-    // log that the method was called
-    NSLog(@"swipeRecognized");
-    
     // if the tombstone is NOT show OR the app is landscape, return
     if( !_tombstoneShown || UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) return;
     

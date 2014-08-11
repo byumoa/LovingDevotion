@@ -15,12 +15,31 @@ const int inset = 20;
     CGPoint _startingPt;
     int _currentIndex;
     int _startingIndex;
+    UIButton* _followBtn;
+    CGPoint _btnOffset;
+    int _height;
 }
 - (void)tapRecognized: (UITapGestureRecognizer*)recognizer;
+- (void) addCircles;
 
 @end
 
 @implementation SGPaintingImageView
+
+-(void)addCircles{
+   
+    _followBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_followBtn setImage:[UIImage imageNamed:@"Circle"] forState:UIControlStateNormal];
+    [self addSubview:_followBtn];
+    [self resetCirclePosForFrame:0];
+}
+
+- (void)resetCirclePosForFrame: (int)frame{
+    _btnOffset.x = -350 * cos(frame/8.0);
+    
+    _height = 75;
+    _followBtn.frame = CGRectMake(self.frame.size.width/2 + _btnOffset.x, _height + _btnOffset.y, 100, 100);
+}
 
 - (void)setupAnimations
 {
@@ -31,6 +50,7 @@ const int inset = 20;
         [animationFrames addObject: [UIImage imageWithContentsOfFile:imagePath]];
     }
     self.animationImages = animationFrames;
+    [self addCircles];
 //    self.animationDuration = 2;
 //    [self startAnimating];
 }
@@ -74,8 +94,6 @@ const int inset = 20;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    NSLog(@"touchesBegan");
-    
     //If
     if( !self.isRadha ) return;
 
@@ -92,6 +110,7 @@ const int inset = 20;
     while( _currentIndex < 0 ){
         _currentIndex += 35;
     }
+    [self resetCirclePosForFrame:_currentIndex];
     
     _currentIndex = _currentIndex % 35;
     [self setImage:[self.animationImages objectAtIndex:_currentIndex]];
