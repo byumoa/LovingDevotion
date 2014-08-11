@@ -8,8 +8,10 @@
 
 #import "GlossaryViewControllerTableViewController.h"
 
-@interface GlossaryViewControllerTableViewController ()
-
+@interface GlossaryViewControllerTableViewController (){
+    NSArray* _glossaryArr;
+    NSMutableArray* _activeEntries;
+}
 @end
 
 @implementation GlossaryViewControllerTableViewController
@@ -18,7 +20,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -30,12 +32,20 @@
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
     
+    NSString* glossaryPath = [[NSBundle mainBundle] pathForResource:@"glossary" ofType:@"plist"];
+    _glossaryArr = [NSArray arrayWithContentsOfFile:glossaryPath];
+    
     UIButton* backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [backButton setImage:[UIImage imageNamed:@"SG_General_BackBtn"] forState:UIControlStateNormal];
     [backButton setImage:[UIImage imageNamed:@"SG_General_BackBtn-on"] forState:UIControlStateHighlighted];
-    backButton.frame = CGRectMake(0, 0, 122, 41);
+    backButton.frame = CGRectMake(10, 40, 122, 41);
     [backButton addTarget:self action:@selector(pressedBack:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backButton];
+    
+    _activeEntries = [NSMutableArray new];
+    for( int i = 0; i < _glossaryArr.count; i++ ){
+        [_activeEntries addObject:[NSNumber numberWithBool:NO]];
+    }
 }
 
 - (void) pressedBack: (UIButton*)sender{
@@ -52,66 +62,77 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return _glossaryArr.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    if( [((NSNumber*)_activeEntries[section]) boolValue] ){
+        return ((NSDictionary*)[_glossaryArr objectAtIndex:section]).count;
+    }
+    else{
+        return 1;
+    }
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString* reuseID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID forIndexPath:indexPath];
     
-    // Configure the cell...
+    if(!cell){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseID];
+    }
+    
+    NSDictionary* entry = _glossaryArr[indexPath.section];
+    NSString* text = @"";
+    switch( indexPath.row ){
+        case 0:{
+            NSString* entryText = [entry objectForKey:@"name"];
+            text = entryText;
+        }
+            break;
+        case 1:{
+            NSString* entryText = [entry objectForKey:@"pronunciation"];
+            text = [NSString stringWithFormat:@"    Pronunciation: %@", entryText];
+        }
+            break;
+        case 2:{
+            NSString* entryText = entry.count > 3 ? [entry objectForKey:@"alternative"] : [entry objectForKey:@"definition"];
+            NSString* modifier = entry.count > 3 ? @"Alternative" : @"Definition";
+            text = [NSString stringWithFormat:@"    %@: %@", modifier, entryText];
+        }
+            break;
+        case 3:{
+            NSString* entryText = [entry objectForKey:@"definition"];
+            text = [NSString stringWithFormat:@"    Definition: %@", entryText];
+        }
+            break;
+        default:
+            break;
+    }
+
+    [cell.textLabel setText:text];
+    cell.textLabel.backgroundColor = [UIColor whiteColor];
+    if( indexPath.section == 0){
+        if( indexPath.row == 0 ){
+            cell.textLabel.backgroundColor = [UIColor yellowColor];
+        }
+    }
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if( indexPath.row == 0 ){
+        bool newBool = ![((NSNumber*)_activeEntries[indexPath.section]) boolValue];
+        _activeEntries[indexPath.section] = [NSNumber numberWithBool:newBool];
+        [tableView reloadData];
+    }
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 /*
 #pragma mark - Navigation
