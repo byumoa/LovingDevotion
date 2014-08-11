@@ -10,4 +10,6 @@
 
 @interface GlossaryViewControllerTableViewController : UITableViewController
 
+- (void) setHighlightWords: (NSArray*) highlightWords;
+
 @end

@@ -11,6 +11,7 @@
 @interface GlossaryViewControllerTableViewController (){
     NSArray* _glossaryArr;
     NSMutableArray* _activeEntries;
+    NSArray* _highlightWords;
 }
 @end
 
@@ -23,6 +24,11 @@
         
     }
     return self;
+}
+
+- (void) setHighlightWords: (NSArray*) highlightWords{
+    NSLog(@"setHighlightWords: %@", highlightWords);
+    _highlightWords = highlightWords;
 }
 
 - (void)viewDidLoad
@@ -89,9 +95,16 @@
     
     NSDictionary* entry = _glossaryArr[indexPath.section];
     NSString* text = @"";
+    UIColor* bgColor = [UIColor whiteColor];
     switch( indexPath.row ){
         case 0:{
             NSString* entryText = [entry objectForKey:@"name"];
+            for( NSString* hWord in _highlightWords ){
+                NSLog(@"hWord: %@, entryText: %@", hWord, entryText);
+                if( [entryText isEqualToString:hWord]){
+                    bgColor = [UIColor yellowColor];
+                }
+            }
             text = entryText;
         }
             break;
@@ -116,13 +129,7 @@
     }
 
     [cell.textLabel setText:text];
-    cell.textLabel.backgroundColor = [UIColor whiteColor];
-    if( indexPath.section == 0){
-        if( indexPath.row == 0 ){
-            cell.textLabel.backgroundColor = [UIColor yellowColor];
-        }
-    }
-    
+    cell.textLabel.backgroundColor = bgColor;
     return cell;
 }
 
@@ -133,16 +140,5 @@
         [tableView reloadData];
     }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -9,6 +9,7 @@
 #import "SGSummaryOverlayViewController.h"
 #import "SGNarrationManager.h"
 #import "SGConvenienceFunctionsManager.h"
+#import "GlossaryViewControllerTableViewController.h"
 
 const NSString* kSummarySpeakerBtnNrmStr = @"speaker_btns__narration_btn.png";
 const NSString* kSummarySpeakerBtnHilStr = @"speaker_btns__narration_btn-on.png";
@@ -81,5 +82,17 @@ const NSString* kSummaryPauseBtnHilStr = @"summary_pause_btn.png";
 {
     
 }
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+     NSLog(@"prepareForSegue");
+     GlossaryViewControllerTableViewController* glossary = [segue destinationViewController];
+     NSArray* highlightedWordsArr = [NSArray arrayWithObjects:@"Avatars", nil];
+     [glossary setHighlightWords:highlightedWordsArr];
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
 
 @end
