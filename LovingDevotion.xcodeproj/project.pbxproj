@@ -102,6 +102,8 @@
 		618B35CF1817FF3100EEC12E /* SGTextOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618B35CE1817FF3100EEC12E /* SGTextOverlayViewController.m */; };
 		618B35D21818083900EEC12E /* SGAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618B35D11818083900EEC12E /* SGAudioViewController.m */; };
 		61A668F5182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A668F4182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m */; };
+		61AB06201998FA7700CC4449 /* glossary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61AB061F1998FA7700CC4449 /* glossary.plist */; };
+		61AB06231999035100CC4449 /* GlossaryViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AB06221999035100CC4449 /* GlossaryViewControllerTableViewController.m */; };
 		61C8C01E18504AB000003608 /* blackTopBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61C8C01C18504AB000003608 /* blackTopBar@2x.png */; };
 		61C8C01F18504AB000003608 /* blackTopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 61C8C01D18504AB000003608 /* blackTopBar.png */; };
 		61C8C02218507D4C00003608 /* SGMediaPlayhead.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C8C02118507D4C00003608 /* SGMediaPlayhead.m */; };
@@ -411,6 +413,9 @@
 		618B35D11818083900EEC12E /* SGAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAudioViewController.m; sourceTree = "<group>"; };
 		61A668F3182EECE300AC749E /* SGStoryOfTheExhibitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGStoryOfTheExhibitionViewController.h; sourceTree = "<group>"; };
 		61A668F4182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGStoryOfTheExhibitionViewController.m; sourceTree = "<group>"; };
+		61AB061F1998FA7700CC4449 /* glossary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = glossary.plist; sourceTree = "<group>"; };
+		61AB06211999035100CC4449 /* GlossaryViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryViewControllerTableViewController.h; sourceTree = "<group>"; };
+		61AB06221999035100CC4449 /* GlossaryViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewControllerTableViewController.m; sourceTree = "<group>"; };
 		61C8C01C18504AB000003608 /* blackTopBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackTopBar@2x.png"; sourceTree = "<group>"; };
 		61C8C01D18504AB000003608 /* blackTopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackTopBar.png; sourceTree = "<group>"; };
 		61C8C02018507D4C00003608 /* SGMediaPlayhead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMediaPlayhead.h; sourceTree = "<group>"; };
@@ -676,6 +681,7 @@
 		15A15847135C9CD700C6B482 /* SacredGifts */ = {
 			isa = PBXGroup;
 			children = (
+				61AB061E1998F4C600CC4449 /* GlossaryController */,
 				61F3D63A19688DDD0039E5B8 /* AppDelegate.h */,
 				61F3D63B19688DDD0039E5B8 /* AppDelegate.m */,
 				6163309E19671DEA0090E5FE /* SGEAGLView.h */,
@@ -864,9 +870,26 @@
 			path = detailbuttons;
 			sourceTree = "<group>";
 		};
+		61AB061D1998F49D00CC4449 /* Glossary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Glossary;
+			sourceTree = "<group>";
+		};
+		61AB061E1998F4C600CC4449 /* GlossaryController */ = {
+			isa = PBXGroup;
+			children = (
+				61AB06211999035100CC4449 /* GlossaryViewControllerTableViewController.h */,
+				61AB06221999035100CC4449 /* GlossaryViewControllerTableViewController.m */,
+			);
+			path = GlossaryController;
+			sourceTree = "<group>";
+		};
 		61CD50A5180C242500D28921 /* GeneralResources */ = {
 			isa = PBXGroup;
 			children = (
+				61AB061D1998F49D00CC4449 /* Glossary */,
 				8A955EF9198B6A7F00478CC5 /* highlights */,
 				618607BA1982CD3E00A1EBD9 /* ld_home__layout_01_home.png */,
 				618607BB1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png */,
@@ -887,6 +910,7 @@
 				61CD5107180C242500D28921 /* MediaControls */,
 				61CD5115180C242500D28921 /* Navigation */,
 				61CD5167180C242500D28921 /* Social */,
+				61AB061F1998FA7700CC4449 /* glossary.plist */,
 			);
 			path = GeneralResources;
 			sourceTree = "<group>";
@@ -1291,6 +1315,7 @@
 				61DC6DF1197EC9870044E0EB /* KrishnaButter.png in Resources */,
 				61072A2A1822658400E8D7A2 /* summary_pause_btn@2x.png in Resources */,
 				61CD5259180C242500D28921 /* SG_General_Painting_DetailMarkerBtn-on.png in Resources */,
+				61AB06201998FA7700CC4449 /* glossary.plist in Resources */,
 				806BA1CC1989EEF000D001D1 /* ld_home_donor_title.png in Resources */,
 				61072A2C1822658400E8D7A2 /* summary_play_btn@2x.png in Resources */,
 				61CD525B180C242500D28921 /* SG_General_Painting_DetailMarkerBtn.png in Resources */,
@@ -1522,6 +1547,7 @@
 				61C8C13F1851A6A900003608 /* SGTimelineEntry.m in Sources */,
 				61CD534A180C256700D28921 /* SGHofmanViewController.m in Sources */,
 				6117E632184D694300A50719 /* SGIntroMovieViewController.m in Sources */,
+				61AB06231999035100CC4449 /* GlossaryViewControllerTableViewController.m in Sources */,
 				61D606841844BA510090C77A /* SGDonateViewController.m in Sources */,
 				61CD5342180C256700D28921 /* SGHomeViewController.m in Sources */,
 				61CD5325180C253400D28921 /* SGContentViewController.m in Sources */,

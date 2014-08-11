@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Ashtamangala</string>
+		<key>pronunciation</key>
+		<string>osh-ta-mon-GA-la</string>
+		<key>definition</key>
+		<string>eight auspicious symbols that represent the qualities of enlightenment: the lotus bloom (purity), conch shell (thwarts evil), victory banner (victory over ignorance), parasol (power and protection), two fish (good fortune), endless knot (infinite wisdom), vase (abundance), and wheel (meditation and discipline)</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Asura</string>
+		<key>pronunciation</key>
+		<string>a-SUR-a</string>
+		<key>definition</key>
+		<string>power-hungry demonic beings frequently at war with the benevolent devatas (gods)</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Atman</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the true self; the essence of an individual devoid of physical trappings</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Avatars</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>alternative</key>
+		<string>Dashavataras</string>
+		<key>definition</key>
+		<string>ten incarnations of the god Vishnu that appear on the earth during catastrophic times to save the world from destruction</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ayudhapurusha</string>
+		<key>pronunciation</key>
+		<string>a-YOU-da-pa-ROO-sha</string>
+		<key>definition</key>
+		<string>personifications of Vishnu in the form of two figures that carry his weapons: Chakrapurusha holds a discus, symbol of the god’s limitless power, and Shankapurusha has a conch shell, a horn used in battle that reminds devotees of Vishnu’s protection and liberation</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Balakrishna</string>
+		<key>alternative</key>
+		<string>Nadugopala</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>depictions and narrative of Krishna as a crawling baby, often stealing butterballs or other alluring treats; important form of Krishna for the cultivation of rasa</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Balarama</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the elder brother of Krishna and avatar of Shesha</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bhagavad Gita</string>
+		<key>pronunciation</key>
+		<string>BUH-guh-vuhd GEE-ta</string>
+		<key>definition</key>
+		<string>(Song of the Lord) – a portion of the Mahabharata, written by Lord Krishna, that emphasizes performing one’s duty and fulfilling one’s destiny; among the most sacred of Hindu texts</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bhakti</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the religious practice of loving devotion; a central concept in the sacred Hindu text, the Bhagavad Gita</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bhudevi</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the Earth Goddess who is saved by Varaha, the great boar, from an evil demon who had hidden her (and the earth, itself) deep in the cosmic ocean of creation</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Brahma</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a member of the Trimurti, a group of three gods who maintain the cosmos; the Creator of the Universe and Father of Mankind; with at least one of his four heads, he continually recites the Vedas</string>
+	</dict>
+</array>
+</plist>
