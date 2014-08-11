@@ -33,6 +33,8 @@
 		<string></string>
 		<key>alternative</key>
 		<string>Dashavataras</string>
+		<key>pronunciation</key>
+		<string>dus-ah-vuh-TAR-us</string>
 		<key>definition</key>
 		<string>ten incarnations of the god Vishnu that appear on the earth during catastrophic times to save the world from destruction</string>
 	</dict>
@@ -72,6 +74,14 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Bhagavad Purana</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>ancient Hindu text that highlights the worship of Lord Vishnu through bhakti and dharma and describes the ten incarnations of Vishnu, with primary emphasis on Krishna </string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Bhakti</string>
 		<key>pronunciation</key>
 		<string></string>
@@ -92,7 +102,758 @@
 		<key>pronunciation</key>
 		<string></string>
 		<key>definition</key>
-		<string>a member of the Trimurti, a group of three gods who maintain the cosmos; the Creator of the Universe and Father of Mankind; with at least one of his four heads, he continually recites the Vedas</string>
+		<string>a member of the Trimurti, a group of three gods who maintain the cosmos; the Creator of the Universe and Father of Mankind; with at least one of his four heads, he continually recites the Vedasa member of the Trimurti, a group of three gods who maintain the cosmos; the Creator of the Universe and Father of Mankind; with at least one of his four heads, he continually recites the Vedas</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Brahman</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the overarching Hindu concepts of god in all of his/her manifestations</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Brahmin</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the most distinguished Hindu caste made up of priests and religious scholars</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Buddha</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the ninth incarnation of Lord Vishnu and focus of the great world religion, Buddhism</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Chakra</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>ancient symbol of the sun and cycles of life; in the shape of a disc or wheel, it is a powerful weapon often wielded by Lord Vishnu; also refers to the points of energy on the human body</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Chauri</string>
+		<key>pronunciation</key>
+		<string>(CHOW-ri)</string>
+		<key>definition</key>
+		<string>female attendants of deity that often bear flywhisks</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Conch shell</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>alternative</key>
+		<string>sankha</string>
+		<key>definition</key>
+		<string>symbol often associated with Vishnu; a horn used in battle that represents victory over evil and the primeval sound of creation; also signifies eternal space and elements of the universe as it unfolds from a single point to an ever-expanding infinity—a solid form that encompasses empty space</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Darshan</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>auspicious sight; the mutual ‘seeing’ of the deity and devotee as the culmination of worship through which the devotee gains blessings from the divine</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Devatas</string>
+		<key>pronunciation</key>
+		<string>DAY-vay-tas</string>
+		<key>definition</key>
+		<string>the benevolent Hindu gods</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Devi</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the supreme female deity and universal counter-balance to the absolute power of male Hindu gods; the embodiment of shakti, the divine feminine force expressed in all female deities</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Dhafli</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a tambourine-like instrument often played by gopis while making music, dancing, and worshipping Krishna</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dharma</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a strict code of conduct and virtue that is in accordance with the order and harmony of the universe</string>
+	</dict>
+		<dict>
+		<key>name</key>
+		<string>Dhoti</string>
+		<key>pronunciation</key>
+		<string>DOH-ti</string>
+		<key>definition</key>
+		<string>a translucent, skirt-like garment, usually yellow or gold, that drapes the hips and thighs of Vishnu; it represents the inspiration of the Vedas and other sacred texts that, like Vishnu, radiate truth</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Discus</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>alternative</key>
+		<string>chakra</string>
+		<key>definition</key>
+		<string>the weapon associated with Vishnu symbolizing his role as divine Protector; also indicates the cycles of time in the cosmos</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ear lobes and earrings</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a sign of nobility, power, and wealth often associated with Vishnu, whose lobes are elongated through constant, bejeweled ornamentation; girls in India have their ears pierced as part of their initiation into womanhood</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Flute of Krishna</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a musical instrument through which Krishna plays sublime music parallel to his own incomparable beauty; Krishna’s divine call that causes men and women to abandon the attachments of the world and devote themselves wholly to God</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Flywhisk</string>
+		<key>pronunciation</key>
+		<string>DAY-vay-tas</string>
+		<key>alternative</key>
+		<string>chamara</string>
+		<key>definition</key>
+		<string>a tool used to swat away flies, often associated with Shiva and emblematic of the high status of the gods; held by servants as a sign of devotion and service; symbolizes not only the swatting away of pesky insects but also unwanted thoughts</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ganesh</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>one of the most beloved gods of Hinduism, whose elephant head was given to him when Shiva unwittingly chopped off his human head, not recognizing Ganesh as his son; the remover of obstacles whose blessing is pursued before undertaking a new or challenging endeavor</string>
+	</dict>	
+	<dict>
+		<key>Ganges River</key>
+		<string>Devatas</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the most sacred river of Hinduism, which flows from the Himalayas through Northern Indian southeast through Bangladesh into the Bay of Bengal; considered the wellspring of all sacred waters, in which Hindus ritually bathe for remission of sins and disperse the ashes of their dead</string>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>Garuda</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>half bird, half man deity; Vishnu’s mode of celestial transportation throughout the cosmos</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Gita Govinda</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>twelfth-century poem that establishes Radha, Krishna’s beloved gopi, as the exemplary symbol of the soul’s longing for the divine, one’s unceasing devotion through bhakti, and the type of rasa (relationship) that all devotees should aspire to in worshiping deity</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Gopis</string>
+		<key>pronunciation</key>
+		<string>GO-peez</string>
+		<key>definition</key>
+		<string>young women who deny themselves traditional mortal experiences in order to be in the youthful Krishna’s presence, tend his cows, frolic in divine play (lila), and dance for Krishna as he plays his enchanting flute; Radha is preeminent as a symbol of transcendent love and pure bhakti</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Guru</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>Sanskrit name for teacher or master; etymology is based on the interplay of dark (gu) and light (ru); i.e., the master dispels the darkness of ignorance and enlightens the student with wisdom and knowledge</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hanuman</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the monkey-faced god worshipped for his strength, perseverance, and devotion and believed by many to be an avatar of Shiva; aids Vishnu’s avatar, Rama, in the rescue of his beloved Sita and is characterized by courage and loyal friendship</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Himalayas</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the highest mountains in the world and a place of pilgrimage for Hindus; Shiva’s abode for meditating</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ishta-devata</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the personal deity chosen by a devotee with whom he/she feels the greatest affinity during a particular time of life, dependent on individual needs and concerns at that moment</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kalki</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the final, tenth incarnation of Vishnu who will appear at the end of the world on his white horse to conquer all evil </string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Karma</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>philosophy that our actions and deeds will come back to us in kind, even in the next life</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kaustabha jewel</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a precious gem in the shape of a diamond worn by Vishnu that emerged from the churning cosmic ocean of creation and is described in the Bhagavad Purana as “brilliant as a thousand suns”</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Krishna</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the eighth and perhaps most beloved incarnation of Vishnu; the all-attractive and enchanting one who is thought to be the reincarnation of Rama; his love for his consort Radha and for his devotees, and their love for him, engenders the supreme form of bhakti</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kurma</string>
+		<key>pronunciation</key>
+		<string>KOOR-muh</string>
+		<key>definition</key>
+		<string>the mighty turtle and second incarnation of Vishnu who saved the nectar of immortality for the gods by heaving a mountain unto his shell</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lakshmi</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>Vishnu’s consort and goddess of wealth, love, and good fortune and patroness of the Hindu festival of Diwali; like Vishnu, she came to earth to act as a preserver to mankind in the form of Sita and Radha, consorts of Rama and Krishna, respectively</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lila</string>
+		<key>pronunciation</key>
+		<string>LEE-la</string>
+		<key>definition</key>
+		<string>the activities of the gods with their devotees and a central element of bhakti; a form of divine play particularly associated with Krishna’s nature for which he is known and adored</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lingam</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a sacred stone used in worship that symbolizes Lord Shiva and represents the fundamental, underlying principle of the universe, the power of the divine, and the source of all creation; indicated by an upward-pointing triangle that denotes its cosmic energy</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lotus blossom</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>alternative</key>
+		<string>padma</string>
+		<key>definition</key>
+		<string>the throne of the gods and a symbol of beauty, purity, and eternal reward</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mace</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>alternative</key>
+		<string>kaudmodaki</string>
+		<key>definition</key>
+		<string>a club-like weapon associated with Vishnu and symbolic of his power and knowledge</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mahabharata</string>
+		<key>pronunciation</key>
+		<string>muh-ha-BAH-ruh-tuh</string>
+		<key>definition</key>
+		<string>monumental history of India’s ancient dynasties and their struggle for land and power wherein Krishna acts as advisor and chariot-driver to his friend, Arjuna, throughout their epic battles</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Maharishi</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>an individual who has gained mastery over body, mind, and soul; one who is enlightened</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Makara</string>
+		<key>pronunciation</key>
+		<string>ma-KAR-a</string>
+		<key>definition</key>
+		<string>mythical elephant-crocodiles</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mala</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a flower garland symbolic of victory and used as offerings during worship; various types of flowers are associated with specific gods</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mandala</string>
+		<key>pronunciation</key>
+		<string>mun-DOLL-a</string>
+		<key>definition</key>
+		<string>a flat, decorated, circular disk upon which a mystical diagram represents the universe with god at its center; used as a visual focus during worship and meditation</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mantra</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a sacred utterance used in meditation or worship, either spoken or sung, often from the Vedas or other sacred Hindu texts; Om is considered to be the most sacred mantra, believed by some to be an actual manifestation of God and the primordial sound of creation</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Marga</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>similar to yoga, the path or discipline followed by a devotee that leads to salvation; the three margas are karma (action), bhakti (devotion), and jnana (knowledge)</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Matsya</string>
+		<key>pronunciation</key>
+		<string>mut-Sye-yah</string>
+		<key>definition</key>
+		<string>the great fish and first incarnation of Vishnu who saved the four Vedas from the great flood</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Matsyapurana</string>
+		<key>pronunciation</key>
+		<string>mut-sye-yah-poor-AH-na</string>
+		<key>definition</key>
+		<string>a sacred text dating from 250 – 500 CE that tells the story of Matsya, the fish, the first incarnation (avatar) of Vishnu</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Moksha</string>
+		<key>pronunciation</key>
+		<string>MOKE-sha</string>
+		<key>definition</key>
+		<string>the ultimate goal of Hindu worship; to reunite with Brahman or cosmos, escape the cycle of reincarnation, and become one with deity; liberation through complete union with God, achieved through pure and steadfast bhakti or one of the other acknowledged paths</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mridanga</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a type of drum used to play devotional music; often played by gopis while worshiping Krishna</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mughals</string>
+		<key>pronunciation</key>
+		<string>MOO-guhls</string>
+		<key>definition</key>
+		<string>an Islamic dynasty originating in central Asia that began conquering India in the sixteenth century and remained in power until 1857 when the British deposed the last Mughal emperor; brought with it the great arts and culture of Persia, which were assimilated into Indian culture</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Murti</string>
+		<key>pronunciation</key>
+		<string>MOOR-ti) </string>
+		<key>definition</key>
+		<string>devotional icons that, once properly installed through ritual and worship, are considered the essence of that god and enable the devotee to experience darshan—the blessing of both seeing and being seen by the divine presence; most important are the eyes of the murti, which consecrate the icon once painted or incised</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Nadugopala</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>alternative</key>
+		<string>Balakrishna</string>
+		<key>definition</key>
+		<string>depictions and narrative of Krishna as a crawling baby, often stealing butterballs or other alluring treats; important manifestation of Krishna for the cultivation of rasa</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Namaste</string>
+		<key>pronunciation</key>
+		<string>Num-us-TEY</string>
+		<key>definition</key>
+		<string>a form of greeting that means, “I honor the place within you in which the entire universe dwells. We are one.”</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Narasimha</string>
+		<key>pronunciation</key>
+		<string>nuh-ruh-SIM-huh</string>
+		<key>definition</key>
+		<string>the fourth incarnation of Vishnu, a cunning half man / half lion who defeated an evil demon king responsible for torturing followers of Vishnu</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Nirvana</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>becoming liberated from the mind and body; a state of pure enlightenment; transcendence</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Om</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>alternative</key>
+		<string>Aum</string>
+		<key>definition</key>
+		<string>the first original sound of creation, usually recited at the beginning and end of any prayer or Veda</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Paraatman</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>mthe divine Being called the Supreme, the Absolute, or the Ultimate Reality; omnipresent, transcendent, and eternal, it is beyond all form, name, and gender</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Parashuramaishna</string>
+		<key>pronunciation</key>
+		<string>Parashuramaishna</string>
+		<key>definition</key>
+		<string>the sixth incarnation of Vishnu, the boy Rama with an ax whose penchant for fighting lead him to destroy the entire corrupt warrior caste; he consequently threw away his ax and devoted his life to paying penance for his violent actions</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Peacock feather</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>emblem symbolic of Krishna’s all-attractive visage and status as prince among Vishnu’s avatars; also associated with love and desire in connection with the song of the peacock sounded during its mating season (monsoon season in India)</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Puja</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a Hindu religious ceremony; temple worship through which God is acknowledged as the source of all blessings</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Puranas</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>collections of stories about the Trimurti (Brahma, Vishnu, and Shiva) such as the Mahabharata and Ramayana</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Radha</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>most beloved gopi of Krishna, venerated as the symbol of divine longing, transcendent love, and pure bhakti</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rajput</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>literally “son of a king,” a patrilineal clan of India and parts of Pakistan that rose to power beginning in the ninth through eleventh centuries and were thought to be descendants of the ancient Hindu warrior class</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rajput painting</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a style of painting developed in the royal courts of Rajputana, India depicting the epics of the Hindu gods; Rajput paintings were treasured like precious jewelry and were often included in the dowries of the Rajput princesses</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rama</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the seventh incarnation of Vishnu who, with his consort Sita, epitomizes the virtues of loyalty, bravery, and the loftiest notions of what it means to be a great parent, spouse, and human being</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ramayana</string>
+		<key>pronunciation</key>
+		<string>rah-ma-YAH-nuh</string>
+		<key>definition</key>
+		<string>from the Mahabharata, the story of Rama, Vishnu’s seventh Avatar, and his band of devotees in their quest to rescue Rama’s wife, Sita, who had been abducted by the king of the demons</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rasa</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the real and present relationships with deity cultivated by devotees: friend, parent, servant, and/or lover; Krishna’s loving, playful nature is especially conducive to the cultivation of rasa</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Reincarnation</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a belief commonly shared in Hinduism that the soul (atman) experiences birth, death, and rebirth into new physical bodies; mortal life is the process by which layers of karma are removed and the soul becomes pure and eternal, liberated from attachments, released from the cycle of reincarnation, and united with God (moksha)</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sakhi</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a female attendant that plays the role of messenger, mediator, and peacemaker between Krishna and Radha when they experience conflict, particularly after a long periods of separation</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Samhadipada</string>
+		<key>pronunciation</key>
+		<string>sum-ha-di-POD-a</string>
+		<key>definition</key>
+		<string>the even-footed stance of Vishnu that symbolizes the balance and harmony that he exerts over the cosmos</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sanskrit</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the liturgical and philosophical language of Hinduism, Buddhism, and Jainism</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sarangi</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a bowed, string instrument of Hindu classical music, often performed by Krishna in an attempt to woo and please Radha, especially after lengthy periods of being separated</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Saraswati</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the primary consort of Brahma and goddess of the arts, knowledge, and nature who can often be seen wearing a white sari and seated on a white lotus blossom or swan, symbolic of her purity</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Shakti</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>divine feminine power or strength, personified by Devi, the great goddess</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Shesha</string>
+		<key>pronunciation</key>
+		<string>SHAY-sha</string>
+		<key>definition</key>
+		<string>an aspect of Vishnu in the form of a snake with five heads that accompanies Vishnu’s manifestations; a primordial entity that encompasses the universe and whose uncoiling activates Vishnu’s process of creation; considered a symbol of eternal cycles because of the snake’s ability to regenerate through the shedding of its skin</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Shiva</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>member of the Trimurti known as the Destroyer; an all-knowing yogi who meditates on the peaks of the Himalayas and appears in his non-representational form as a lingam, or sacred stone</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Silpin</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>an artist who creates the physical image of a god through prayer and meditation as a form of bhakti worship</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Trimurti</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the holy trinity of Hindu gods: Brahma, the Creator; Vishnu, the Preserver and Protector; and Shiva, the Destroyer or Transformer</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tulsi plant</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>an auspicious plant that especially pleases Vishnu and his avatar, Krishna; a holy basil that is believed to be endowed with a divine feminine force</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Upacaras</string>
+		<key>pronunciation</key>
+		<string>OO-pa-KAR-us</string>
+		<key>definition</key>
+		<string>offerings of devotees such as food, flowers, or honorific gestures deemed worthy of the deity—fanning with a peacock feather, for example</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Upanishads</string>
+		<key>pronunciation</key>
+		<string>oo-PON-ee-shods</string>
+		<key>definition</key>
+		<string>collection of Vedic texts that represent the core of Hindu philosophy concerning the nature of ultimate salvation (moksha)</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vaishnavas</string>
+		<key>pronunciation</key>
+		<string>va-EESH-na-vaz</string>
+		<key>definition</key>
+		<string>followers of Vishnu</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vamana</string>
+		<key>pronunciation</key>
+		<string>vuh-MUN-uh</string>
+		<key>definition</key>
+		<string>fifth incarnation of Vishnu, the dwarf who cunningly defeated the king of the demons, Bali, and subjected the demons to the underworld as their abode</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Varada gesture</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>God’s mudra (hand gesture) that represents the bestowal of a blessing, with the hand upside down and the palm facing outward</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Varaha</string>
+		<key>pronunciation</key>
+		<string>vuh-RAH-huh</string>
+		<key>definition</key>
+		<string>the third incarnation of Vishnu, the great boar who saved the earth goddess, Bhudevi, along with the earth itself, from an evil demon who had hidden them deep in the cosmic ocean of creation</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Varna</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the hierarchal caste system of Hinduism widely practiced in India and consisting of five main divisions with thousands of subdivisions: Brahmin—scholars, religious leaders—most distinguished; Kshatriya—warriors, rulers; Vaisya—merchants, petty landowners; Sudras—peasants, artisans; Pariahs—untouchables, lowest caste
+</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vedas</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>the most ancient sacred texts in Hinduism used for conducting religious rituals and prayers; written in Sanskrit, they consist of four parts: Rigveda, Yajurveda, Samaveda, and Atharvaveda</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Venugopala</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>depictions and narrative of Krishna as the fluting cowherd, traditionally in a jaunty stance with ankles crossed while playing the flute</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vidyadhara</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>celestial male knowledge bearers that often accompany deity, carry garlands of victory, and represent the bestowal of wisdom</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vishnu</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>member of the Trimurti; the Preserver of the universe often manifested in the form of ten incarnations who appear on earth during catastrophic times to save the world from destruction</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vishnupatta</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>a stone tablet devoted to Vishnu, used for personal worship</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vrindavan</string>
+		<key>pronunciation</key>
+		<string>VRIN-du-von</string>
+		<key>definition</key>
+		<string>a forest in northern India where Krishna lived and grazed his cows along with others of his village and caste</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Vyala</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>legendary, mythical goat-lions</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Yajnopavita cord</string>
+		<key>pronunciation</key>
+		<string>Yodge-no-pa-VEE-ta</string>
+		<key>definition</key>
+		<string>a sacred thread worn by most gods and goddesses that represents the endowment of spiritual knowledge; also used in male Hindu rites of passage to signal a boy’s entrance into a life of duty and devotion</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Yoga</string>
+		<key>pronunciation</key>
+		<string></string>
+		<key>definition</key>
+		<string>meaning “union,” a spiritual, mental, and physical discipline of calming the states of the mind to achieve unity with deity—more about awareness and communication than body shaping; typically three paths of yoga are considered the means to achieving release or liberation—the Path of Action (karma yoga), the Path of Devotion (bhakti), and the Path of Knowledge (jnana)</string>
 	</dict>
 </array>
 </plist>
