@@ -29,16 +29,20 @@ const int inset = 20;
 -(void)addCircles{
    
     _followBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_followBtn setImage:[UIImage imageNamed:@"Circle"] forState:UIControlStateNormal];
+    [_followBtn setImage:[UIImage imageNamed:@"ld_highlight_lg"] forState:UIControlStateNormal];
+    [_followBtn setImage:[UIImage imageNamed:@"ld_highlight_lg_on"] forState:UIControlStateHighlighted];
     [self addSubview:_followBtn];
     [self resetCirclePosForFrame:0];
 }
 
 - (void)resetCirclePosForFrame: (int)frame{
-    _btnOffset.x = -350 * cos(frame/8.0);
+    //5.8 is behind
+    //5.5 is ahead
+    _btnOffset.x = -312 * cos(frame/5.75) - 70;
+    _btnOffset.y = -30 * sin(frame/6.0);
     
     _height = 75;
-    _followBtn.frame = CGRectMake(self.frame.size.width/2 + _btnOffset.x, _height + _btnOffset.y, 100, 100);
+    _followBtn.frame = CGRectMake(self.frame.size.width/2 + _btnOffset.x, _height + _btnOffset.y, 145, 145);
 }
 
 - (void)setupAnimations
@@ -94,7 +98,6 @@ const int inset = 20;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    //If
     if( !self.isRadha ) return;
 
     _startingPt = [(UITouch*)[touches anyObject] locationInView:self];
