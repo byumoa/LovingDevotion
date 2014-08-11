@@ -16,6 +16,7 @@ const int inset = 20;
     int _currentIndex;
     int _startingIndex;
     UIButton* _followBtn;
+    UIButton* _blurredBtn;
     CGPoint _btnOffset;
     int _height;
 }
@@ -28,22 +29,56 @@ const int inset = 20;
 
 -(void)addCircles{
    
+    _blurredBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_blurredBtn setImage:[UIImage imageNamed:@"ld_highlight_lg_blur"] forState:UIControlStateNormal];
+    [_blurredBtn setImage:[UIImage imageNamed:@"ld_highlight_lg_blur_on"] forState:UIControlStateHighlighted];
+    [self insertSubview:_blurredBtn belowSubview:_followBtn];
+    
     _followBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_followBtn setImage:[UIImage imageNamed:@"ld_highlight_lg"] forState:UIControlStateNormal];
     [_followBtn setImage:[UIImage imageNamed:@"ld_highlight_lg_on"] forState:UIControlStateHighlighted];
     [self addSubview:_followBtn];
+    
     [self resetCirclePosForFrame:0];
 }
 
 - (void)resetCirclePosForFrame: (int)frame{
-    //5.8 is behind
-    //5.5 is ahead
+    
+    float alpha = 1;
+    switch (frame) {
+        case 7:
+            alpha = 0.66;
+            break;
+        case 8:
+            alpha = 0.33;
+            break;
+        case 9:
+        case 10:
+        case 11:
+        case 12:
+        case 13:
+            alpha = 0.0;
+            break;
+        case 14:
+            alpha = 0.33;
+            break;
+        case 15:
+            alpha = 0.66;
+            break;
+        default:
+            alpha = 1;
+            break;
+    }
+
+    _followBtn.alpha = alpha;
+    
     _btnOffset.x = -312 * cos(frame/5.75) - 70;
     _btnOffset.y = -30 * sin(frame/6.0);
     
     _height = 75;
     _followBtn.frame = CGRectMake(self.frame.size.width/2 + _btnOffset.x, _height + _btnOffset.y, 145, 145);
-}
+    _blurredBtn.frame = _followBtn.frame;
+    }
 
 - (void)setupAnimations
 {
@@ -113,9 +148,9 @@ const int inset = 20;
     while( _currentIndex < 0 ){
         _currentIndex += 35;
     }
-    [self resetCirclePosForFrame:_currentIndex];
     
     _currentIndex = _currentIndex % 35;
+    [self resetCirclePosForFrame:_currentIndex];
     [self setImage:[self.animationImages objectAtIndex:_currentIndex]];
     
 }
