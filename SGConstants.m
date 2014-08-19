@@ -29,11 +29,31 @@ NSString* const kfacebookURLFlute = @"http://on.fb.me/1mNINSp";
 const NSString* kfacebookURLRadha = @"http://on.fb.me/1t5keIR";
 const NSString* kfacebookURLVishnuAttendants = @"http://on.fb.me/1nDmNOF";
 
-const int kTotalPaintings = 3;
+const int kTotalPaintings = 23;
 NSString* const kPaintingNames[] = {
+    @"balakrishna_butterballs",
     @"fluting_krishna1",
+    @"krishna_butterballs",
+    @"krishna_radha",
     @"radha1",
+    @"nadu_gopala1",
+    @"temple_urn",
+    @"painting_devotee",
+    @"painting_flute",
+    @"painting_friend",
+    @"painting_garlands",
+    @"painting_instrument",
+    @"painting_radha",
+    @"male_torso",
+    @"shrine1",
+    @"shrine2",
+    @"vishnupatta",
     @"vishnu_attendants1",
+    @"vishnu_attendants2",
+    @"vishnu_attendants3",
+    @"vishnu_attendants4",
+    @"vishnu_varaha",
+    @"vishnu_mandala",
 };
 
 const int kTotalPaintingsBloch = 13;
