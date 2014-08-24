@@ -66,8 +66,6 @@
 		61735B39183233EE0000D837 /* SG_General_header_thanks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B33183233EE0000D837 /* SG_General_header_thanks@2x.png */; };
 		618607B81982AB4300A1EBD9 /* about_exhibition.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607B51982AB4300A1EBD9 /* about_exhibition.png */; };
 		618607B91982AB4300A1EBD9 /* bhakti.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607B71982AB4300A1EBD9 /* bhakti.png */; };
-		618607BC1982CD3E00A1EBD9 /* ld_home__layout_01_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607BA1982CD3E00A1EBD9 /* ld_home__layout_01_home.png */; };
-		618607BD1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png in Resources */ = {isa = PBXBuildFile; fileRef = 618607BB1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png */; };
 		618626F419880B98004F7CE7 /* LDTurnAroundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 618626F319880B98004F7CE7 /* LDTurnAroundImageView.m */; };
 		618628E2184E882C00060319 /* SGTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618628E1184E882C00060319 /* SGTwitterViewController.m */; };
 		618645A7181AD11E00195384 /* SGHighlightsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618645A6181AD11E00195384 /* SGHighlightsViewController.m */; };
@@ -409,8 +407,6 @@
 		61735B33183233EE0000D837 /* SG_General_header_thanks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SG_General_header_thanks@2x.png"; sourceTree = "<group>"; };
 		618607B51982AB4300A1EBD9 /* about_exhibition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_exhibition.png; sourceTree = "<group>"; };
 		618607B71982AB4300A1EBD9 /* bhakti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bhakti.png; sourceTree = "<group>"; };
-		618607BA1982CD3E00A1EBD9 /* ld_home__layout_01_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_home__layout_01_home.png; sourceTree = "<group>"; };
-		618607BB1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_home__layout_02_donors.png; sourceTree = "<group>"; };
 		618626F219880B98004F7CE7 /* LDTurnAroundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTurnAroundImageView.h; sourceTree = "<group>"; };
 		618626F319880B98004F7CE7 /* LDTurnAroundImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTurnAroundImageView.m; sourceTree = "<group>"; };
 		618628E0184E882C00060319 /* SGTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTwitterViewController.h; sourceTree = "<group>"; };
@@ -1029,8 +1025,6 @@
 				61C9E3F119A3840B00293264 /* Thumbnails */,
 				61AB061D1998F49D00CC4449 /* Glossary */,
 				8A955EF9198B6A7F00478CC5 /* highlights */,
-				618607BA1982CD3E00A1EBD9 /* ld_home__layout_01_home.png */,
-				618607BB1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png */,
 				618607B41982AB4300A1EBD9 /* about */,
 				618607B61982AB4300A1EBD9 /* learn_more */,
 				61E163441859B4AB0076F73A /* Headers */,
@@ -1490,7 +1484,6 @@
 				618607B91982AB4300A1EBD9 /* bhakti.png in Resources */,
 				618713C2182F10AA005BC973 /* SG_General_Module_OverlayHalf_Bloch@2x.png in Resources */,
 				61CD524C180C242500D28921 /* SG_General_ModuleButtonBar@2x.png in Resources */,
-				618607BC1982CD3E00A1EBD9 /* ld_home__layout_01_home.png in Resources */,
 				61C9E44C19A3840B00293264 /* thumbnail9.png in Resources */,
 				8A955F11198B6A7F00478CC5 /* ld_highlight_sm_blur@2x.png in Resources */,
 				61E5430B1832B1A3001ECC04 /* SG_General_painting-castleBtn-Bloch-on.png in Resources */,
@@ -1645,7 +1638,6 @@
 				61C9E43C19A3840B00293264 /* thumbnail22@2x.png in Resources */,
 				61CD51E0180C242500D28921 /* sg_home_bg-home@2x.png in Resources */,
 				61E5430E1832B1A3001ECC04 /* SG_General_painting-castleBtn-Bloch@2x.png in Resources */,
-				618607BD1982CD3E00A1EBD9 /* ld_home__layout_02_donors.png in Resources */,
 				61CD5236180C242500D28921 /* SG_General_Music_PlayPause@2x.png in Resources */,
 				614E3CA0180DF631002E875B /* speaker_btns__narration_btn.png in Resources */,
 				61CD5213180C242500D28921 /* sg_home_meetartistsbtn@2x.png in Resources */,
