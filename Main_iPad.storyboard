@@ -434,15 +434,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home.png" id="wD5-xQ-xt5">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_learn_flatMenu.png" id="wD5-xQ-xt5">
                                 <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bCG-he-jFX">
-                                <rect key="frame" x="254" y="293" width="259" height="89"/>
+                                <rect key="frame" x="158" y="207" width="451" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <state key="normal" title="India">
+                                <state key="normal">
                                     <color key="titleColor" red="0.92885737302607674" green="0.68410824450251273" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -451,10 +451,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dxK-L2-6va">
-                                <rect key="frame" x="217" y="390" width="333" height="108"/>
+                                <rect key="frame" x="158" y="361" width="451" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <state key="normal" title="Hinduism">
+                                <state key="normal">
                                     <color key="titleColor" red="0.92885737302607674" green="0.68410824450251273" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -463,10 +463,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5uc-N7-wEc">
-                                <rect key="frame" x="272" y="506" width="223" height="108"/>
+                                <rect key="frame" x="158" y="480" width="451" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <state key="normal" title="Bhakti">
+                                <state key="normal">
                                     <color key="titleColor" red="0.92885737302607674" green="0.68410824450251273" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -475,15 +475,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bCg-99-Cfh">
-                                <rect key="frame" x="171" y="622" width="426" height="108"/>
+                                <rect key="frame" x="158" y="602" width="451" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <state key="normal" title="BYU &amp; India">
+                                <state key="normal">
                                     <color key="titleColor" red="0.92885737302607674" green="0.68410824450251273" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="OFX-6O-8R9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RF1-Dg-S2M">
+                                <rect key="frame" x="158" y="721" width="451" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.92885737300000004" green="0.68410824449999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="4DL-7S-TBK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -503,15 +515,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home.png" id="A5s-dC-9AP">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_about_flatMenu.png" id="A5s-dC-9AP">
                                 <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3vO-VV-e0Y">
-                                <rect key="frame" x="255" y="342" width="259" height="108"/>
+                                <rect key="frame" x="139" y="399" width="491" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <state key="normal" title="Story">
+                                <state key="normal">
                                     <color key="titleColor" red="0.92885737300000004" green="0.68410824449999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -520,10 +532,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C1d-Jp-eb9">
-                                <rect key="frame" x="255" y="458" width="259" height="108"/>
+                                <rect key="frame" x="139" y="232" width="491" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <state key="normal" title="MOA">
+                                <state key="normal">
                                     <color key="titleColor" red="0.92885737300000004" green="0.68410824449999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -532,15 +544,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IP7-xe-zIP">
-                                <rect key="frame" x="255" y="574" width="259" height="108"/>
+                                <rect key="frame" x="139" y="574" width="491" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <state key="normal" title="Bios">
+                                <state key="normal">
                                     <color key="titleColor" red="0.92885737300000004" green="0.68410824449999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="XP2-Ej-3cB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="M4j-JR-Adm">
+                                <rect key="frame" x="139" y="690" width="491" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.92885737300000004" green="0.68410824449999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="406-CU-Hd7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1435,6 +1459,55 @@
             </objects>
             <point key="canvasLocation" x="3606" y="1887"/>
         </scene>
+        <!--Donors View Controller-->
+        <scene sceneID="tOk-GY-iAz">
+            <objects>
+                <viewController restorationIdentifier="donors" storyboardIdentifier="donors" id="iep-Xz-pz9" customClass="DonorsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwr-76-PAb">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_donors.png" id="sEy-UT-gbz">
+                                <rect key="frame" x="-18" y="0.0" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8iF-Rq-D7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3734" y="2017"/>
+        </scene>
+        <!--India View Controller-->
+        <scene sceneID="eaL-GF-hcW">
+            <objects>
+                <viewController restorationIdentifier="india" storyboardIdentifier="india" id="lj8-RC-Mzg" customClass="IndiaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ng-Qv-oE4">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" id="qZT-mC-yvT">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_india.png" id="UJj-aD-yyJ">
+                                        <rect key="frame" x="-18" y="0.0" width="804" height="1458"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="qZT-mC-yvT" id="D7z-sD-ufn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdc-rO-lmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3995" y="2129"/>
+        </scene>
         <!--Glossary View Controller Table View Controller-->
         <scene sceneID="bGU-qm-617">
             <objects>
@@ -1578,11 +1651,15 @@
         <image name="about_exhibition.png" width="804" height="1060"/>
         <image name="childrens_bloch_prompt.png" width="768" height="48"/>
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
+        <image name="ld_about_flatMenu.png" width="768" height="1024"/>
         <image name="ld_bhakti.png" width="804" height="1725"/>
         <image name="ld_bios.png" width="804" height="2685"/>
         <image name="ld_byu.png" width="804" height="1060"/>
+        <image name="ld_donors.png" width="804" height="1060"/>
         <image name="ld_hinduism.png" width="804" height="2990"/>
         <image name="ld_home_home_title.png" width="550" height="450"/>
+        <image name="ld_india.png" width="804" height="1458"/>
+        <image name="ld_learn_flatMenu.png" width="768" height="1024"/>
         <image name="ld_map.png" width="804" height="1060"/>
         <image name="ld_moa.png" width="804" height="3912"/>
         <image name="sg_general_Share_signout.png" width="244" height="41"/>

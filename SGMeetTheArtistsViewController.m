@@ -32,7 +32,7 @@ typedef enum
     
     switch (sender.tag) {
         case 1:
-            toControllerIDStr = @"map";
+            toControllerIDStr = @"india";
             break;
         case 2:
             toControllerIDStr = @"hinduism";
@@ -43,7 +43,9 @@ typedef enum
         case 4:
             toControllerIDStr = @"byu&india";
             break;
-            
+        case 5:
+            toControllerIDStr = @"map";
+            break;
         default:
             break;
     }

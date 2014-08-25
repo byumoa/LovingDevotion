@@ -37,6 +37,9 @@ const int kNavigationReservations = 456;
         case 3:
             toControllerIDStr = @"bios";
             break;
+        case 4:
+            toControllerIDStr = @"donors";
+            break;
             
         default:
             break;

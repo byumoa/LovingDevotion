@@ -79,6 +79,10 @@
 		6167207B19AB74E900D238D8 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167207A19AB74E900D238D8 /* StoryViewController.m */; };
 		6167207E19AB74FA00D238D8 /* MoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167207D19AB74FA00D238D8 /* MoaViewController.m */; };
 		6167208119AB750F00D238D8 /* BiosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167208019AB750F00D238D8 /* BiosViewController.m */; };
+		6167208419AB817A00D238D8 /* ld_about_flatMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6167208219AB817A00D238D8 /* ld_about_flatMenu.png */; };
+		6167208519AB817A00D238D8 /* ld_learn_flatMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6167208319AB817A00D238D8 /* ld_learn_flatMenu.png */; };
+		6167208819AB84B900D238D8 /* DonorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167208719AB84B900D238D8 /* DonorsViewController.m */; };
+		6167208B19AB84C700D238D8 /* IndiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167208A19AB84C700D238D8 /* IndiaViewController.m */; };
 		61735B2A183233D90000D837 /* SG_General_window_closeBtn-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B26183233D90000D837 /* SG_General_window_closeBtn-on.png */; };
 		61735B2B183233D90000D837 /* SG_General_window_closeBtn-on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B27183233D90000D837 /* SG_General_window_closeBtn-on@2x.png */; };
 		61735B2C183233D90000D837 /* SG_General_window_closeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B28183233D90000D837 /* SG_General_window_closeBtn.png */; };
@@ -452,6 +456,12 @@
 		6167207D19AB74FA00D238D8 /* MoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoaViewController.m; sourceTree = "<group>"; };
 		6167207F19AB750F00D238D8 /* BiosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiosViewController.h; sourceTree = "<group>"; };
 		6167208019AB750F00D238D8 /* BiosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiosViewController.m; sourceTree = "<group>"; };
+		6167208219AB817A00D238D8 /* ld_about_flatMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_about_flatMenu.png; sourceTree = "<group>"; };
+		6167208319AB817A00D238D8 /* ld_learn_flatMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_learn_flatMenu.png; sourceTree = "<group>"; };
+		6167208619AB84B900D238D8 /* DonorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonorsViewController.h; sourceTree = "<group>"; };
+		6167208719AB84B900D238D8 /* DonorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonorsViewController.m; sourceTree = "<group>"; };
+		6167208919AB84C700D238D8 /* IndiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndiaViewController.h; sourceTree = "<group>"; };
+		6167208A19AB84C700D238D8 /* IndiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndiaViewController.m; sourceTree = "<group>"; };
 		61735B26183233D90000D837 /* SG_General_window_closeBtn-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SG_General_window_closeBtn-on.png"; sourceTree = "<group>"; };
 		61735B27183233D90000D837 /* SG_General_window_closeBtn-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SG_General_window_closeBtn-on@2x.png"; sourceTree = "<group>"; };
 		61735B28183233D90000D837 /* SG_General_window_closeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SG_General_window_closeBtn.png; sourceTree = "<group>"; };
@@ -889,6 +899,10 @@
 				6167207D19AB74FA00D238D8 /* MoaViewController.m */,
 				6167207F19AB750F00D238D8 /* BiosViewController.h */,
 				6167208019AB750F00D238D8 /* BiosViewController.m */,
+				6167208619AB84B900D238D8 /* DonorsViewController.h */,
+				6167208719AB84B900D238D8 /* DonorsViewController.m */,
+				6167208919AB84C700D238D8 /* IndiaViewController.h */,
+				6167208A19AB84C700D238D8 /* IndiaViewController.m */,
 			);
 			name = SacredGifts;
 			sourceTree = "<group>";
@@ -983,6 +997,8 @@
 		6167204819AB617700D238D8 /* ld_learn_about */ = {
 			isa = PBXGroup;
 			children = (
+				6167208219AB817A00D238D8 /* ld_about_flatMenu.png */,
+				6167208319AB817A00D238D8 /* ld_learn_flatMenu.png */,
 				6167204919AB617700D238D8 /* ld_about.png */,
 				6167204A19AB617700D238D8 /* ld_about@2x.png */,
 				6167204B19AB617700D238D8 /* ld_bhakti.png */,
@@ -1600,6 +1616,7 @@
 				61E5F0B6184620AD003959C7 /* sg_general_Share_signout.png in Resources */,
 				6117E62D184D3D6E00A50719 /* SG_Social_Module_Overlay_Schwartz.png in Resources */,
 				61CD5212180C242500D28921 /* sg_home_meetartistsbtn.png in Resources */,
+				6167208519AB817A00D238D8 /* ld_learn_flatMenu.png in Resources */,
 				6117E629184D3D6E00A50719 /* SG_Social_Module_Overlay_Bloch.png in Resources */,
 				8A955F1C198CBBCC00478CC5 /* ld_highlight_md_blur_on.png in Resources */,
 				613292E218325C9E00551F09 /* SG_General_painting-castleBtn-on.png in Resources */,
@@ -1731,6 +1748,7 @@
 				61CD528D180C242500D28921 /* SG_General_Share_fb-on@2x.png in Resources */,
 				61CD51DD180C242500D28921 /* sg_home_bg-findpainting@2x.png in Resources */,
 				8A955F0A198B6A7F00478CC5 /* ld_highlight_md.png in Resources */,
+				6167208419AB817A00D238D8 /* ld_about_flatMenu.png in Resources */,
 				6167206919AB617700D238D8 /* ld_map.png in Resources */,
 				61CD5266180C242500D28921 /* SG_General_Painting_GiftsBtn@2x.png in Resources */,
 				618713C5182F10AA005BC973 /* SG_General_Module_OverlayHalf_Schwartz.png in Resources */,
@@ -1804,6 +1822,7 @@
 				618B35D21818083900EEC12E /* SGAudioViewController.m in Sources */,
 				15A1585D135C9CF800C6B482 /* main.m in Sources */,
 				618B35CF1817FF3100EEC12E /* SGTextOverlayViewController.m in Sources */,
+				6167208B19AB84C700D238D8 /* IndiaViewController.m in Sources */,
 				6167206F19AB67F300D238D8 /* IndiaMapViewController.m in Sources */,
 				61865DCC180F515E004CE494 /* SGNarrationManager.m in Sources */,
 				61CD5319180C250800D28921 /* SGPaintingImageView.m in Sources */,
@@ -1835,6 +1854,7 @@
 				61C8C13F1851A6A900003608 /* SGTimelineEntry.m in Sources */,
 				61CD534A180C256700D28921 /* SGHofmanViewController.m in Sources */,
 				6117E632184D694300A50719 /* SGIntroMovieViewController.m in Sources */,
+				6167208819AB84B900D238D8 /* DonorsViewController.m in Sources */,
 				6167207E19AB74FA00D238D8 /* MoaViewController.m in Sources */,
 				61AB06231999035100CC4449 /* GlossaryViewControllerTableViewController.m in Sources */,
 				61D606841844BA510090C77A /* SGDonateViewController.m in Sources */,
