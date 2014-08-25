@@ -72,6 +72,13 @@
 		6167206A19AB617700D238D8 /* ld_map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6167205819AB617700D238D8 /* ld_map@2x.png */; };
 		6167206B19AB617700D238D8 /* ld_moa.png in Resources */ = {isa = PBXBuildFile; fileRef = 6167205919AB617700D238D8 /* ld_moa.png */; };
 		6167206C19AB617700D238D8 /* ld_moa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6167205A19AB617700D238D8 /* ld_moa@2x.png */; };
+		6167206F19AB67F300D238D8 /* IndiaMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167206E19AB67F300D238D8 /* IndiaMapViewController.m */; };
+		6167207219AB6AC000D238D8 /* HinduismViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167207119AB6AC000D238D8 /* HinduismViewController.m */; };
+		6167207519AB6AD000D238D8 /* BhaktiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167207419AB6AD000D238D8 /* BhaktiViewController.m */; };
+		6167207819AB6AF000D238D8 /* ByuAndIndiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167207719AB6AF000D238D8 /* ByuAndIndiaViewController.m */; };
+		6167207B19AB74E900D238D8 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167207A19AB74E900D238D8 /* StoryViewController.m */; };
+		6167207E19AB74FA00D238D8 /* MoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167207D19AB74FA00D238D8 /* MoaViewController.m */; };
+		6167208119AB750F00D238D8 /* BiosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167208019AB750F00D238D8 /* BiosViewController.m */; };
 		61735B2A183233D90000D837 /* SG_General_window_closeBtn-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B26183233D90000D837 /* SG_General_window_closeBtn-on.png */; };
 		61735B2B183233D90000D837 /* SG_General_window_closeBtn-on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B27183233D90000D837 /* SG_General_window_closeBtn-on@2x.png */; };
 		61735B2C183233D90000D837 /* SG_General_window_closeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 61735B28183233D90000D837 /* SG_General_window_closeBtn.png */; };
@@ -431,6 +438,20 @@
 		6167205819AB617700D238D8 /* ld_map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_map@2x.png"; sourceTree = "<group>"; };
 		6167205919AB617700D238D8 /* ld_moa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_moa.png; sourceTree = "<group>"; };
 		6167205A19AB617700D238D8 /* ld_moa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_moa@2x.png"; sourceTree = "<group>"; };
+		6167206D19AB67F300D238D8 /* IndiaMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndiaMapViewController.h; sourceTree = "<group>"; };
+		6167206E19AB67F300D238D8 /* IndiaMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndiaMapViewController.m; sourceTree = "<group>"; };
+		6167207019AB6AC000D238D8 /* HinduismViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HinduismViewController.h; sourceTree = "<group>"; };
+		6167207119AB6AC000D238D8 /* HinduismViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HinduismViewController.m; sourceTree = "<group>"; };
+		6167207319AB6AD000D238D8 /* BhaktiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BhaktiViewController.h; sourceTree = "<group>"; };
+		6167207419AB6AD000D238D8 /* BhaktiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BhaktiViewController.m; sourceTree = "<group>"; };
+		6167207619AB6AF000D238D8 /* ByuAndIndiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByuAndIndiaViewController.h; sourceTree = "<group>"; };
+		6167207719AB6AF000D238D8 /* ByuAndIndiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByuAndIndiaViewController.m; sourceTree = "<group>"; };
+		6167207919AB74E900D238D8 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		6167207A19AB74E900D238D8 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		6167207C19AB74FA00D238D8 /* MoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoaViewController.h; sourceTree = "<group>"; };
+		6167207D19AB74FA00D238D8 /* MoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoaViewController.m; sourceTree = "<group>"; };
+		6167207F19AB750F00D238D8 /* BiosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiosViewController.h; sourceTree = "<group>"; };
+		6167208019AB750F00D238D8 /* BiosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiosViewController.m; sourceTree = "<group>"; };
 		61735B26183233D90000D837 /* SG_General_window_closeBtn-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SG_General_window_closeBtn-on.png"; sourceTree = "<group>"; };
 		61735B27183233D90000D837 /* SG_General_window_closeBtn-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SG_General_window_closeBtn-on@2x.png"; sourceTree = "<group>"; };
 		61735B28183233D90000D837 /* SG_General_window_closeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SG_General_window_closeBtn.png; sourceTree = "<group>"; };
@@ -854,6 +875,20 @@
 				6132D57B1861006F00D764FA /* SGPaintingImageViewDelegate.h */,
 				618626F219880B98004F7CE7 /* LDTurnAroundImageView.h */,
 				618626F319880B98004F7CE7 /* LDTurnAroundImageView.m */,
+				6167206D19AB67F300D238D8 /* IndiaMapViewController.h */,
+				6167206E19AB67F300D238D8 /* IndiaMapViewController.m */,
+				6167207019AB6AC000D238D8 /* HinduismViewController.h */,
+				6167207119AB6AC000D238D8 /* HinduismViewController.m */,
+				6167207319AB6AD000D238D8 /* BhaktiViewController.h */,
+				6167207419AB6AD000D238D8 /* BhaktiViewController.m */,
+				6167207619AB6AF000D238D8 /* ByuAndIndiaViewController.h */,
+				6167207719AB6AF000D238D8 /* ByuAndIndiaViewController.m */,
+				6167207919AB74E900D238D8 /* StoryViewController.h */,
+				6167207A19AB74E900D238D8 /* StoryViewController.m */,
+				6167207C19AB74FA00D238D8 /* MoaViewController.h */,
+				6167207D19AB74FA00D238D8 /* MoaViewController.m */,
+				6167207F19AB750F00D238D8 /* BiosViewController.h */,
+				6167208019AB750F00D238D8 /* BiosViewController.m */,
 			);
 			name = SacredGifts;
 			sourceTree = "<group>";
@@ -1769,6 +1804,7 @@
 				618B35D21818083900EEC12E /* SGAudioViewController.m in Sources */,
 				15A1585D135C9CF800C6B482 /* main.m in Sources */,
 				618B35CF1817FF3100EEC12E /* SGTextOverlayViewController.m in Sources */,
+				6167206F19AB67F300D238D8 /* IndiaMapViewController.m in Sources */,
 				61865DCC180F515E004CE494 /* SGNarrationManager.m in Sources */,
 				61CD5319180C250800D28921 /* SGPaintingImageView.m in Sources */,
 				61CD5349180C256700D28921 /* SGSchwartzViewController.m in Sources */,
@@ -1778,9 +1814,11 @@
 				61CD5343180C256700D28921 /* SGMeetTheArtistsViewController.m in Sources */,
 				61CD5340180C256700D28921 /* SGViewController.m in Sources */,
 				61CD5309180C24FD00D28921 /* SGOverlayViewController.m in Sources */,
+				6167208119AB750F00D238D8 /* BiosViewController.m in Sources */,
 				61CD530B180C24FD00D28921 /* SGPersepectivesOverlayViewController.m in Sources */,
 				618628E2184E882C00060319 /* SGTwitterViewController.m in Sources */,
 				61CD5305180C24FD00D28921 /* SGFingerPaintView.m in Sources */,
+				6167207B19AB74E900D238D8 /* StoryViewController.m in Sources */,
 				61CD5307180C24FD00D28921 /* SGMusicOverlayViewController.m in Sources */,
 				610554F6182A782C0030CCC3 /* SGButtonOnPaintingViewController.m in Sources */,
 				618626F419880B98004F7CE7 /* LDTurnAroundImageView.m in Sources */,
@@ -1791,16 +1829,20 @@
 				61A668F5182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m in Sources */,
 				61CD5345180C256700D28921 /* SGBlurManager.m in Sources */,
 				61CD5306180C24FD00D28921 /* SGGiftOverlayViewController.m in Sources */,
+				6167207219AB6AC000D238D8 /* HinduismViewController.m in Sources */,
+				6167207519AB6AD000D238D8 /* BhaktiViewController.m in Sources */,
 				61CD5348180C256700D28921 /* SGBlochViewController.m in Sources */,
 				61C8C13F1851A6A900003608 /* SGTimelineEntry.m in Sources */,
 				61CD534A180C256700D28921 /* SGHofmanViewController.m in Sources */,
 				6117E632184D694300A50719 /* SGIntroMovieViewController.m in Sources */,
+				6167207E19AB74FA00D238D8 /* MoaViewController.m in Sources */,
 				61AB06231999035100CC4449 /* GlossaryViewControllerTableViewController.m in Sources */,
 				61D606841844BA510090C77A /* SGDonateViewController.m in Sources */,
 				61CD5342180C256700D28921 /* SGHomeViewController.m in Sources */,
 				61CD5325180C253400D28921 /* SGContentViewController.m in Sources */,
 				61CD531B180C250800D28921 /* SGVideoOverlayViewController.m in Sources */,
 				61CD5344180C256700D28921 /* SGAboutTheExhibitionViewController.m in Sources */,
+				6167207819AB6AF000D238D8 /* ByuAndIndiaViewController.m in Sources */,
 				616330A019671DEA0090E5FE /* SGEAGLView.m in Sources */,
 				610554F3182A60CD0030CCC3 /* SGMediaSelectionViewController.m in Sources */,
 				61CD5326180C253400D28921 /* SGContainerViewController.m in Sources */,
