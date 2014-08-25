@@ -157,119 +157,6 @@
             </objects>
             <point key="canvasLocation" x="46" y="-195"/>
         </scene>
-        <!--Hofman View Controller-->
-        <scene sceneID="Vj2-LF-bd6">
-            <objects>
-                <viewController restorationIdentifier="hofman" storyboardIdentifier="hofman" wantsFullScreenLayout="YES" id="jBG-xU-cwl" customClass="SGHofmanViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xia-wn-nqc">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home_blur.png" id="mCH-LF-c65">
-                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="zcQ-lH-V0e">
-                                <rect key="frame" x="0.0" y="62" width="768" height="962"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="artists_pages_hofmann_overlay.png" id="IcZ-cK-MCb">
-                                        <rect key="frame" x="0.0" y="96" width="769" height="1133"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ckk-2L-XRd">
-                                        <rect key="frame" x="668" y="126" width="71" height="71"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="speaker_btns__narration_btn.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="speaker_btns__narration_btn-on.png"/>
-                                        <state key="highlighted" image="speaker_btns__narration_btn-on.png"/>
-                                        <connections>
-                                            <action selector="pressedNarration:" destination="jBG-xU-cwl" eventType="touchUpInside" id="0TR-6r-mZh"/>
-                                        </connections>
-                                    </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="paintings_text.png" id="5go-9w-FRe">
-                                        <rect key="frame" x="36" y="1239" width="101" height="41"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" id="hTd-IF-HXc" userLabel="Hofmanns">
-                                        <rect key="frame" x="36" y="1278" width="712" height="328"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rnv-27-bXA">
-                                                <rect key="frame" x="0.0" y="0.0" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_capture.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_capture-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="jBG-xU-cwl" eventType="touchUpInside" id="Vjm-jH-VKk"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zra-ZP-XZ4">
-                                                <rect key="frame" x="366" y="0.0" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_gethsemane.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_gethsemane-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="jBG-xU-cwl" eventType="touchUpInside" id="axg-V2-cCk"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8nb-ja-917">
-                                                <rect key="frame" x="244" y="0.0" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_ruler.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_ruler-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="jBG-xU-cwl" eventType="touchUpInside" id="27f-ce-759"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bFt-3g-oUd">
-                                                <rect key="frame" x="488" y="0.0" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_savior.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_savior-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="jBG-xU-cwl" eventType="touchUpInside" id="kSc-yl-d0n"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="onh-qe-QKP">
-                                                <rect key="frame" x="122" y="0.0" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_temple.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_temple-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="jBG-xU-cwl" eventType="touchUpInside" id="aqU-3o-MO6"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="background" destination="mCH-LF-c65" id="I6c-zv-bJq"/>
-                        <outlet property="scrollView" destination="zcQ-lH-V0e" id="Zve-3F-Owc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n1W-Xj-Ag3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="95" y="-136"/>
-        </scene>
         <!--Painting Container View Controller-->
         <scene sceneID="8OC-Kg-Gyd">
             <objects>
@@ -537,7 +424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPG-bt-khs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1242" y="-86"/>
+            <point key="canvasLocation" x="1159" y="-82"/>
         </scene>
         <!--Meet The Artists View Controller-->
         <scene sceneID="WzT-8Z-BUq">
@@ -547,32 +434,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bhakti.png" id="Gf6-Rc-1k1">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home.png" id="wD5-xQ-xt5">
                                 <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fgT-Ic-Evq">
-                                <rect key="frame" x="614" y="974" width="84" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bCG-he-jFX">
+                                <rect key="frame" x="254" y="293" width="259" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Glossary">
-                                    <color key="titleColor" red="0.99215692281723022" green="0.91764712333679199" blue="0.80784320831298828" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="India">
+                                    <color key="titleColor" red="0.92885737302607674" green="0.68410824450251273" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CmV-5q-dg0" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="pAy-MY-5Uu"/>
+                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="s3D-Y7-cFI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dxK-L2-6va">
+                                <rect key="frame" x="217" y="390" width="333" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="Hinduism">
+                                    <color key="titleColor" red="0.92885737302607674" green="0.68410824450251273" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="a7r-4a-cBi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5uc-N7-wEc">
+                                <rect key="frame" x="272" y="506" width="223" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="Bhakti">
+                                    <color key="titleColor" red="0.92885737302607674" green="0.68410824450251273" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="g3g-y2-dtZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bCg-99-Cfh">
+                                <rect key="frame" x="171" y="622" width="426" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="BYU &amp; India">
+                                    <color key="titleColor" red="0.92885737302607674" green="0.68410824450251273" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="x7a-eH-1TN" eventType="touchUpInside" id="OFX-6O-8R9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="background" destination="Gf6-Rc-1k1" id="y0j-1g-Is8"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vat-ZX-hpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1262" y="5"/>
+            <point key="canvasLocation" x="1262" y="4"/>
         </scene>
         <!--About The Exhibition View Controller-->
         <scene sceneID="yuB-Df-6F5">
@@ -582,21 +503,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="about_exhibition.png" id="1Ue-Ca-a7e">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home.png" id="A5s-dC-9AP">
                                 <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3vO-VV-e0Y">
+                                <rect key="frame" x="255" y="342" width="259" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="Story">
+                                    <color key="titleColor" red="0.92885737300000004" green="0.68410824449999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="Kay-hd-Jt6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C1d-Jp-eb9">
+                                <rect key="frame" x="255" y="458" width="259" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="MOA">
+                                    <color key="titleColor" red="0.92885737300000004" green="0.68410824449999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="Pgj-Tp-9O5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IP7-xe-zIP">
+                                <rect key="frame" x="255" y="574" width="259" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="Bios">
+                                    <color key="titleColor" red="0.92885737300000004" green="0.68410824449999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBtn:" destination="idu-wO-YB6" eventType="touchUpInside" id="XP2-Ej-3cB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="background" destination="1Ue-Ca-a7e" id="sUB-LN-ZoD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upi-qV-PHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1398" y="48"/>
+            <point key="canvasLocation" x="1402" y="68"/>
         </scene>
         <!--Painting View Controller-->
         <scene sceneID="BGv-Jj-T43">
@@ -1121,287 +1075,6 @@
             </objects>
             <point key="canvasLocation" x="2631" y="420"/>
         </scene>
-        <!--Schwartz View Controller-->
-        <scene sceneID="PKt-4M-xKP">
-            <objects>
-                <viewController restorationIdentifier="schwartz" storyboardIdentifier="schwartz" wantsFullScreenLayout="YES" id="vkt-vk-LdG" customClass="SGSchwartzViewController" sceneMemberID="viewController">
-                    <view key="view" tag="1" contentMode="scaleToFill" id="KB8-Rl-OOd">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home_blur.png" id="Ld5-MX-NYR">
-                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="Ekf-vs-Rsn">
-                                <rect key="frame" x="0.0" y="62" width="768" height="962"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="artists_pages_schwartz_overlay.png" id="7nQ-4B-Qa3">
-                                        <rect key="frame" x="0.0" y="96" width="768" height="1115"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d6d-Wx-beA">
-                                        <rect key="frame" x="668" y="126" width="71" height="71"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="speaker_btns__narration_btn.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="speaker_btns__narration_btn-on.png"/>
-                                        <state key="highlighted" image="speaker_btns__narration_btn-on.png"/>
-                                        <connections>
-                                            <action selector="pressedNarration:" destination="vkt-vk-LdG" eventType="touchUpInside" id="6Vy-ah-Cyx"/>
-                                        </connections>
-                                    </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="paintings_text.png" id="gRv-M4-hVO">
-                                        <rect key="frame" x="39" y="1220" width="101" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" id="kP7-fI-MZr" userLabel="Schwartzs">
-                                        <rect key="frame" x="39" y="1255" width="244" height="164"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="q0p-IR-86n">
-                                                <rect key="frame" x="0.0" y="0.0" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_garden.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_garden-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="vkt-vk-LdG" eventType="touchUpInside" id="mXx-Kf-giR"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lr6-qf-SlC">
-                                                <rect key="frame" x="121" y="0.0" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_aalborg.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_aalborg-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="vkt-vk-LdG" eventType="touchUpInside" id="Jh5-GX-dfj"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="background" destination="Ld5-MX-NYR" id="hMZ-Ye-Zhy"/>
-                        <outlet property="scrollView" destination="Ekf-vs-Rsn" id="7Xa-SQ-pGA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kA3-sm-dXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="150" y="-77"/>
-        </scene>
-        <!--Bloch View Controller-->
-        <scene sceneID="xxs-WI-hnk">
-            <objects>
-                <viewController restorationIdentifier="bloch" storyboardIdentifier="bloch" wantsFullScreenLayout="YES" id="kwW-sc-41B" customClass="SGBlochViewController" sceneMemberID="viewController">
-                    <view key="view" tag="2" contentMode="scaleToFill" id="YPJ-Jy-GnP">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_bg-home_blur.png" id="UIH-Jo-nG4">
-                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="ycS-7P-AwM">
-                                <rect key="frame" x="0.0" y="62" width="768" height="962"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="artists_pages_bloch_overlay.png" id="nYs-UR-Zbq">
-                                        <rect key="frame" x="0.0" y="96" width="768" height="1074"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h94-0a-9Ax">
-                                        <rect key="frame" x="668" y="126" width="71" height="71"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="speaker_btns__narration_btn.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="speaker_btns__narration_btn-on.png"/>
-                                        <state key="highlighted" image="speaker_btns__narration_btn-on.png"/>
-                                        <connections>
-                                            <action selector="pressedNarration:" destination="kwW-sc-41B" eventType="touchUpInside" id="hTf-Cw-yle"/>
-                                        </connections>
-                                    </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="paintings_text.png" id="Cwj-zO-f5Q">
-                                        <rect key="frame" x="33" y="1171" width="101" height="41"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" id="fmS-Dv-eTN" userLabel="Blochs">
-                                        <rect key="frame" x="32" y="1163" width="728" height="371"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4rE-gX-Tw0">
-                                                <rect key="frame" x="605" y="42" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_children.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_children-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="qGf-kX-RPn"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Ok-qq-YRa">
-                                                <rect key="frame" x="121" y="42" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_consolator.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_consolator-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="ZVT-MS-GEX"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VgE-n8-lBL">
-                                                <rect key="frame" x="242" y="42" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_emmaus.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_emmaus-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="1ek-Me-e1P"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CXk-sc-rL2">
-                                                <rect key="frame" x="0.0" y="42" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_mocking.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_mocking-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="8bZ-Di-r0a"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q5t-Dw-caX">
-                                                <rect key="frame" x="484" y="42" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_sermon.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_sermon-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="geL-zw-6yD"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I4s-0m-mxE">
-                                                <rect key="frame" x="363" y="42" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_shepherds.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_shepherds-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="w6h-BH-o1f"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Qt-oK-whw">
-                                                <rect key="frame" x="484" y="207" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_burial.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_burial-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="7mU-VP-upm"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="D4q-N1-Dgy">
-                                                <rect key="frame" x="121" y="207" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_cleansing.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_cleansing-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="W8g-cR-38X"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="frW-Ki-udA">
-                                                <rect key="frame" x="363" y="207" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_cross.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_cross-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="XMh-m9-qyX"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g7r-MV-q82">
-                                                <rect key="frame" x="0.0" y="207" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_healing.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_healing-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="6IJ-Th-cIn"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DD6-yI-1OJ">
-                                                <rect key="frame" x="605" y="207" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_resurrection.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_resurrection-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="SGa-to-iu1"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EKE-Qk-rvJ">
-                                                <rect key="frame" x="242" y="207" width="123" height="164"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="painting_thumb_denial.png">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <state key="highlighted" image="painting_thumb_denial-on.png"/>
-                                                <connections>
-                                                    <action selector="pressedPainting:" destination="kwW-sc-41B" eventType="touchUpInside" id="0zI-GI-y58"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="saU-vB-di2">
-                                        <rect key="frame" x="0.0" y="1109" width="319" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="SG_General_painting-castleBtn-Bloch.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted" image="SG_General_painting-castleBtn-Bloch-on.png"/>
-                                        <connections>
-                                            <action selector="pressedCastle:" destination="kwW-sc-41B" eventType="touchUpInside" id="OFz-S9-eHe"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="background" destination="UIH-Jo-nG4" id="K2e-gQ-axr"/>
-                        <outlet property="scrollView" destination="ycS-7P-AwM" id="vJ3-of-eUq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R5i-t3-lov" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="458" y="152"/>
-        </scene>
         <!--Parent View Controller-->
         <scene sceneID="9GC-qj-ULx">
             <objects>
@@ -1417,110 +1090,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faw-K1-Ad7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-449" y="1296"/>
-        </scene>
-        <!--Donate View Controller-->
-        <scene sceneID="xqe-Bd-oXr">
-            <objects>
-                <viewController restorationIdentifier="donate" storyboardIdentifier="donate" id="ftq-32-kEI" customClass="SGDonateViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="et8-1E-oh1">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sg_home_museumDonate.png" id="NmV-OO-r3T">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uN5-mX-3Jz">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchedAnywhere:" destination="ftq-32-kEI" eventType="touchUpInside" id="zor-NN-vOj"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q6L-Jk-mgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="234" y="1340"/>
-        </scene>
-        <!--Web View Controller-->
-        <scene sceneID="DFb-82-qrc">
-            <objects>
-                <viewController restorationIdentifier="web" storyboardIdentifier="web" id="KHn-YW-mRs" customClass="SGWebViewController" sceneMemberID="viewController">
-                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="Le8-43-FpC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="koA-RZ-kc3">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="867-Gq-8KU">
-                                        <rect key="frame" x="727" y="0.0" width="41" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="SG_General_Module_CloseBtn.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted" image="SG_General_Module_CloseBtn-on.png"/>
-                                        <connections>
-                                            <action selector="pressedClose:" destination="KHn-YW-mRs" eventType="touchUpInside" id="BQd-jc-c6N"/>
-                                        </connections>
-                                    </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SG_General_header_thanks.png" id="fRt-ig-Pzy">
-                                        <rect key="frame" x="284" y="0.0" width="200" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="vkD-Go-1QN">
-                                <rect key="frame" x="0.0" y="954" width="768" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Er9-Sb-VQb">
-                                        <rect key="frame" x="663" y="0.0" width="102" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="SG_General_window_closeBtn.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted" image="SG_General_window_closeBtn-on.png"/>
-                                        <connections>
-                                            <action selector="pressedClose:" destination="KHn-YW-mRs" eventType="touchUpInside" id="1YM-xg-SZa"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <webView contentMode="scaleToFill" id="06T-i5-Y6L">
-                                <rect key="frame" x="0.0" y="41" width="768" height="913"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="KHn-YW-mRs" id="wdD-9f-Zog"/>
-                                </connections>
-                            </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" id="f4q-ih-m0x">
-                                <rect key="frame" x="374" y="488" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="activityIndicator" destination="f4q-ih-m0x" id="9dh-ju-A1J"/>
-                        <outlet property="webHeaderImgView" destination="fRt-ig-Pzy" id="aXu-02-mer"/>
-                        <outlet property="webView" destination="06T-i5-Y6L" id="sVm-94-m22"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c5O-vc-nh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="858" y="1307"/>
         </scene>
         <!--Text Overlay View Controller-->
         <scene sceneID="QJq-bj-8aB">
@@ -1613,49 +1182,6 @@
             </objects>
             <point key="canvasLocation" x="2959" y="554"/>
         </scene>
-        <!--Story Of The Exhibition View Controller-->
-        <scene sceneID="44V-WG-Tw2">
-            <objects>
-                <viewController restorationIdentifier="SacredGifts StoryOfTheExhibition" storyboardIdentifier="SacredGifts StoryOfTheExhibition" wantsFullScreenLayout="YES" id="fQ9-Kj-Hgd" customClass="SGStoryOfTheExhibitionViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kja-Fb-G2H">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="sg_home_bg-home_blur.png" id="NSo-DL-M96">
-                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="5sz-nv-nkX">
-                                <rect key="frame" x="0.0" y="62" width="768" height="962"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="exhibition_story_overlay.png" id="2rL-33-6Wu">
-                                        <rect key="frame" x="0.0" y="96" width="768" height="921"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="exhibition_donors_overlay.png" id="2Tv-IO-Sb4">
-                                        <rect key="frame" x="0.0" y="1040" width="768" height="758"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="exhibition_credit_overlay.png" id="DnA-Ao-ipR">
-                                        <rect key="frame" x="0.0" y="1820" width="768" height="798"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                </subviews>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="background" destination="NSo-DL-M96" id="AC6-S7-bS5"/>
-                        <outlet property="scrollView" destination="5sz-nv-nkX" id="c6E-FP-vtQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b0k-7J-fNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="337" y="70"/>
-        </scene>
         <!--Facebook View Controller-->
         <scene sceneID="kaT-PN-j3K">
             <objects>
@@ -1724,104 +1250,190 @@
             </objects>
             <point key="canvasLocation" x="1300" y="1436"/>
         </scene>
-        <!--Intro Movie View Controller-->
-        <scene sceneID="N9H-xD-tbF">
+        <!--India Map View Controller-->
+        <scene sceneID="rbc-iS-6e9">
             <objects>
-                <viewController restorationIdentifier="SacredGifts IntroMovie" storyboardIdentifier="SacredGifts IntroMovie" id="CHv-eh-pmv" customClass="SGIntroMovieViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4Jf-jS-Szu">
+                <viewController restorationIdentifier="map" storyboardIdentifier="map" id="fL8-Dh-Niu" customClass="IndiaMapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eVr-ng-aTW">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_map.png" id="zaT-w7-oMf">
+                                <rect key="frame" x="0.0" y="0.0" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Urx-N6-ebt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2f-Pd-hjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2094" y="1436"/>
+            <point key="canvasLocation" x="2225" y="1060"/>
         </scene>
-        <!--Timeline View Controller-->
-        <scene sceneID="pXy-Li-dhJ">
+        <!--Bhakti View Controller-->
+        <scene sceneID="svI-fC-k6F">
             <objects>
-                <viewController restorationIdentifier="timeline" storyboardIdentifier="timeline" id="U9m-uu-YE8" customClass="SGTimelineViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pfV-tZ-p9A">
+                <viewController restorationIdentifier="bhakti" storyboardIdentifier="bhakti" id="Adk-pb-e6D" customClass="BhaktiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Utg-AC-Yjd">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="oRN-DB-yUV">
-                                <rect key="frame" x="0.0" y="-60" width="768" height="956"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" id="wRu-qv-C0f">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" image="timeline_assets_dates.png" id="9ZQ-JX-3Dd">
-                                        <rect key="frame" x="-400" y="481" width="6176" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_bhakti.png" id="hm6-3l-JwF">
+                                        <rect key="frame" x="-18" y="0.0" width="804" height="1725"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WKp-93-fwf">
-                                <rect key="frame" x="-16" y="954" width="148" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="timeline_assets_hofmannBtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="timeline_assets_hofmannBtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedTimelineToggle:" destination="U9m-uu-YE8" eventType="touchUpInside" id="Lro-vT-bwg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eIU-3e-u6r">
-                                <rect key="frame" x="140" y="954" width="129" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="timeline_assets_schwartzBtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="timeline_assets_schwartzBtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedTimelineToggle:" destination="U9m-uu-YE8" eventType="touchUpInside" id="hNA-Ca-kVi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VwU-O8-pND">
-                                <rect key="frame" x="277" y="954" width="97" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="timeline_assets_blochBtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="timeline_assets_blochBtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedTimelineToggle:" destination="U9m-uu-YE8" eventType="touchUpInside" id="eGR-ML-wKb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rfN-ak-G7Y">
-                                <rect key="frame" x="382" y="954" width="162" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="timeline_assets_worldBtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="timeline_assets_worldBtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedTimelineToggle:" destination="U9m-uu-YE8" eventType="touchUpInside" id="pCU-H0-6hv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C5O-fh-pWR">
-                                <rect key="frame" x="552" y="954" width="232" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="timeline_assets_churchBtn.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="timeline_assets_churchBtn-on.png"/>
-                                <connections>
-                                    <action selector="pressedTimelineToggle:" destination="U9m-uu-YE8" eventType="touchUpInside" id="k9Z-BN-n2d"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="datesImageView" destination="9ZQ-JX-3Dd" id="gwL-WA-mwO"/>
-                        <outlet property="scrollView" destination="oRN-DB-yUV" id="Meb-qF-ceL"/>
+                        <outlet property="scrollView" destination="wRu-qv-C0f" id="gql-aF-Nml"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jTp-Ec-qaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMA-wb-s2H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2924" y="1436"/>
+            <point key="canvasLocation" x="2501" y="1213"/>
+        </scene>
+        <!--Byu And India View Controller-->
+        <scene sceneID="ej5-bY-cN7">
+            <objects>
+                <viewController restorationIdentifier="byu&amp;india" storyboardIdentifier="byu&amp;india" id="36Z-eK-r2K" customClass="ByuAndIndiaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NeR-J0-4cF">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_byu.png" id="xtb-kL-bxr">
+                                <rect key="frame" x="-18" y="0.0" width="804" height="1060"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGE-bZ-pJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2716" y="1365"/>
+        </scene>
+        <!--Hinduism View Controller-->
+        <scene sceneID="MNb-Z0-eVw">
+            <objects>
+                <viewController restorationIdentifier="hinduism" storyboardIdentifier="hinduism" id="Q1o-aA-S5g" customClass="HinduismViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mXU-xh-65Y">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" id="2AY-pb-1n8">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_hinduism.png" id="j97-ts-10O">
+                                        <rect key="frame" x="-18" y="0.0" width="804" height="2990"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="2AY-pb-1n8" id="sw7-lX-HLl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POk-n7-Wui" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3022" y="1490"/>
+        </scene>
+        <!--Bios View Controller-->
+        <scene sceneID="Jqm-TY-CLg">
+            <objects>
+                <viewController restorationIdentifier="bios" storyboardIdentifier="bios" id="77m-5X-fu3" customClass="BiosViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zuq-iv-Grg">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" id="eB8-nO-p9n">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_bios.png" id="1Zv-Vm-12M">
+                                        <rect key="frame" x="-18" y="0.0" width="804" height="2685"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="eB8-nO-p9n" id="Yuc-H9-H5W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZS-PV-CGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3258" y="1623"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="Xx6-eS-eMM">
+            <objects>
+                <viewController restorationIdentifier="story" storyboardIdentifier="story" id="ohj-y5-I4H" customClass="StoryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dc4-CV-5Z3">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" id="bs9-gI-VKy">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="about_exhibition.png" id="H0O-bP-O7G">
+                                        <rect key="frame" x="-18" y="0.0" width="804" height="1060"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="bs9-gI-VKy" id="SQn-i5-1jY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rpg-L4-0fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3419" y="1746"/>
+        </scene>
+        <!--Moa View Controller-->
+        <scene sceneID="5bB-Aa-gjq">
+            <objects>
+                <viewController restorationIdentifier="moa" storyboardIdentifier="moa" id="YZg-PC-r3V" customClass="MoaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OcK-98-C6j">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" id="xgl-2V-p7z">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_moa.png" id="hpX-oF-Am7">
+                                        <rect key="frame" x="-18" y="0.0" width="804" height="3912"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="xgl-2V-p7z" id="pCe-LF-bYu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56a-Mx-ho5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3606" y="1887"/>
         </scene>
         <!--Glossary View Controller Table View Controller-->
         <scene sceneID="bGU-qm-617">
@@ -1958,66 +1570,24 @@
         <image name="SG_General_Share_tw-on.png" width="244" height="41"/>
         <image name="SG_General_Share_tw.png" width="244" height="41"/>
         <image name="SG_General_TopBar.png" width="1" height="1"/>
-        <image name="SG_General_header_thanks.png" width="200" height="41"/>
         <image name="SG_General_painting-castleBtn-Bloch-on.png" width="250" height="41"/>
         <image name="SG_General_painting-castleBtn-Bloch.png" width="250" height="41"/>
         <image name="SG_General_window_closeBtn-on.png" width="102" height="70"/>
         <image name="SG_General_window_closeBtn.png" width="102" height="70"/>
         <image name="aalborg.png" width="800" height="410"/>
         <image name="about_exhibition.png" width="804" height="1060"/>
-        <image name="artists_pages_bloch_overlay.png" width="768" height="1074"/>
-        <image name="artists_pages_hofmann_overlay.png" width="768" height="1133"/>
-        <image name="artists_pages_schwartz_overlay.png" width="768" height="1115"/>
-        <image name="bhakti.png" width="804" height="1060"/>
         <image name="childrens_bloch_prompt.png" width="768" height="48"/>
-        <image name="exhibition_credit_overlay.png" width="768" height="799"/>
-        <image name="exhibition_donors_overlay.png" width="768" height="759"/>
-        <image name="exhibition_story_overlay.png" width="768" height="921"/>
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
-        <image name="ld_home_home_title.png" width="542" height="429"/>
-        <image name="painting_thumb_aalborg-on.png" width="123" height="164"/>
-        <image name="painting_thumb_aalborg.png" width="123" height="164"/>
-        <image name="painting_thumb_burial-on.png" width="123" height="164"/>
-        <image name="painting_thumb_burial.png" width="123" height="164"/>
-        <image name="painting_thumb_capture-on.png" width="123" height="164"/>
-        <image name="painting_thumb_capture.png" width="123" height="164"/>
-        <image name="painting_thumb_children-on.png" width="123" height="164"/>
-        <image name="painting_thumb_children.png" width="123" height="164"/>
-        <image name="painting_thumb_cleansing-on.png" width="123" height="164"/>
-        <image name="painting_thumb_cleansing.png" width="123" height="164"/>
-        <image name="painting_thumb_consolator-on.png" width="123" height="164"/>
-        <image name="painting_thumb_consolator.png" width="123" height="164"/>
-        <image name="painting_thumb_cross-on.png" width="123" height="164"/>
-        <image name="painting_thumb_cross.png" width="123" height="164"/>
-        <image name="painting_thumb_denial-on.png" width="123" height="164"/>
-        <image name="painting_thumb_denial.png" width="123" height="164"/>
-        <image name="painting_thumb_emmaus-on.png" width="123" height="164"/>
-        <image name="painting_thumb_emmaus.png" width="123" height="164"/>
-        <image name="painting_thumb_garden-on.png" width="123" height="164"/>
-        <image name="painting_thumb_garden.png" width="123" height="164"/>
-        <image name="painting_thumb_gethsemane-on.png" width="123" height="164"/>
-        <image name="painting_thumb_gethsemane.png" width="123" height="164"/>
-        <image name="painting_thumb_healing-on.png" width="123" height="164"/>
-        <image name="painting_thumb_healing.png" width="123" height="164"/>
-        <image name="painting_thumb_mocking-on.png" width="123" height="164"/>
-        <image name="painting_thumb_mocking.png" width="123" height="164"/>
-        <image name="painting_thumb_resurrection-on.png" width="123" height="164"/>
-        <image name="painting_thumb_resurrection.png" width="123" height="164"/>
-        <image name="painting_thumb_ruler-on.png" width="123" height="164"/>
-        <image name="painting_thumb_ruler.png" width="123" height="164"/>
-        <image name="painting_thumb_savior-on.png" width="123" height="164"/>
-        <image name="painting_thumb_savior.png" width="123" height="164"/>
-        <image name="painting_thumb_sermon-on.png" width="123" height="164"/>
-        <image name="painting_thumb_sermon.png" width="123" height="164"/>
-        <image name="painting_thumb_shepherds-on.png" width="123" height="164"/>
-        <image name="painting_thumb_shepherds.png" width="123" height="164"/>
-        <image name="painting_thumb_temple-on.png" width="123" height="164"/>
-        <image name="painting_thumb_temple.png" width="123" height="164"/>
-        <image name="paintings_text.png" width="101" height="41"/>
+        <image name="ld_bhakti.png" width="804" height="1725"/>
+        <image name="ld_bios.png" width="804" height="2685"/>
+        <image name="ld_byu.png" width="804" height="1060"/>
+        <image name="ld_hinduism.png" width="804" height="2990"/>
+        <image name="ld_home_home_title.png" width="550" height="450"/>
+        <image name="ld_map.png" width="804" height="1060"/>
+        <image name="ld_moa.png" width="804" height="3912"/>
         <image name="sg_general_Share_signout.png" width="244" height="41"/>
         <image name="sg_home_bg-findpainting.png" width="804" height="1060"/>
         <image name="sg_home_bg-home.png" width="804" height="1060"/>
-        <image name="sg_home_bg-home_blur.png" width="1" height="1"/>
         <image name="sg_home_donatebtn-on.png" width="245" height="123"/>
         <image name="sg_home_donatebtn.png" width="245" height="123"/>
         <image name="sg_home_exhibitionbtn-on.png" width="768" height="225"/>
@@ -2029,7 +1599,6 @@
         <image name="sg_home_footer_bg.png" width="804" height="161"/>
         <image name="sg_home_meetartistsbtn-on.png" width="768" height="226"/>
         <image name="sg_home_meetartistsbtn.png" width="768" height="226"/>
-        <image name="sg_home_museumDonate.png" width="768" height="1024"/>
         <image name="sg_temple_btn_1880-on.png" width="151" height="48"/>
         <image name="sg_temple_btn_1880.png" width="151" height="48"/>
         <image name="sg_temple_btn_later-on.png" width="150" height="48"/>
@@ -2059,24 +1628,10 @@
         <image name="thumbnail7.png" width="124" height="119"/>
         <image name="thumbnail8.png" width="124" height="119"/>
         <image name="thumbnail9.png" width="124" height="119"/>
-        <image name="timeline_assets_blochBtn-on.png" width="97" height="70"/>
-        <image name="timeline_assets_blochBtn.png" width="97" height="70"/>
-        <image name="timeline_assets_churchBtn-on.png" width="232" height="70"/>
-        <image name="timeline_assets_churchBtn.png" width="232" height="70"/>
-        <image name="timeline_assets_dates.png" width="6176" height="31"/>
-        <image name="timeline_assets_hofmannBtn-on.png" width="148" height="70"/>
-        <image name="timeline_assets_hofmannBtn.png" width="148" height="70"/>
-        <image name="timeline_assets_schwartzBtn-on.png" width="129" height="70"/>
-        <image name="timeline_assets_schwartzBtn.png" width="129" height="70"/>
-        <image name="timeline_assets_worldBtn-on.png" width="162" height="70"/>
-        <image name="timeline_assets_worldBtn.png" width="162" height="70"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="n0k-02-bEK"/>
-    </inferredMetricsTieBreakers>
 </document>

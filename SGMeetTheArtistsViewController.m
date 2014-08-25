@@ -31,17 +31,17 @@ typedef enum
     NSString* toControllerIDStr = (NSString*)kControllerIDHomeStr;
     
     switch (sender.tag) {
-        case kNavigationDestinationBloch:
-            toControllerIDStr = (NSString*)kControllerIDBlochStr;
+        case 1:
+            toControllerIDStr = @"map";
             break;
-        case kNavigationDestinationHofman:
-            toControllerIDStr = (NSString*)kControllerIDHofmantr;
+        case 2:
+            toControllerIDStr = @"hinduism";
             break;
-        case kNavigationDestinationSchwartz:
-            toControllerIDStr = (NSString*)kControllerIDSchwartzStr;
+        case 3:
+            toControllerIDStr = @"bhakti";
             break;
-        case kNavigationDestinationTimeline:
-            toControllerIDStr = @"timeline";
+        case 4:
+            toControllerIDStr = @"byu&india";
             break;
             
         default:

@@ -28,26 +28,21 @@ const int kNavigationReservations = 456;
     NSString* toControllerIDStr = (NSString*)kControllerIDHomeStr;
     
     switch (sender.tag) {
-        case kNavigationDestinationStoryOfTheExhibition:
-            toControllerIDStr = (NSString*)kControllerIDStoryOfTheExhibitionStr;
-            [self.delegate transitionFromController:self toControllerID:toControllerIDStr fromButtonRect:sender.frame withAnimType:kAnimTypeZoomIn];
+        case 1:
+            toControllerIDStr = @"story";
             break;
-        case kNavigationReservations:
-        {
-            SGWebViewController* webViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"web"];
-            [self presentViewController:webViewController animated:YES completion:^{
-                [[UIApplication sharedApplication] setStatusBarHidden:YES];
-            }];
-            [webViewController configureWebpageFor:webPageTypeTickets];
-        }
+        case 2:
+            toControllerIDStr = @"moa";
             break;
-        case kNavigationIntroMovie:
-            toControllerIDStr = (NSString*)kControllerIDIntroMovieStr;
-            [self.delegate transitionFromController:self toControllerID:toControllerIDStr fromButtonRect:sender.frame withAnimType:kAnimTypeZoomIn];
+        case 3:
+            toControllerIDStr = @"bios";
             break;
+            
         default:
             break;
     }
+    
+    [self.delegate transitionFromController:self toControllerID:toControllerIDStr fromButtonRect:sender.frame withAnimType:kAnimTypeZoomIn];
 }
 
 @end

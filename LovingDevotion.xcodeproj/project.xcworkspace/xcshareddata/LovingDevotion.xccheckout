@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E3E146A0-494E-42A0-B494-0B536D107077</string>
+	<string>45A1FF95-BEA4-4514-B3F7-05AD8D39F14D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LovingDevotion</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4B3F1736-0951-4001-BFC1-36FB8860405C</key>
-		<string>https://github.com/byumoa/LovingDevotion.git</string>
+		<key>E1FAD882-0767-4D98-A882-D7FED23243EC</key>
+		<string>https://github.com/byumoa/LovingDevotion</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LovingDevotion.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4B3F1736-0951-4001-BFC1-36FB8860405C</key>
+		<key>E1FAD882-0767-4D98-A882-D7FED23243EC</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/byumoa/LovingDevotion.git</string>
+	<string>https://github.com/byumoa/LovingDevotion</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4B3F1736-0951-4001-BFC1-36FB8860405C</string>
+	<string>E1FAD882-0767-4D98-A882-D7FED23243EC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4B3F1736-0951-4001-BFC1-36FB8860405C</string>
+			<string>E1FAD882-0767-4D98-A882-D7FED23243EC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>LovingDevotion</string>
 		</dict>
