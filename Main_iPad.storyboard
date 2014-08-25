@@ -1828,7 +1828,7 @@
             <objects>
                 <tableViewController id="CmV-5q-dg0" customClass="GlossaryViewControllerTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PtI-6Y-HyZ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="524"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -1974,7 +1974,7 @@
         <image name="exhibition_donors_overlay.png" width="768" height="759"/>
         <image name="exhibition_story_overlay.png" width="768" height="921"/>
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
-        <image name="ld_home_home_title.png" width="542" height="429"/>
+        <image name="ld_home_home_title.png" width="550" height="450"/>
         <image name="painting_thumb_aalborg-on.png" width="123" height="164"/>
         <image name="painting_thumb_aalborg.png" width="123" height="164"/>
         <image name="painting_thumb_burial-on.png" width="123" height="164"/>
@@ -2077,6 +2077,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="n0k-02-bEK"/>
+        <segue reference="pAy-MY-5Uu"/>
     </inferredMetricsTieBreakers>
 </document>
