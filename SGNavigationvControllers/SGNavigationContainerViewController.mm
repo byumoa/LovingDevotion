@@ -232,6 +232,9 @@ const int kDonateAlertViewTag = 1;
         self.headerBlurDecoy.backgroundColor = [UIColor blackColor];
     }];
     
+//    paintingContainer.pagination2View.hidden = NO;
+//    [paintingContainer.view bringSubviewToFront:paintingContainer.pagination2View];
+    
     return paintingContainer;
 }
 
