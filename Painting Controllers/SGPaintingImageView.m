@@ -85,7 +85,7 @@ const int inset = 20;
 {
     NSMutableArray *animationFrames = [NSMutableArray new];
 //    for( int i = 0; i < 35; i++ ){
-    for( int i = 20; i < 55; i++ ){
+    for( int i = 26; i < 61; i++ ){
         int index = i % 35;
         NSString *fileName = [NSString stringWithFormat:@"PaintingResources/%@/Spin/35%i", paintingName, index];
         NSString* imagePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"png"];
@@ -100,8 +100,8 @@ const int inset = 20;
 
 -(void)delayedStopAnimating:(NSTimer *)timer{
     [self stopAnimating];
-    [self setImage:[self.animationImages objectAtIndex:15]];
-    _currentIndex = 15;
+    [self setImage:[self.animationImages objectAtIndex:10]];
+    _currentIndex = 9;
 }
 
 -(id)initWithCoder:(NSCoder *)aDecoder
