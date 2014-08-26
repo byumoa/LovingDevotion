@@ -69,8 +69,8 @@
 
 + (NSString *)getFBURLStrForModule:(NSString*)paintingStr
 {
-    for( int i = 0; i < kTotalPaintings; i ++ ){
-        if( [paintingStr isEqualToString:(NSString*)kPaintingNames[i]] ){
+    for( int i = 0; i < kFullPaintingListTotal; i ++ ){
+        if( [paintingStr isEqualToString:(NSString*)kFullPaintingList[i]] ){
             return (NSString*)kPaintingFbUrls[i];
         }
     }

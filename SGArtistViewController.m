@@ -83,7 +83,7 @@
 
 - (IBAction)pressedPainting:(UIButton *)sender
 {
-    NSString* paintingName = (NSString*)kPaintingNames[sender.tag-1];
+    NSString* paintingName = (NSString*)kFullPaintingList[sender.tag];
     SGPaintingContainerViewController* paintingViewController = (SGPaintingContainerViewController*)[self.delegate transitionFromController:self toPaintingNamed:paintingName fromButtonRect:sender.frame withAnimType:kAnimTypeZoomIn];
     ((SGPaintingViewController*)paintingViewController.currentContentController).fromArtist = [SGConvenienceFunctionsManager artistForPainting:paintingName abbreviated:YES];
 }

@@ -26,7 +26,7 @@ const NSString* kControllerIDHofmantr = @"hofman";
 const NSString* kControllerIDPanoramaStr = @"panorama";
 
 NSString* const kPaintingFbUrls[] = {
-    @"https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10492485_10152559559380170_6996841324159749962_n.png?oh=fc7b4c6a3d90921037b50b013ce89df5&oe=548211B6&__gda__=1415754707_45cf885e696f32725634e82dfb7b7e52",
+    @"",
     @"",
     @"",
     @"",
@@ -51,31 +51,38 @@ NSString* const kPaintingFbUrls[] = {
     @"",
 };
 
-const int kTotalPaintings = 23;
-NSString* const kPaintingNames[] = {
-    @"balakrishna_butterballs",
-    @"fluting_krishna1",
-    @"krishna_butterballs",
-    @"krishna_radha",
-    @"radha1",
-    @"nadu_gopala1",
-    @"temple_urn",
-    @"painting_devotee",
-    @"painting_flute",
-    @"painting_friend",
-    @"painting_garlands",
-    @"painting_instrument",
-    @"painting_radha",
-    @"male_torso",
-    @"shrine1",
-    @"shrine2",
-    @"vishnupatta",
-    @"vishnu_attendants1",
-    @"vishnu_attendants2",
-    @"vishnu_attendants3",
-    @"vishnu_attendants4",
-    @"vishnu_varaha",
-    @"vishnu_mandala",
+const int kFullPaintingListTotal = 30;
+NSString* const kFullPaintingList[] = {
+    @"balakrishna_butterballs", //0
+    @"fluting_krishna1",        //1
+    @"fluting_krishna2",        //2
+    @"fluting_krishna3",        //3
+    @"krishna_butterballs",     //4
+    @"krishna_radha",           //5
+    @"radha1",                  //6
+    @"radha2",                  //7
+    @"nadu_gopala1",            //8
+    @"nadu_gopala2",            //9
+    @"nadu_gopala3",            //10
+    @"nadu_gopala4",            //11
+    @"nadu_gopala5",            //12
+    @"temple_urn",              //13
+    @"painting_devotee",        //14
+    @"painting_flute",          //15
+    @"painting_friend",         //16
+    @"painting_garlands",       //17
+    @"painting_instrument",     //18
+    @"painting_radha",          //19
+    @"male_torso",              //20
+    @"shrine1",                 //21
+    @"shrine2",                 //22
+    @"vishnupatta",             //23
+    @"vishnu_attendants1",      //24
+    @"vishnu_attendants2",      //25
+    @"vishnu_attendants3",      //26
+    @"vishnu_attendants4",      //27
+    @"vishnu_varaha",           //28
+    @"vishnu_mandala",          //29
 };
 
 const int kTotalPaintingsBloch = 13;

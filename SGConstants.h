@@ -49,8 +49,9 @@ extern const NSString* kControllerIDHofmantr;
 
 extern const NSString* kPaintingFbUrls[];
 
-extern const int kTotalPaintings;
-extern const NSString* kPaintingNames[];
+extern const int kFullPaintingListTotal;
+extern const NSString* kFullPaintingList[];
+
 extern const int kTotalPaintingsBloch;
 extern NSString* const kPaintingNamesBloch[];
 extern const int kTotalPaintingsSchwartz;

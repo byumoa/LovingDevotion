@@ -86,8 +86,9 @@ int const kOverlayHeight = 236;
         case SocialMediaTypeEmail:
         {
             
-            NSString* artist = [self calcArtistForPaintingStr:self.paintingName];
-            NSString* autofillStr = [NSString stringWithFormat:kEmailAutofill, artist, kAppStoreURL];
+//            NSString* artist = [self calcArtistForPaintingStr:self.paintingName];
+//            NSString* autofillStr = [NSString stringWithFormat:kEmailAutofill, artist, kAppStoreURL];
+            NSString* autofillStr = kEmailAutofill;
             
             MFMailComposeViewController *mailController = [[MFMailComposeViewController alloc] init];
             [mailController setMailComposeDelegate:self];
