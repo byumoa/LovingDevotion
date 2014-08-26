@@ -51,8 +51,10 @@
     }
     
     //Position close btn in top right corner
-    if( self.closeButton )
-    self.closeButton.center = CGPointMake(self.view.frame.size.width - 50, 50);
+    if( self.closeButton ){
+//        self.closeButton.center = CGPointMake(self.view.frame.size.width - 50, 50);
+        self.closeButton.center = CGPointMake(20, 30);
+    }
     
 //    self.screenName = [NSString stringWithFormat:@"%@: %@", self.paintingName, [SGConvenienceFunctionsManager getStringForModule:self.moduleType]];
 }

@@ -77,8 +77,10 @@ NSString* const kArtistInstructionStr = @"childrens_%@_prompt.png";
     NSString* promptImgStr = [NSString stringWithFormat:kArtistInstructionStr, artistName];
     self.instructionPrompt.image = [UIImage imageNamed:promptImgStr];
     
-    if( self.closeButton )
+    if( self.closeButton ){
         self.closeButton.center = CGPointMake(self.view.frame.size.width - 21, self.view.frame.size.height - 875);
+//        self.closeButton.center = CGPointMake(20,20);
+    }
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
