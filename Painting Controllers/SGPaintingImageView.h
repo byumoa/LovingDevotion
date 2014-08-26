@@ -14,8 +14,8 @@
 @property (weak, nonatomic) UIViewController<SGPaintingImageViewDelegate>* delegate;
 @property (nonatomic) BOOL isDown;
 //temp
-@property (nonatomic) BOOL isRadha;
-- (void)setupAnimations;
+@property (nonatomic) BOOL isTurnAround;
+- (void)setupAnimations: (NSString*)paintingName;
 
 
 - (void)animateDownWithDelay: (float)delay;

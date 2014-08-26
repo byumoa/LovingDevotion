@@ -80,16 +80,16 @@ const int inset = 20;
     _blurredBtn.frame = _followBtn.frame;
     }
 
-- (void)setupAnimations
+-(void)setupAnimations:(NSString *)paintingName
 {
     NSMutableArray *animationFrames = [NSMutableArray new];
     for( int i = 0; i < 35; i++ ){
-        NSString *fileName = [NSString stringWithFormat:@"PaintingResources/radha1/Spin/35%i", i];
+        NSString *fileName = [NSString stringWithFormat:@"PaintingResources/%@/Spin/35%i", paintingName, i];
         NSString* imagePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"png"];
         [animationFrames addObject: [UIImage imageWithContentsOfFile:imagePath]];
     }
     self.animationImages = animationFrames;
-    [self addCircles];
+//    [self addCircles];
 //    self.animationDuration = 2;
 //    [self startAnimating];
 }
@@ -133,7 +133,7 @@ const int inset = 20;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    if( !self.isRadha ) return;
+    if( !self.isTurnAround ) return;
 
     _startingPt = [(UITouch*)[touches anyObject] locationInView:self];
     _startingIndex = _currentIndex;
@@ -141,7 +141,7 @@ const int inset = 20;
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if( !self.isRadha ) return;
+    if( !self.isTurnAround ) return;
     int currentDelta = _startingPt.x - [(UITouch*)[touches anyObject] locationInView:self].x;
     _currentIndex = _startingIndex + currentDelta/10;
     
@@ -150,7 +150,7 @@ const int inset = 20;
     }
     
     _currentIndex = _currentIndex % 35;
-    [self resetCirclePosForFrame:_currentIndex];
+//    [self resetCirclePosForFrame:_currentIndex];
     [self setImage:[self.animationImages objectAtIndex:_currentIndex]];
     
 }

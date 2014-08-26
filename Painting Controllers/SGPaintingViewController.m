@@ -367,11 +367,13 @@ static BOOL chromeHidden = NO;
 {
     NSString *paintingPath = [[NSBundle mainBundle] pathForResource:@"MainPainting" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@", kPaintingResourcesStr, paintingName]];
     
-    if( [paintingName isEqualToString:@"radha1"] ){
-//        self.paintingImageView = [[LDTurnAroundImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:paintingPath]];
+    NSString *spinPath = [[NSBundle mainBundle] pathForResource:@"350" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@/Spin", kPaintingResourcesStr, paintingName]];
+    
+//    if( [paintingName isEqualToString:@"radha1"] ){
+    if( spinPath != NULL ){
         self.paintingImageView.image = [UIImage imageWithContentsOfFile:paintingPath];
-        [self.paintingImageView setupAnimations];
-        self.paintingImageView.isRadha = YES;
+        [self.paintingImageView setupAnimations: paintingName];
+        self.paintingImageView.isTurnAround = YES;
         self.middleView.hidden = YES;
     }
     else{
