@@ -25,9 +25,31 @@ const NSString* kControllerIDSchwartzStr = @"schwartz";
 const NSString* kControllerIDHofmantr = @"hofman";
 const NSString* kControllerIDPanoramaStr = @"panorama";
 
-NSString* const kfacebookURLFlute = @"http://on.fb.me/1mNINSp";
-const NSString* kfacebookURLRadha = @"http://on.fb.me/1t5keIR";
-const NSString* kfacebookURLVishnuAttendants = @"http://on.fb.me/1nDmNOF";
+NSString* const kPaintingFbUrls[] = {
+    @"https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10492485_10152559559380170_6996841324159749962_n.png?oh=fc7b4c6a3d90921037b50b013ce89df5&oe=548211B6&__gda__=1415754707_45cf885e696f32725634e82dfb7b7e52",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+    @"",
+};
 
 const int kTotalPaintings = 23;
 NSString* const kPaintingNames[] = {

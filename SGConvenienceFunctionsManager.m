@@ -69,11 +69,13 @@
 
 + (NSString *)getFBURLStrForModule:(NSString*)paintingStr
 {
-    if( [paintingStr isEqualToString:(NSString*)kPaintingNames[0]] ) return (NSString*)kfacebookURLFlute;
-    else if( [paintingStr isEqualToString:(NSString*)kPaintingNames[1]] ) return (NSString*)kfacebookURLRadha;
-    else if( [paintingStr isEqualToString:(NSString*)kPaintingNames[2]] ) return (NSString*)kfacebookURLVishnuAttendants;
+    for( int i = 0; i < kTotalPaintings; i ++ ){
+        if( [paintingStr isEqualToString:(NSString*)kPaintingNames[i]] ){
+            return (NSString*)kPaintingFbUrls[i];
+        }
+    }
     
-    return (NSString*)kfacebookURLFlute;
+    return (NSString*)kPaintingFbUrls[0];
 }
 
 @end

@@ -29,11 +29,6 @@ typedef enum
     kOverlayAnimationFall
 }OverlayAnimation;
 
-extern const NSString* kfacebookURLFlute;
-extern const NSString* kfacebookURLRadha;
-extern const NSString* kfacebookURLVishnuAttendants;
-
-
 extern const NSString* kAnimTypeZoomIn;
 extern const NSString* kAnimTypeZoomOut;
 extern const NSString* kAnimTypeSwipeRight;
@@ -51,6 +46,8 @@ extern const NSString* kControllerIDPaintingStr;
 extern const NSString* kControllerIDBlochStr;
 extern const NSString* kControllerIDSchwartzStr;
 extern const NSString* kControllerIDHofmantr;
+
+extern const NSString* kPaintingFbUrls[];
 
 extern const int kTotalPaintings;
 extern const NSString* kPaintingNames[];

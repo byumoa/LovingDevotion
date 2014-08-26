@@ -18,9 +18,8 @@
 #import "SGPaintingContainerViewController.h"
 #import "SGPaintingViewController.h"
 
-NSString* const kEmailAutofill = @"Enjoying the painting by %@ while using the Sacred Gifts app from the BYU Museum of Art. %@";
-NSString* const kTwitterAutofill = @"Viewing this painting while using the @BYUmoa’s #sacredgifts app.";
-//NSString* const kFacebookAutofill = @"Viewing this painting by %@ and feeling grateful while using the #sacredgifts app from the BYU Museum of Art.";
+NSString* const kEmailAutofill = @"Enjoying this example of #lovingdevotion at the BYU Museum of Art.";
+NSString* const kTwitterAutofill = @"Enjoying this example of #lovingdevotion at the BYU Museum of Art.";
 NSString* const kFacebookAutofill = @"Enjoying this example of #lovingdevotion at the BYU Museum of Art.";
 
 NSString* const kAppStoreURL = @"https://itunes.apple.com/us/app/sacred-gifts-brigham-young/id723165787?ls=1&mt=8";
@@ -29,10 +28,6 @@ NSString* const kTwitterPrefillTweet = @"https://twitter.com/intent/tweet?text=V
 int const kOverlayHeight = 236;
 
 @interface SGSocialViewController()
-{
-    NSArray* _schwartzPaintings;
-    NSArray* _hofmannPaintings;
-}
 
 - (NSString*)calcArtistForPaintingStr: (NSString*)paintingName;
 - (void)doInMuseumFBPostWithImage: (UIImage*)thumbnail;
@@ -46,9 +41,6 @@ int const kOverlayHeight = 236;
     if( self = [super initWithCoder:aDecoder]){
         _centerPos = CGPointMake(384, 720);
         self.moduleType = kModuleTypeSocial;
-        
-        _schwartzPaintings = @[@"garden", @"aalborg"];
-        _hofmannPaintings = @[@"capture", @"temple", @"ruler", @"gethsemane", @"savior"];
     }
     
     return self;
@@ -56,7 +48,9 @@ int const kOverlayHeight = 236;
 
 - (IBAction)pressedSocialBtn:(id)sender
 {
-    UIImage* thumbnail = [UIImage imageNamed:self.paintingName];
+//    UIImage* thumbnail = [UIImage imageNamed:self.paintingName];
+    NSString *previewPath = [[NSBundle mainBundle] pathForResource:@"sharing" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@/sharing", kPaintingResourcesStr, self.paintingName]];
+    UIImage* thumbnail = [UIImage imageWithContentsOfFile:previewPath];
     
     NSString* mediaType;
     switch (((UIButton*)sender).tag)
@@ -68,7 +62,7 @@ int const kOverlayHeight = 236;
             SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
             [socialSheet setInitialText:autofillStr];
             [socialSheet addImage:thumbnail];
-            [socialSheet addURL:[NSURL URLWithString:[SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName]]];
+//            [socialSheet addURL:[NSURL URLWithString:[SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName]]];
 //            [socialSheet addURL:[NSURL URLWithString:kAppStoreURL]];
             [self presentViewController:socialSheet animated:YES completion:^{}];
             
@@ -81,7 +75,7 @@ int const kOverlayHeight = 236;
             SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
             [socialSheet setInitialText:(NSString*)kTwitterAutofill];
             [socialSheet addImage:thumbnail];
-            [socialSheet addURL:[NSURL URLWithString:[SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName]]];
+//            [socialSheet addURL:[NSURL URLWithString:[SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName]]];
 //            [socialSheet addURL:[NSURL URLWithString:kAppStoreURL]];
             [self presentViewController:socialSheet animated:YES completion:^{}];
             
@@ -151,15 +145,6 @@ int const kOverlayHeight = 236;
 
 -(NSString *)calcArtistForPaintingStr:(NSString *)paintingName
 {
-    for (NSString* pName in _schwartzPaintings ) {
-        if( [pName isEqualToString:paintingName])
-            return @"Frans Schwartz";
-    }
-    for (NSString* pName in _hofmannPaintings ) {
-        if( [pName isEqualToString:paintingName])
-            return @"Heinrich Hofmann";
-    }
-    
     return @"Carl Bloch";
 }
 
@@ -171,7 +156,9 @@ int const kOverlayHeight = 236;
 -(void)addBackgroundImgWithImgName:(NSString *)bgImgName
 {
     [super addBackgroundImgWithImgName:bgImgName];
-    self.paintingThumbnail.image = [UIImage imageNamed:self.paintingName];
+    NSString *previewPath = [[NSBundle mainBundle] pathForResource:@"sharing_preview" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@/sharing", kPaintingResourcesStr, self.paintingName]];
+    self.paintingThumbnail.image = [UIImage imageWithContentsOfFile:previewPath];
+    
     CGRect frame = self.view.frame;
     frame.size.height = kOverlayHeight;
 }
