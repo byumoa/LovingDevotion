@@ -22,6 +22,7 @@ const int inset = 20;
 }
 - (void)tapRecognized: (UITapGestureRecognizer*)recognizer;
 - (void) addCircles;
+- (void) delayedStopAnimating: (NSTimer*)timer;
 
 @end
 
@@ -83,15 +84,24 @@ const int inset = 20;
 -(void)setupAnimations:(NSString *)paintingName
 {
     NSMutableArray *animationFrames = [NSMutableArray new];
-    for( int i = 0; i < 35; i++ ){
-        NSString *fileName = [NSString stringWithFormat:@"PaintingResources/%@/Spin/35%i", paintingName, i];
+//    for( int i = 0; i < 35; i++ ){
+    for( int i = 20; i < 55; i++ ){
+        int index = i % 35;
+        NSString *fileName = [NSString stringWithFormat:@"PaintingResources/%@/Spin/35%i", paintingName, index];
         NSString* imagePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"png"];
         [animationFrames addObject: [UIImage imageWithContentsOfFile:imagePath]];
     }
     self.animationImages = animationFrames;
 //    [self addCircles];
-//    self.animationDuration = 2;
-//    [self startAnimating];
+    self.animationDuration = 3;
+    [self startAnimating];
+    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(delayedStopAnimating:) userInfo:nil repeats:NO];
+}
+
+-(void)delayedStopAnimating:(NSTimer *)timer{
+    [self stopAnimating];
+    [self setImage:[self.animationImages objectAtIndex:15]];
+    _currentIndex = 15;
 }
 
 -(id)initWithCoder:(NSCoder *)aDecoder
