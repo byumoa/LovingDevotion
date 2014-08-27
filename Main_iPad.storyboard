@@ -839,42 +839,6 @@
             </objects>
             <point key="canvasLocation" x="2754" y="480"/>
         </scene>
-        <!--Childrens Overlay View Controller-->
-        <scene sceneID="7kj-5c-EQf">
-            <objects>
-                <viewController restorationIdentifier="childrens" storyboardIdentifier="childrens" id="R97-2Z-edN" customClass="SGChildrensOverlayViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iW5-Ox-6f2" customClass="SGOverlayView">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="892"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view opaque="NO" contentMode="center" id="mDA-F7-Mhn" customClass="ScratchableView">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="892"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="childrens_bloch_prompt.png" id="f1V-uC-RwT">
-                                        <rect key="frame" x="-28" y="844" width="825" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="768" height="892"/>
-                    <connections>
-                        <outlet property="instructionPrompt" destination="f1V-uC-RwT" id="wOr-6c-TAk"/>
-                        <outlet property="scratchableView" destination="mDA-F7-Mhn" id="AnA-i0-nLO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sPd-we-w8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2696" y="-188"/>
-        </scene>
         <!--Gift Overlay View Controller-->
         <scene sceneID="HjJ-QA-JCS">
             <objects>
@@ -973,15 +937,15 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar.png" id="kMj-l1-heC">
-                                <rect key="frame" x="98" y="961" width="635" height="9"/>
+                                <rect key="frame" x="98" y="925" width="635" height="9"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar_Overlay.png" id="EX2-Ku-XJK">
-                                <rect key="frame" x="98" y="961" width="1" height="9"/>
+                                <rect key="frame" x="98" y="925" width="1" height="9"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pR6-73-u8v">
-                                <rect key="frame" x="9" y="927" width="96" height="77"/>
+                                <rect key="frame" x="9" y="891" width="96" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="SG_General_Music_PlayPause.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -992,7 +956,7 @@
                                 </connections>
                             </button>
                             <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SG_General_Media_Playhead.png" id="v83-CX-YKT" customClass="SGMediaPlayhead">
-                                <rect key="frame" x="78" y="946" width="40" height="40"/>
+                                <rect key="frame" x="78" y="910" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="Vy2-fL-KCd" id="nEl-1P-9zQ"/>
@@ -1636,7 +1600,6 @@
         <image name="SG_General_window_closeBtn.png" width="102" height="70"/>
         <image name="aalborg.png" width="800" height="410"/>
         <image name="about_exhibition.png" width="804" height="1060"/>
-        <image name="childrens_bloch_prompt.png" width="768" height="48"/>
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
         <image name="ld_about_flatMenu.png" width="768" height="1024"/>
         <image name="ld_bhakti.png" width="804" height="1725"/>
