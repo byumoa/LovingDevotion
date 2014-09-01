@@ -51,6 +51,19 @@ const int kDonateAlertViewTag = 1;
             _backViewControllerIDStr = (NSString*)kControllerIDMeetTheArtistsStr;
         else if ([self.currentContentController.restorationIdentifier isEqualToString:(NSString*)kControllerIDStoryOfTheExhibitionStr])
             _backViewControllerIDStr = (NSString*)kControllerIDAboutTheExhibitionStr;
+        else if([self.currentContentController.restorationIdentifier isEqualToString:@"india"] ||
+                [self.currentContentController.restorationIdentifier isEqualToString:@"hinduism"] ||
+                [self.currentContentController.restorationIdentifier isEqualToString:@"bhakti"] ||
+                [self.currentContentController.restorationIdentifier isEqualToString:@"byu&india"] ||
+                [self.currentContentController.restorationIdentifier isEqualToString:@"map"]){
+            _backViewControllerIDStr = (NSString*)kControllerIDMeetTheArtistsStr;
+        }
+        else if([self.currentContentController.restorationIdentifier isEqualToString:@"bios"] ||
+                [self.currentContentController.restorationIdentifier isEqualToString:@"story"] ||
+                [self.currentContentController.restorationIdentifier isEqualToString:@"moa"] ||
+                [self.currentContentController.restorationIdentifier isEqualToString:@"donors"]){
+            _backViewControllerIDStr = (NSString*)kControllerIDAboutTheExhibitionStr;
+        }
         else
             _backViewControllerIDStr = (NSString*)kControllerIDHomeStr;
     
