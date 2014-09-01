@@ -19,7 +19,6 @@
 #import "SGConvenienceFunctionsManager.h"
 #import "SGNavigationContainerViewController.h"
 #import "SGPaintingContainerViewController.h"
-#import "LDTurnAroundImageView.h"
 
 const int kFooterBtnOffset = 140;
 const int kFooterBtnY = 35;
@@ -302,16 +301,17 @@ static BOOL chromeHidden = NO;
     else return kModuleTypeGifts;
 }
 
+- (NSString*)spinPath{
+    return [[NSBundle mainBundle] pathForResource:@"350" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@/Spin", kPaintingResourcesStr, _paintingNameStr]];
+}
+
 -(void)addMainPainting:(NSString*)paintingName
 {
     NSString *paintingPath = [[NSBundle mainBundle] pathForResource:@"MainPainting" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@", kPaintingResourcesStr, paintingName]];
     
-    NSString *spinPath = [[NSBundle mainBundle] pathForResource:@"350" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@/Spin", kPaintingResourcesStr, paintingName]];
-    
-//    if( [paintingName isEqualToString:@"radha1"] ){
-    if( spinPath != NULL ){
+    if( self.spinPath != NULL ){
         self.paintingImageView.image = [UIImage imageWithContentsOfFile:paintingPath];
-        [self.paintingImageView setupAnimations: paintingName];
+//        [self.paintingImageView setupAnimations: paintingName];
         self.paintingImageView.isTurnAround = YES;
         self.middleView.hidden = YES;
     }
@@ -320,6 +320,14 @@ static BOOL chromeHidden = NO;
     }
     
     self.paintingImageView.delegate = self;
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    if( self.spinPath != NULL ){
+        [self.paintingImageView setupAnimations: _paintingNameStr];
+    }
 }
 
 -(UIButton *)footerBtnForTag:(ModuleType)moduleType

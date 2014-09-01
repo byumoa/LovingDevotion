@@ -84,8 +84,8 @@ const int inset = 20;
 -(void)setupAnimations:(NSString *)paintingName
 {
     NSMutableArray *animationFrames = [NSMutableArray new];
-//    for( int i = 0; i < 35; i++ ){
-    for( int i = 26; i < 61; i++ ){
+    for( int i = 0; i < 35; i++ ){
+//    for( int i = 26; i < 61; i++ ){
         int index = i % 35;
         NSString *fileName = [NSString stringWithFormat:@"PaintingResources/%@/Spin/35%i", paintingName, index];
         NSString* imagePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"png"];
@@ -94,8 +94,8 @@ const int inset = 20;
     self.animationImages = animationFrames;
 //    [self addCircles];
     self.animationDuration = 3;
-    [self startAnimating];
-    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(delayedStopAnimating:) userInfo:nil repeats:NO];
+//    [self startAnimating];
+//    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(delayedStopAnimating:) userInfo:nil repeats:NO];
 }
 
 -(void)delayedStopAnimating:(NSTimer *)timer{
