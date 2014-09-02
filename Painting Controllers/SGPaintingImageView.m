@@ -43,7 +43,10 @@ const int inset = 20;
     [self resetCirclePosForFrame:0];
 }
 
-- (void)resetCirclePosForFrame: (int)frame{
+- (void)resetCirclePosForFrame: (int)frame
+{
+    NSString* calloutPath = [[NSBundle mainBundle] pathForResource:@"Callouts" ofType:@"plist" inDirectory:[NSString stringWithFormat: @"%@/%@", @"PaintingResources", self.paintingName]];
+    NSLog(@"calloutPath: %@", calloutPath);
     
     float alpha = 1;
     switch (frame) {
@@ -74,10 +77,9 @@ const int inset = 20;
     _followBtn.alpha = alpha;
     
     _btnOffset.x = -312 * cos(frame/5.75) - 70;
-    _btnOffset.y = -30 * sin(frame/6.0);
+    _btnOffset.y = -30 * sin(frame/6.0) + 75;
     
-    _height = 75;
-    _followBtn.frame = CGRectMake(self.frame.size.width/2 + _btnOffset.x, _height + _btnOffset.y, 145, 145);
+    _followBtn.frame = CGRectMake(self.frame.size.width/2 + _btnOffset.x, _btnOffset.y, 145, 145);
     _blurredBtn.frame = _followBtn.frame;
     }
 
@@ -92,7 +94,7 @@ const int inset = 20;
         [animationFrames addObject: [UIImage imageWithContentsOfFile:imagePath]];
     }
     self.animationImages = animationFrames;
-//    [self addCircles];
+    [self addCircles];
     self.animationDuration = 3;
 //    [self startAnimating];
 //    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(delayedStopAnimating:) userInfo:nil repeats:NO];
@@ -160,7 +162,7 @@ const int inset = 20;
     }
     
     _currentIndex = _currentIndex % 35;
-//    [self resetCirclePosForFrame:_currentIndex];
+    [self resetCirclePosForFrame:_currentIndex];
     [self setImage:[self.animationImages objectAtIndex:_currentIndex]];
     
 }

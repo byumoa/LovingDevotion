@@ -70,7 +70,6 @@ NSString* const kTempleDefaultKey = @"templeVersion";
     float targetAlpha = 1;
     
     if( self.footerView.alpha == 1 )    targetAlpha = 0;
-    //else                                [self addTombstoneDelayed:0];
     
     chromeHidden = (self.footerView.alpha == 1);
     [self setChromeAlpha:targetAlpha isTurning:NO];
@@ -79,14 +78,6 @@ NSString* const kTempleDefaultKey = @"templeVersion";
 
 -(void)configWithPaintingName:(NSString *)paintingStr;
 {
-//    if( [paintingStr isEqualToString:@"temple"] ||
-//        [paintingStr isEqualToString:@"temple-ny"] )
-//    {
-//        NSString* lastPainting = [[NSUserDefaults standardUserDefaults] stringForKey:kTempleDefaultKey];
-//        if( lastPainting )
-//            paintingStr = lastPainting;
-//    }
-    
 //    self.screenName = [NSString stringWithFormat:@"painting: %@", paintingStr];
     
     //Main Painting
@@ -133,21 +124,6 @@ NSString* const kTempleDefaultKey = @"templeVersion";
     {
         self.templeButtonsView.alpha = isTurningToLandscape ? 0 : 1;
     }
-    /*
-    if([_paintingNameStr isEqualToString:@"aalborg"] ||
-       [_paintingNameStr isEqualToString:@"capture"] ||
-       [_paintingNameStr isEqualToString:@"ruler"] ||
-       [_paintingNameStr isEqualToString:@"temple"] ||
-       [_paintingNameStr isEqualToString:@"temple-ny"])
-    {
-        NSString* paintingPath;
-        if( isTurningToLandscape )
-            paintingPath = [[NSBundle mainBundle] pathForResource:@"MainPainting-landscape" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@", kPaintingResourcesStr, _paintingNameStr]];
-        else
-            paintingPath = [[NSBundle mainBundle] pathForResource:@"MainPainting" ofType:@"png" inDirectory:[NSString stringWithFormat: @"%@/%@", kPaintingResourcesStr, _paintingNameStr]];
-        self.paintingImageView.image = [UIImage imageWithContentsOfFile:paintingPath];
-    }
-     */
     
     if([self.overlayController respondsToSelector:@selector(childOverlay)] &&
        ((SGMediaSelectionViewController*)self.overlayController).childOverlay.moduleType == kModuleTypeVideo)
@@ -311,7 +287,6 @@ static BOOL chromeHidden = NO;
     
     if( self.spinPath != NULL ){
         self.paintingImageView.image = [UIImage imageWithContentsOfFile:paintingPath];
-//        [self.paintingImageView setupAnimations: paintingName];
         self.paintingImageView.isTurnAround = YES;
         self.middleView.hidden = YES;
     }

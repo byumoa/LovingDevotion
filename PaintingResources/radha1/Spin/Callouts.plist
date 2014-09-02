@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>FadeOut</key>
+		<string>6</string>
+		<key>FadeIn</key>
+		<string>16</string>
+		<key>AmplitudeX</key>
+		<string>-312</string>
+		<key>AmplitudeY</key>
+		<string>-30</string>
+		<key>PartialPeriodX</key>
+		<string>5.75</string>
+		<key>PartialPeriodY</key>
+		<string>6.0</string>
+		<key>VerticalShift</key>
+		<string>75</string>
+		<key>HorizontalShift</key>
+		<string>-70</string>
+	</dict>
+</array>
+</plist>

@@ -13,8 +13,8 @@
 @interface SGPaintingImageView : UIImageView
 @property (weak, nonatomic) UIViewController<SGPaintingImageViewDelegate>* delegate;
 @property (nonatomic) BOOL isDown;
-//temp
 @property (nonatomic) BOOL isTurnAround;
+@property (nonatomic) NSString* paintingName;
 - (void)setupAnimations: (NSString*)paintingName;
 
 
