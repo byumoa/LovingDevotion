@@ -295,6 +295,7 @@ static BOOL chromeHidden = NO;
     }
     
     self.paintingImageView.delegate = self;
+    self.paintingImageView.paintingName = paintingName;
 }
 
 -(void)viewDidAppear:(BOOL)animated{

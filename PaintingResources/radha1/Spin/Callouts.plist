@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>Title</key>
+		<string>Flower</string>
 		<key>FadeOut</key>
 		<string>6</string>
 		<key>FadeIn</key>
@@ -17,6 +19,26 @@
 		<string>6.0</string>
 		<key>VerticalShift</key>
 		<string>75</string>
+		<key>HorizontalShift</key>
+		<string>-70</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Lower Hand</string>
+		<key>FadeOut</key>
+		<string>6</string>
+		<key>FadeIn</key>
+		<string>16</string>
+		<key>AmplitudeX</key>
+		<string>-312</string>
+		<key>AmplitudeY</key>
+		<string>-30</string>
+		<key>PartialPeriodX</key>
+		<string>5.75</string>
+		<key>PartialPeriodY</key>
+		<string>6.0</string>
+		<key>VerticalShift</key>
+		<string>350</string>
 		<key>HorizontalShift</key>
 		<string>-70</string>
 	</dict>

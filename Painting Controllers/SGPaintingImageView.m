@@ -15,10 +15,11 @@ const int inset = 20;
     CGPoint _startingPt;
     int _currentIndex;
     int _startingIndex;
-    UIButton* _followBtn;
-    UIButton* _blurredBtn;
+    NSMutableArray* _followBtns;
     CGPoint _btnOffset;
     int _height;
+    
+    NSArray* _circlesInfo;
 }
 - (void)tapRecognized: (UITapGestureRecognizer*)recognizer;
 - (void) addCircles;
@@ -29,59 +30,60 @@ const int inset = 20;
 @implementation SGPaintingImageView
 
 -(void)addCircles{
-   
-    _blurredBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_blurredBtn setImage:[UIImage imageNamed:@"ld_highlight_lg_blur"] forState:UIControlStateNormal];
-    [_blurredBtn setImage:[UIImage imageNamed:@"ld_highlight_lg_blur_on"] forState:UIControlStateHighlighted];
-    [self insertSubview:_blurredBtn belowSubview:_followBtn];
+    NSString* dir = [NSString stringWithFormat: @"%@/%@/Spin", @"PaintingResources", self.paintingName];
+    NSString* calloutPath = [[NSBundle mainBundle] pathForResource:@"Callouts" ofType:@"plist" inDirectory:dir];
+    _circlesInfo = [NSArray arrayWithContentsOfFile:calloutPath];
     
-    _followBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_followBtn setImage:[UIImage imageNamed:@"ld_highlight_lg"] forState:UIControlStateNormal];
-    [_followBtn setImage:[UIImage imageNamed:@"ld_highlight_lg_on"] forState:UIControlStateHighlighted];
-    [self addSubview:_followBtn];
+    _followBtns = [NSMutableArray array];
+    
+    for (int i = 0; i < _circlesInfo.count; i++) {
+        UIButton* followBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [followBtn setImage:[UIImage imageNamed:@"ld_highlight_lg"] forState:UIControlStateNormal];
+        [followBtn setImage:[UIImage imageNamed:@"ld_highlight_lg_on"] forState:UIControlStateHighlighted];
+        [self addSubview:followBtn];
+        [_followBtns addObject:followBtn];
+    }
     
     [self resetCirclePosForFrame:0];
 }
 
 - (void)resetCirclePosForFrame: (int)frame
 {
-    NSString* calloutPath = [[NSBundle mainBundle] pathForResource:@"Callouts" ofType:@"plist" inDirectory:[NSString stringWithFormat: @"%@/%@", @"PaintingResources", self.paintingName]];
-    NSLog(@"calloutPath: %@", calloutPath);
-    
-    float alpha = 1;
-    switch (frame) {
-        case 7:
+    for( int i = 0; i < _circlesInfo.count; i++)
+    {
+        NSDictionary* circleInfo = _circlesInfo[i];
+        UIButton* followButton = _followBtns[i];
+        int fadeStartFrame = ((NSString*)[circleInfo objectForKey:@"FadeOut"]).intValue;
+        int fadeEndFrame = ((NSString*)[circleInfo objectForKey:@"FadeIn"]).intValue;
+        int ampX = ((NSString*)[circleInfo objectForKey:@"AmplitudeX"]).intValue;
+        int ampY = ((NSString*)[circleInfo objectForKey:@"AmplitudeY"]).intValue;
+        float ppX = ((NSString*)[circleInfo objectForKey:@"PartialPeriodX"]).floatValue;
+        float ppY = ((NSString*)[circleInfo objectForKey:@"PartialPeriodY"]).floatValue;
+        int vShift = ((NSString*)[circleInfo objectForKey:@"VerticalShift"]).intValue;
+        int hShift = ((NSString*)[circleInfo objectForKey:@"HorizontalShift"]).intValue;
+        
+        float alpha = 1;
+        if (frame > fadeStartFrame &&
+            frame < fadeEndFrame ){
+            alpha = 0;
+        }
+        if((frame == (fadeStartFrame + 1)) ||
+           (frame == (fadeEndFrame - 1))){
             alpha = 0.66;
-            break;
-        case 8:
+        }
+        if((frame == (fadeStartFrame + 2)) ||
+           (frame == (fadeEndFrame - 2))){
             alpha = 0.33;
-            break;
-        case 9:
-        case 10:
-        case 11:
-        case 12:
-        case 13:
-            alpha = 0.0;
-            break;
-        case 14:
-            alpha = 0.33;
-            break;
-        case 15:
-            alpha = 0.66;
-            break;
-        default:
-            alpha = 1;
-            break;
-    }
-
-    _followBtn.alpha = alpha;
+        }
+        followButton.alpha = alpha;
     
-    _btnOffset.x = -312 * cos(frame/5.75) - 70;
-    _btnOffset.y = -30 * sin(frame/6.0) + 75;
+        
+        _btnOffset.x = ampX * cos(frame/ppX) + hShift;
+        _btnOffset.y = ampY * sin(frame/ppY) + vShift;
     
-    _followBtn.frame = CGRectMake(self.frame.size.width/2 + _btnOffset.x, _btnOffset.y, 145, 145);
-    _blurredBtn.frame = _followBtn.frame;
+        followButton.frame = CGRectMake(self.frame.size.width/2 + _btnOffset.x, _btnOffset.y, 145, 145);
     }
+}
 
 -(void)setupAnimations:(NSString *)paintingName
 {
