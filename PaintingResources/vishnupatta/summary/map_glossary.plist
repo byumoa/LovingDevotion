@@ -4,13 +4,27 @@
 <dict>
 	<key>map</key>
 	<array>
-		<string>map_tamil_nadu</string>
+		<string>map_bengladesh</string>
 	</array>
 	<key>glossary</key>
 	<array>
-		<string>krishna</string>
-		<string>shesha</string>
+		<string>vishnupatta</string>
 		<string>vishnu</string>
+		<string>avatars</string>
+		<string>matsya</string>
+		<string>kurma</string>
+		<string>vahara</string>
+		<string>narasimha</string>
+		<string>vamana</string>
+		<string>trivikrama</string>
+		<string>rama</string>
+		<string>parashurama</string>
+		<string>buddha</string>
+		<string>kalki</string>
+		<string>lotus_blossom</string>
+		<string>lakshmi</string>
+		<string>garuda</string>
+		<string>flywhisks</string>
 	</array>
 </dict>
 </plist>
