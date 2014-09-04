@@ -4,13 +4,19 @@
 <dict>
 	<key>map</key>
 	<array>
-		<string>map_tamil_nadu</string>
+		<string>map_kota</string>
 	</array>
 	<key>glossary</key>
 	<array>
-		<string>krishna</string>
-		<string>shesha</string>
 		<string>vishnu</string>
+		<string>mace</string>
+		<string>ayudhapurusha</string>
+		<string>discus</string>
+		<string>conch_shell</string>
+		<string>bhakti</string>
+		<string>puja</string>
+		<string>darshan</string>
+		<string>murti</string>
 	</array>
 </dict>
 </plist>

@@ -4,13 +4,15 @@
 <dict>
 	<key>map</key>
 	<array>
-		<string>map_tamil_nadu</string>
+		<string>map_bengal</string>
+		<string>map_vrindavan</string>
 	</array>
 	<key>glossary</key>
 	<array>
 		<string>krishna</string>
-		<string>shesha</string>
-		<string>vishnu</string>
+		<string>venugopala</string>
+		<string>vrindavan</string>
+		<string>flute_of_krishna</string>
 	</array>
 </dict>
 </plist>
