@@ -52,38 +52,6 @@ NSString* const kPaintingFbUrls[] = {
 };
 
 const int kFullPaintingListTotal = 30;
-//NSString* const kFullPaintingList[] = {
-//    @"balakrishna_butterballs", //0
-//    @"fluting_krishna1",        //1
-//    @"fluting_krishna2",        //2
-//    @"fluting_krishna3",        //3
-//    @"krishna_butterballs",     //4
-//    @"krishna_radha",           //5
-//    @"radha1",                  //6
-//    @"radha2",                  //7
-//    @"nadu_gopala1",            //8
-//    @"nadu_gopala2",            //9
-//    @"nadu_gopala3",            //10
-//    @"nadu_gopala4",            //11
-//    @"nadu_gopala5",            //12
-//    @"temple_urn",              //13
-//    @"painting_devotee",        //14
-//    @"painting_flute",          //15
-//    @"painting_friend",         //16
-//    @"painting_garlands",       //17
-//    @"painting_instrument",     //18
-//    @"painting_radha",          //19
-//    @"male_torso",              //20
-//    @"shrine1",                 //21
-//    @"shrine2",                 //22
-//    @"vishnupatta",             //23
-//    @"vishnu_attendants1",      //24
-//    @"vishnu_attendants2",      //25
-//    @"vishnu_attendants3",      //26
-//    @"vishnu_attendants4",      //27
-//    @"vishnu_varaha",           //28
-//    @"vishnu_mandala",          //29
-//};
 
 NSString* const kFullPaintingList[] = {
     @"vishnu_mandala",          //1
