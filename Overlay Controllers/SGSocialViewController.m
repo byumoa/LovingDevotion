@@ -57,6 +57,7 @@ int const kOverlayHeight = 236;
     {
         case SocialMediaTypeFacebook:
         {
+            /*
             NSString* autofillStr = kFacebookAutofill;
             
             SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
@@ -67,11 +68,13 @@ int const kOverlayHeight = 236;
             [self presentViewController:socialSheet animated:YES completion:^{}];
             
             mediaType = @"facebook";
-//            [self doInMuseumFBPostWithImage:thumbnail];
+             */
+            [self doInMuseumFBPostWithImage:thumbnail];
         }
             break;
         case SocialMediaTypeTwitter:
         {
+            /*
             SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
             [socialSheet setInitialText:(NSString*)kTwitterAutofill];
             [socialSheet addImage:thumbnail];
@@ -80,7 +83,8 @@ int const kOverlayHeight = 236;
             [self presentViewController:socialSheet animated:YES completion:^{}];
             
             mediaType = @"twitter";
-//            [self doInMuseumTWPostWithImage:thumbnail];
+             */
+            [self doInMuseumTWPostWithImage:thumbnail];
         }
             break;
         case SocialMediaTypeEmail:
@@ -137,7 +141,6 @@ int const kOverlayHeight = 236;
 {
     SGTwitterViewController* twViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"twitter"];
     [self presentViewController:twViewController animated:YES completion:nil];
-    
     NSString* fbImgStr = [SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName];
     NSString* artist = [SGConvenienceFunctionsManager artistForPainting:self.paintingName abbreviated:YES].capitalizedString;
     NSString* urlStr = [NSString stringWithFormat:(NSString*)kTwitterPrefillTweet, artist, fbImgStr];
