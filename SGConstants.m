@@ -26,69 +26,76 @@ const NSString* kControllerIDHofmantr = @"hofman";
 const NSString* kControllerIDPanoramaStr = @"panorama";
 
 NSString* const kPaintingFbUrls[] = {
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
-    @"",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680180170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679820170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680215170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680090170/?type=3&theater",//Should be vishnu_attendants2
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680090170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650673160170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680075170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680095170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//Duplicates nadu_gopala1
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//Duplicates nadu_gopala1
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//Duplicates nadu_gopala1
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//Duplicates nadu_gopala1
+    @"",//fluting
+    @"",//fluting
+    @"",//fluting
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680005170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680005170/?type=3&theater",//Duplicated radha1
+    @"",//Missing balakrishna_butterballs
+    @"",//Missing krishna_butterballs
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680020170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679925170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679920170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679830170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679880170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679875170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679935170/?type=3&theater",
+    @"",//Missing Krishna_Radha
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680160170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680030170/?type=3&theater",
 };
 
 const int kFullPaintingListTotal = 30;
 
 NSString* const kFullPaintingList[] = {
-    @"vishnu_mandala",          //1
-    @"male_torso",              //2
-    @"vishnu_varaha",           //3
-    @"vishnu_attendants2",      //4
-    @"vishnu_attendants1",      //5
-    @"vishnupatta",             //6
-    @"temple_urn",              //7
-    @"vishnu_attendants3",      //8
+    @"vishnu_mandala",          //1-
+    @"male_torso",              //2-
+    @"vishnu_varaha",           //3-
+    @"vishnu_attendants2",      //4-Duplicate of vishnu_attendants1
+    @"vishnu_attendants1",      //5-
+    @"vishnupatta",             //6-
+    @"temple_urn",              //7-
+    @"vishnu_attendants3",      //8-
     
-    @"nadu_gopala1",            //9
-    @"nadu_gopala2",            //10
-    @"nadu_gopala3",            //11
-    @"nadu_gopala4",            //12
-    @"nadu_gopala5",            //13
+    @"nadu_gopala1",            //9-
+    @"nadu_gopala2",            //10-
+    @"nadu_gopala3",            //11-
+    @"nadu_gopala4",            //12-
+    @"nadu_gopala5",            //13-
     
-    @"fluting_krishna1",        //14
-    @"fluting_krishna2",        //15
-    @"fluting_krishna3",        //16
+    @"fluting_krishna1",        //14//Missing
+    @"fluting_krishna2",        //15//Missing
+    @"fluting_krishna3",        //16//Missing
     
-    @"radha1",                  //17
-    @"radha2",                  //18
+    @"radha1",                  //17-
+    @"radha2",                  //18-
     
-    @"balakrishna_butterballs", //19
+    @"balakrishna_butterballs", //19//Missing
     
-    @"krishna_butterballs",     //20
-    @"shrine1",                 //21
-    @"painting_instrument",     //22
-    @"painting_garlands",       //23
-    @"painting_devotee",        //24
-    @"painting_flute",          //25
-    @"painting_friend",         //26
-    @"painting_radha",          //27
-    @"krishna_radha",           //28
-    @"vishnu_attendants4",      //29
-    @"shrine2",                 //30
+    @"krishna_butterballs",     //20//Missing
+    @"shrine1",                 //21-
+    @"painting_instrument",     //22-
+    @"painting_garlands",       //23-
+    @"painting_devotee",        //24-
+    @"painting_flute",          //25-
+    @"painting_friend",         //26-
+    @"painting_radha",          //27-
+    @"krishna_radha",           //28//Missing
+    @"vishnu_attendants4",      //29-
+    @"shrine2",                 //30-
 };
 
 const int kTotalPaintingsBloch = 13;
