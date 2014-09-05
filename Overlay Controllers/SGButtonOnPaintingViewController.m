@@ -27,7 +27,7 @@
             NSLog(@"buttonConfigPath: %@", buttonConfigPath);
             NSDictionary* buttonDict = [NSDictionary dictionaryWithContentsOfFile:buttonConfigPath];
             UIButton* button = [self buttonForHighlightIndex:i];
-            CGPoint center = CGPointMake([[buttonDict objectForKey:@"xPos"] intValue], [[buttonDict objectForKey:@"yPos"] intValue]+40);
+            CGPoint center = CGPointMake([[buttonDict objectForKey:@"xPos"] intValue] + 57, [[buttonDict objectForKey:@"yPos"] intValue]+17);
             button.center = center;
             
             [self.view addSubview:button];

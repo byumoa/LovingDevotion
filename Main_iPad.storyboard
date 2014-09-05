@@ -368,7 +368,7 @@
                                     <action selector="touchedPainting:" destination="S3D-aX-bvd" eventType="touchUpInside" id="GwS-M3-NeT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WRd-fL-pi8">
+                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WRd-fL-pi8">
                                 <rect key="frame" x="544" y="521" width="124" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="thumbnail11.png">
