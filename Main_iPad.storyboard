@@ -1348,6 +1348,16 @@
                                         <rect key="frame" x="-18" y="0.0" width="804" height="1725"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="91F-Bu-5yV">
+                                        <rect key="frame" x="339" y="345" width="90" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Bhakti Movie">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="K2K-iN-OF8" kind="modal" identifier="bhakti" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HAZ-GN-BA3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -1373,13 +1383,47 @@
                                 <rect key="frame" x="-18" y="0.0" width="804" height="1060"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YRS-Mf-CBt">
+                                <rect key="frame" x="217" y="345" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BYU&amp;India Movie">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="K2K-iN-OF8" kind="modal" identifier="byuandindia" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="9sm-ZX-Uba"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UYg-Ra-dNq">
+                                <rect key="frame" x="463" y="345" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Director Msg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="K2K-iN-OF8" kind="modal" identifier="directormsg" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="FKm-eB-dSC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGE-bZ-pJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2716" y="1365"/>
+            <point key="canvasLocation" x="2740" y="1328"/>
+        </scene>
+        <!--Learn More Movie View Controller-->
+        <scene sceneID="EAr-sg-Tw2">
+            <objects>
+                <viewController id="K2K-iN-OF8" customClass="LearnMoreMovieViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T8K-RP-0BQ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Dd-gl-tt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863" y="2449"/>
         </scene>
         <!--Hinduism View Controller-->
         <scene sceneID="MNb-Z0-eVw">
@@ -1397,6 +1441,26 @@
                                         <rect key="frame" x="-18" y="0.0" width="804" height="2990"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="n2c-jp-p4u">
+                                        <rect key="frame" x="264" y="343" width="75" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Festivals">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="K2K-iN-OF8" kind="modal" identifier="festivals" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Snq-Ka-GKh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Eka-v9-GGf">
+                                        <rect key="frame" x="426" y="343" width="75" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="People Of">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="K2K-iN-OF8" kind="modal" identifier="peopleof" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="sGz-2s-MoD"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -1533,6 +1597,16 @@
                                         <rect key="frame" x="-18" y="0.0" width="804" height="1458"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Elu-Gh-jpy">
+                                        <rect key="frame" x="345" y="342" width="79" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="India Movie">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="K2K-iN-OF8" kind="modal" identifier="india" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="mIz-0n-LKE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -1747,4 +1821,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="mIz-0n-LKE"/>
+    </inferredMetricsTieBreakers>
 </document>

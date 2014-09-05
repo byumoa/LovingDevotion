@@ -6,8 +6,8 @@
 //
 //
 
-#import "SGContentViewController.h"
+#import "LearnMoreMovieSpawnerViewController.h"
 
-@interface ByuAndIndiaViewController : SGContentViewController
+@interface ByuAndIndiaViewController : LearnMoreMovieSpawnerViewController
 
 @end
