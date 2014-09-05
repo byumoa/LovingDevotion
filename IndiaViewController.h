@@ -6,9 +6,9 @@
 //
 //
 
-#import "SGContentViewController.h"
+#import "LearnMoreMovieSpawnerViewController.h"
 
-@interface IndiaViewController : SGContentViewController
+@interface IndiaViewController : LearnMoreMovieSpawnerViewController
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
