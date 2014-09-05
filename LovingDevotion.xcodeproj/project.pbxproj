@@ -127,6 +127,11 @@
 		618713DA1830E592005BC973 /* sg_general_painting_detailmarkerbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 618713D61830E592005BC973 /* sg_general_painting_detailmarkerbtn@2x.png */; };
 		618B35CF1817FF3100EEC12E /* SGTextOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618B35CE1817FF3100EEC12E /* SGTextOverlayViewController.m */; };
 		618B35D21818083900EEC12E /* SGAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618B35D11818083900EEC12E /* SGAudioViewController.m */; };
+		6190545919B9DF9A003FE6D2 /* Bhakti.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6190545419B9DF9A003FE6D2 /* Bhakti.mp4 */; };
+		6190545A19B9DF9A003FE6D2 /* BYUAndIndia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6190545519B9DF9A003FE6D2 /* BYUAndIndia.mp4 */; };
+		6190545B19B9DF9A003FE6D2 /* Hindu Festivals.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6190545619B9DF9A003FE6D2 /* Hindu Festivals.mp4 */; };
+		6190545C19B9DF9A003FE6D2 /* Hindu PeopleOfHinduism.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6190545719B9DF9A003FE6D2 /* Hindu PeopleOfHinduism.mp4 */; };
+		6190545D19B9DF9A003FE6D2 /* India.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6190545819B9DF9A003FE6D2 /* India.mp4 */; };
 		6193049619B94EA900775953 /* PaginationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6193049519B94EA900775953 /* PaginationView.m */; };
 		61A668F5182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A668F4182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m */; };
 		61AB06201998FA7700CC4449 /* glossary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61AB061F1998FA7700CC4449 /* glossary.plist */; };
@@ -518,6 +523,11 @@
 		618B35CE1817FF3100EEC12E /* SGTextOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTextOverlayViewController.m; sourceTree = "<group>"; };
 		618B35D01818083900EEC12E /* SGAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAudioViewController.h; sourceTree = "<group>"; };
 		618B35D11818083900EEC12E /* SGAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAudioViewController.m; sourceTree = "<group>"; };
+		6190545419B9DF9A003FE6D2 /* Bhakti.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bhakti.mp4; sourceTree = "<group>"; };
+		6190545519B9DF9A003FE6D2 /* BYUAndIndia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BYUAndIndia.mp4; sourceTree = "<group>"; };
+		6190545619B9DF9A003FE6D2 /* Hindu Festivals.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hindu Festivals.mp4"; sourceTree = "<group>"; };
+		6190545719B9DF9A003FE6D2 /* Hindu PeopleOfHinduism.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hindu PeopleOfHinduism.mp4"; sourceTree = "<group>"; };
+		6190545819B9DF9A003FE6D2 /* India.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = India.mp4; sourceTree = "<group>"; };
 		6193049419B94EA900775953 /* PaginationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginationView.h; sourceTree = "<group>"; };
 		6193049519B94EA900775953 /* PaginationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginationView.m; sourceTree = "<group>"; };
 		61A668F3182EECE300AC749E /* SGStoryOfTheExhibitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGStoryOfTheExhibitionViewController.h; sourceTree = "<group>"; };
@@ -1070,6 +1080,18 @@
 			path = detailbuttons;
 			sourceTree = "<group>";
 		};
+		6190545319B9DF9A003FE6D2 /* Navigation Videos */ = {
+			isa = PBXGroup;
+			children = (
+				6190545419B9DF9A003FE6D2 /* Bhakti.mp4 */,
+				6190545519B9DF9A003FE6D2 /* BYUAndIndia.mp4 */,
+				6190545619B9DF9A003FE6D2 /* Hindu Festivals.mp4 */,
+				6190545719B9DF9A003FE6D2 /* Hindu PeopleOfHinduism.mp4 */,
+				6190545819B9DF9A003FE6D2 /* India.mp4 */,
+			);
+			path = "Navigation Videos";
+			sourceTree = "<group>";
+		};
 		61AB061D1998F49D00CC4449 /* Glossary */ = {
 			isa = PBXGroup;
 			children = (
@@ -1142,6 +1164,7 @@
 		61CD50A5180C242500D28921 /* GeneralResources */ = {
 			isa = PBXGroup;
 			children = (
+				6190545319B9DF9A003FE6D2 /* Navigation Videos */,
 				61F5493119AC97FC00974FA7 /* PaginationButtons */,
 				6167204819AB617700D238D8 /* ld_learn_about */,
 				61C9E3F119A3840B00293264 /* Thumbnails */,
@@ -1608,6 +1631,7 @@
 				61CD527D180C242500D28921 /* SG_General_Painting_Summary@2x.png in Resources */,
 				61CD509C180C23B100D28921 /* Main_iPad.storyboard in Resources */,
 				618713C7182F10AA005BC973 /* SG_General_Module_OverlayHalf.png in Resources */,
+				6190545D19B9DF9A003FE6D2 /* India.mp4 in Resources */,
 				6167206A19AB617700D238D8 /* ld_map@2x.png in Resources */,
 				6167206C19AB617700D238D8 /* ld_moa@2x.png in Resources */,
 				61C8C01F18504AB000003608 /* blackTopBar.png in Resources */,
@@ -1662,6 +1686,7 @@
 				6167205E19AB617700D238D8 /* ld_bhakti@2x.png in Resources */,
 				618713C1182F10AA005BC973 /* SG_General_Module_OverlayHalf_Bloch.png in Resources */,
 				61CD51FF180C242500D28921 /* sg_home_findbtn@2x.png in Resources */,
+				6190545B19B9DF9A003FE6D2 /* Hindu Festivals.mp4 in Resources */,
 				610554E618285D600030CCC3 /* sg_temple_btn_1880-on.png in Resources */,
 				61CD509B180C23B100D28921 /* Main_iPhone.storyboard in Resources */,
 				806BA1CD1989EEF000D001D1 /* ld_home_home_title@2x.png in Resources */,
@@ -1741,6 +1766,7 @@
 				61C9E44319A3840B00293264 /* thumbnail4@2x.png in Resources */,
 				61CD5292180C242500D28921 /* SG_General_Share_other.png in Resources */,
 				61CD5294180C242500D28921 /* SG_General_Share_thanks-on.png in Resources */,
+				6190545C19B9DF9A003FE6D2 /* Hindu PeopleOfHinduism.mp4 in Resources */,
 				61CD51FD180C242500D28921 /* sg_home_findbtn-on@2x.png in Resources */,
 				61C9E42A19A3840B00293264 /* thumbnail14@2x.png in Resources */,
 				61CD524B180C242500D28921 /* SG_General_ModuleButtonBar.png in Resources */,
@@ -1824,6 +1850,7 @@
 				618645AC181AEEB700195384 /* childrens_btn-on.png in Resources */,
 				61CD528E180C242500D28921 /* SG_General_Share_fb.png in Resources */,
 				8A955F21198CBBDE00478CC5 /* ld_highlight_md_on@2x.png in Resources */,
+				6190545919B9DF9A003FE6D2 /* Bhakti.mp4 in Resources */,
 				61CD5263180C242500D28921 /* SG_General_Painting_GiftsBtn-on.png in Resources */,
 				61CD5262180C242500D28921 /* SG_General_Painting_DetailsBtn@2x.png in Resources */,
 				6167206119AB617700D238D8 /* ld_byu.png in Resources */,
@@ -1831,6 +1858,7 @@
 				61C9E42B19A3840B00293264 /* thumbnail15.png in Resources */,
 				61735B38183233EE0000D837 /* SG_General_header_thanks.png in Resources */,
 				61E5F0B7184620AD003959C7 /* sg_general_Share_signout@2x.png in Resources */,
+				6190545A19B9DF9A003FE6D2 /* BYUAndIndia.mp4 in Resources */,
 				61CD5264180C242500D28921 /* SG_General_Painting_GiftsBtn-on@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
