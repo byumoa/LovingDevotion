@@ -30,7 +30,8 @@ CGRect const kMovieFrameLandscapeLM = {0, 0, 1024, 768};
     self.moviePlayer.view.center = self.view.center;
     self.moviePlayer.movieSourceType = MPMovieSourceTypeFile;
     self.moviePlayer.controlStyle = MPMovieControlStyleNone;
-    [self.view addSubview:self.moviePlayer.view];
+//    [self.view addSubview:self.moviePlayer.view];
+    [self.view insertSubview:self.moviePlayer.view atIndex:1];
     self.moviePlayer.backgroundView.backgroundColor = [UIColor blackColor];
     [self.moviePlayer prepareToPlay];
     [self.moviePlayer play];
@@ -51,4 +52,9 @@ CGRect const kMovieFrameLandscapeLM = {0, 0, 1024, 768};
     }
 }
 
+- (IBAction)pressedBackFromMovie:(UIButton *)sender {
+    [self.moviePlayer stop];
+    self.moviePlayer = nil;
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

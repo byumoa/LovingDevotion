@@ -25,6 +25,7 @@
     // Pass the selected object to the new view controller.
     
     NSString* segueID = segue.identifier;
+    NSLog(@"segueID: %@", segueID);
     UIViewController* dest = segue.destinationViewController;
     if( [dest isKindOfClass:[LearnMoreMovieViewController class]] )
     {
@@ -51,6 +52,7 @@
         else if( [segueID isEqualToString:@"india" ])
         {
             ((LearnMoreMovieViewController*)dest).movieName = @"India";
+            NSLog(@"[segueID isEqualToString:@\"india\" ]");
         }
     }
 }

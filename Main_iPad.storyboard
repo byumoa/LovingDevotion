@@ -1418,12 +1418,25 @@
                     <view key="view" contentMode="scaleToFill" id="T8K-RP-0BQ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F3l-la-k8y">
+                                <rect key="frame" x="0.0" y="14" width="140" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="SG_General_BackBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="SG_General_BackBtn-on.png"/>
+                                <connections>
+                                    <action selector="pressedBackFromMovie:" destination="K2K-iN-OF8" eventType="touchUpInside" id="Qpi-Q8-NYJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Dd-gl-tt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1863" y="2449"/>
+            <point key="canvasLocation" x="1885" y="2454"/>
         </scene>
         <!--Hinduism View Controller-->
         <scene sceneID="MNb-Z0-eVw">
@@ -1487,7 +1500,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_bios.png" id="1Zv-Vm-12M">
-                                        <rect key="frame" x="-18" y="0.0" width="804" height="2685"/>
+                                        <rect key="frame" x="-18" y="0.0" width="804" height="4855"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
@@ -1762,7 +1775,7 @@
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
         <image name="ld_about_flatMenu.png" width="768" height="1024"/>
         <image name="ld_bhakti.png" width="804" height="1725"/>
-        <image name="ld_bios.png" width="804" height="2720"/>
+        <image name="ld_bios.png" width="804" height="4855"/>
         <image name="ld_byu.png" width="804" height="1060"/>
         <image name="ld_donors.png" width="804" height="1060"/>
         <image name="ld_hinduism.png" width="804" height="2990"/>

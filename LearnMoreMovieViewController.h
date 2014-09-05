@@ -13,5 +13,6 @@
 @property (nonatomic, strong) MPMoviePlayerController *moviePlayer;
 
 @property(weak, nonatomic) NSString* movieName;
+- (IBAction)pressedBackFromMovie:(UIButton *)sender;
 
 @end
