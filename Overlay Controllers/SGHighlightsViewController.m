@@ -11,6 +11,8 @@
 #import "SGOverlayView.h"
 #import "SGBlurManager.h"
 #import "SGConvenienceFunctionsManager.h"
+#import "SGPaintingImageView.h"
+#import "AppDelegate.h"
 
 @interface SGHighlightsViewController()
 
@@ -40,7 +42,7 @@
 
 -(void)animateButtonsOn
 {
-    NSLog(@"animateButtonsOn _buttons.count: %i", _buttons.count);
+//    NSLog(@"animateButtonsOn _buttons.count: %i", _buttons.count);
     for( int i = 0; i < _buttons.count; i++ )
     {
         UIButton* button = _buttons[i];
@@ -67,11 +69,15 @@
             }];
         }];
     }
+    
+    SGPaintingImageView* paintingImageView = [((AppDelegate*)[[UIApplication sharedApplication] delegate]) getPaintingImageView];
+    [paintingImageView tearAnimation];
 }
 
 -(SGOverlayViewController*)pressedHighlightBtn:(UIButton *)sender
 {
     [super pressedHighlightBtn:sender];
+    
 //    SGOverlayViewController* childGAIViewController = [super pressedHighlightBtn:sender];
 //    NSString* moduleStr = [SGConvenienceFunctionsManager getStringForModule:childGAIViewController.moduleType];
 //    childGAIViewController.screenName = [NSString stringWithFormat:@"%@: highlights %@", self.paintingName, moduleStr];

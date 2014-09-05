@@ -12,19 +12,19 @@
 
 -(void)configureWithPath:(NSString *)folderPath
 {
-    NSLog(@"configureWithPath: %@", folderPath);
+//    NSLog(@"configureWithPath: %@", folderPath);
     self.rootFolderPath = folderPath;
     _buttons = [NSMutableArray new];
     
     for( int i = 1; i <= 10; i++ )
     {
         NSString* buttonConfigDir = [NSString stringWithFormat:@"%@/%@_%i", folderPath, _moduleTypeStr, i];
-        NSLog(@"buttonConfigDir: %@", buttonConfigDir );
+//        NSLog(@"buttonConfigDir: %@", buttonConfigDir );
         NSString* buttonConfigPath = [[NSBundle mainBundle] pathForResource:@"ButtonPlacement" ofType:@"plist" inDirectory:buttonConfigDir];
         
         if( buttonConfigPath )
         {
-            NSLog(@"buttonConfigPath: %@", buttonConfigPath);
+//            NSLog(@"buttonConfigPath: %@", buttonConfigPath);
             NSDictionary* buttonDict = [NSDictionary dictionaryWithContentsOfFile:buttonConfigPath];
             UIButton* button = [self buttonForHighlightIndex:i];
 //            CGPoint center = CGPointMake([[buttonDict objectForKey:@"xPos"] intValue] + 57, [[buttonDict objectForKey:@"yPos"] intValue]+17);

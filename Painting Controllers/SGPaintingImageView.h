@@ -16,7 +16,7 @@
 @property (nonatomic) BOOL isTurnAround;
 @property (nonatomic) NSString* paintingName;
 - (void)setupAnimations: (NSString*)paintingName;
-
+- (void) tearAnimation;
 
 - (void)animateDownWithDelay: (float)delay;
 - (void)animateUpWithDelay: (float)delay;

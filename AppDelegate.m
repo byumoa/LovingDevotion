@@ -7,8 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import "SGViewController.h"
+#import "SGPaintingContainerViewController.h"
+#import "SGPaintingViewController.h"
+#import "SGPaintingImageView.h"
 
 @implementation AppDelegate
+
+-(SGPaintingImageView *)getPaintingImageView{
+    SGPaintingImageView* paintingImageView = ((SGPaintingViewController*)((SGPaintingContainerViewController*)((SGViewController*)self.window.rootViewController).currentContentController).currentContentController).paintingImageView;
+    NSLog(@"paintingImageView: %@", [paintingImageView class]);
+    return paintingImageView;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

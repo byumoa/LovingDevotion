@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SGPaintingImageView;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
+
+- (SGPaintingImageView*)getPaintingImageView;
 
 @end

@@ -18,12 +18,14 @@ const int inset = 20;
     NSMutableArray* _followBtns;
     CGPoint _btnOffset;
     int _height;
+    NSTimer* _currentTimer;
     
     NSArray* _circlesInfo;
 }
 - (void)tapRecognized: (UITapGestureRecognizer*)recognizer;
 - (void) addCircles;
 - (void) delayedStopAnimating: (NSTimer*)timer;
+- (void)animToZero:(NSTimer*)timer;
 
 @end
 
@@ -167,6 +169,22 @@ const int inset = 20;
     [self resetCirclePosForFrame:_currentIndex];
     [self setImage:[self.animationImages objectAtIndex:_currentIndex]];
     
+}
+
+-(void)tearAnimation{
+    NSLog(@"tearAnimation");
+    if( self.isTurnAround ){
+        _currentTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/30.0 target:self selector:@selector(animToZero:) userInfo:nil repeats:YES];
+    }
+}
+
+- (void)animToZero:(NSTimer*)timer{
+    if (_currentIndex != 0 ) {
+        [self setImage:[self.animationImages objectAtIndex:_currentIndex--]];
+    }
+    else{
+        [_currentTimer invalidate];
+    }
 }
 
 @end
