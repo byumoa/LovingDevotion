@@ -23,7 +23,7 @@ NSString* const kTwitterAutofill = @"Enjoying this example of #lovingdevotion at
 NSString* const kFacebookAutofill = @"Enjoying this example of #lovingdevotion at the BYU Museum of Art.";
 
 NSString* const kAppStoreURL = @"https://itunes.apple.com/us/app/sacred-gifts-brigham-young/id723165787?ls=1&mt=8";
-NSString* const kTwitterPrefillTweet = @"https://twitter.com/intent/tweet?text=Viewing this %@ painting & feeling grateful @BYUMOA’s #sacredgifts %@";
+NSString* const kTwitterPrefillTweet = @"https://twitter.com/intent/tweet?text=Enjoying this example of #lovingdevotion at the BYU Museum of Art. %@";
 
 int const kOverlayHeight = 236;
 
@@ -133,8 +133,8 @@ int const kOverlayHeight = 236;
 {
     SGFacebookViewController* fbViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"facebook"];
     [self presentViewController:fbViewController animated:YES completion:nil];
-    NSString* urlStr = [SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName];
-    [fbViewController configureWebpageForURLStr:urlStr];
+    NSString* fbImgStr = [SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName];
+    [fbViewController configureWebpageForURLStr:fbImgStr];
 }
 
 - (void)doInMuseumTWPostWithImage: (UIImage*)thumbnail
@@ -142,8 +142,7 @@ int const kOverlayHeight = 236;
     SGTwitterViewController* twViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"twitter"];
     [self presentViewController:twViewController animated:YES completion:nil];
     NSString* fbImgStr = [SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName];
-    NSString* artist = [SGConvenienceFunctionsManager artistForPainting:self.paintingName abbreviated:YES].capitalizedString;
-    NSString* urlStr = [NSString stringWithFormat:(NSString*)kTwitterPrefillTweet, artist, fbImgStr];
+    NSString* urlStr = [NSString stringWithFormat:(NSString*)kTwitterPrefillTweet, fbImgStr];
     [twViewController configureWebpageForURLStr:urlStr];
 }
 

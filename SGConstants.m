@@ -27,25 +27,25 @@ const NSString* kControllerIDPanoramaStr = @"panorama";
 
 NSString* const kPaintingFbUrls[] = {
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680180170/?type=3&theater",
-    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679820170/?type=3&theater",
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679820170/?type=3&theater"
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680215170/?type=3&theater",
-    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680090170/?type=3&theater",//Should be vishnu_attendants2
+    @"https://www.facebook.com/BYUmoa/photos/a.10152559559330170.1073741845.53484520169/10152654854810170/?type=3&theater",//vishnu_attendants2
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680090170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650673160170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680075170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680095170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",
-    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//Duplicates nadu_gopala1
-    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//Duplicates nadu_gopala1
-    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//Duplicates nadu_gopala1
-    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//Duplicates nadu_gopala1
-    @"",//fluting
-    @"",//fluting
-    @"",//fluting
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//nadu_gopala1
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//nadu_gopala1
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//nadu_gopala1
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679825170/?type=3&theater",//nadu_gopala1
+    @"https://m.facebook.com/BYUmoa/photos/a.10152559559330170.1073741845.53484520169/10152654854745170/?type=3&theater",//fluting
+    @"https://www.facebook.com/BYUmoa/photos/a.10152559559330170.1073741845.53484520169/10152654854745170/?type=3&theater",//fluting
+    @"https://www.facebook.com/BYUmoa/photos/a.10152559559330170.1073741845.53484520169/10152654854745170/?type=3&theater",//fluting
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680005170/?type=3&theater",
-    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680005170/?type=3&theater",//Duplicated radha1
-    @"",//Missing balakrishna_butterballs
-    @"",//Missing krishna_butterballs
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680005170/?type=3&theater",//radha1
+    @"https://www.facebook.com/BYUmoa/photos/a.10152559559330170.1073741845.53484520169/10152654854735170/?type=3&theater",//balakrishna_butterballs
+    @"https://www.facebook.com/BYUmoa/photos/a.10152559559330170.1073741845.53484520169/10152654854750170/?type=3&theater",//krishna_butterballs
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680020170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679925170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679920170/?type=3&theater",
@@ -53,7 +53,7 @@ NSString* const kPaintingFbUrls[] = {
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679880170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679875170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679935170/?type=3&theater",
-    @"",//Missing Krishna_Radha
+    @"https://www.facebook.com/BYUmoa/photos/a.10152559559330170.1073741845.53484520169/10152654854790170/?type=3&theater",//Krishna_Radha
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680160170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680030170/?type=3&theater",
 };
