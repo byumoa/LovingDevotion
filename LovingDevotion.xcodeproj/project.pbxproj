@@ -127,6 +127,7 @@
 		618713DA1830E592005BC973 /* sg_general_painting_detailmarkerbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 618713D61830E592005BC973 /* sg_general_painting_detailmarkerbtn@2x.png */; };
 		618B35CF1817FF3100EEC12E /* SGTextOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618B35CE1817FF3100EEC12E /* SGTextOverlayViewController.m */; };
 		618B35D21818083900EEC12E /* SGAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618B35D11818083900EEC12E /* SGAudioViewController.m */; };
+		6193049619B94EA900775953 /* PaginationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6193049519B94EA900775953 /* PaginationView.m */; };
 		61A668F5182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A668F4182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m */; };
 		61AB06201998FA7700CC4449 /* glossary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61AB061F1998FA7700CC4449 /* glossary.plist */; };
 		61AB06231999035100CC4449 /* GlossaryViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AB06221999035100CC4449 /* GlossaryViewControllerTableViewController.m */; };
@@ -517,6 +518,8 @@
 		618B35CE1817FF3100EEC12E /* SGTextOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTextOverlayViewController.m; sourceTree = "<group>"; };
 		618B35D01818083900EEC12E /* SGAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAudioViewController.h; sourceTree = "<group>"; };
 		618B35D11818083900EEC12E /* SGAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAudioViewController.m; sourceTree = "<group>"; };
+		6193049419B94EA900775953 /* PaginationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginationView.h; sourceTree = "<group>"; };
+		6193049519B94EA900775953 /* PaginationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginationView.m; sourceTree = "<group>"; };
 		61A668F3182EECE300AC749E /* SGStoryOfTheExhibitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGStoryOfTheExhibitionViewController.h; sourceTree = "<group>"; };
 		61A668F4182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGStoryOfTheExhibitionViewController.m; sourceTree = "<group>"; };
 		61AB061F1998FA7700CC4449 /* glossary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = glossary.plist; sourceTree = "<group>"; };
@@ -906,6 +909,8 @@
 				6167208719AB84B900D238D8 /* DonorsViewController.m */,
 				6167208919AB84C700D238D8 /* IndiaViewController.h */,
 				6167208A19AB84C700D238D8 /* IndiaViewController.m */,
+				6193049419B94EA900775953 /* PaginationView.h */,
+				6193049519B94EA900775953 /* PaginationView.m */,
 			);
 			name = SacredGifts;
 			sourceTree = "<group>";
@@ -1888,6 +1893,7 @@
 				61CD5303180C24FD00D28921 /* SGChildrensOverlayViewController.m in Sources */,
 				618713B8182F0B6C005BC973 /* SGConvenienceFunctionsManager.m in Sources */,
 				61CD5341180C256700D28921 /* SGFindAPaintingViewController.m in Sources */,
+				6193049619B94EA900775953 /* PaginationView.m in Sources */,
 				61CD533F180C256700D28921 /* SGConstants.m in Sources */,
 				61F3D63C19688DDD0039E5B8 /* AppDelegate.m in Sources */,
 				61CD530A180C24FD00D28921 /* SGPanoramaOverlayViewController.m in Sources */,

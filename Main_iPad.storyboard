@@ -164,13 +164,97 @@
                     <view key="view" contentMode="scaleToFill" id="Hta-UW-5HZ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" id="e3b-QX-gKH" userLabel="Pagination View5" customClass="PaginationView">
+                                <rect key="frame" x="302" y="20" width="164" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_pagination.png" id="PZ5-W4-OU5">
+                                        <rect key="frame" x="66" y="2" width="25" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_pagination.png" id="ecH-Ge-ldP">
+                                        <rect key="frame" x="99" y="2" width="25" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_pagination.png" id="x00-P5-bNP">
+                                        <rect key="frame" x="132" y="2" width="25" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_pagination.png" id="tYo-E5-d2a">
+                                        <rect key="frame" x="33" y="2" width="25" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_pagination.png" id="L0O-7E-IVg">
+                                        <rect key="frame" x="0.0" y="2" width="25" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dot1" destination="L0O-7E-IVg" id="44b-fT-I6X"/>
+                                    <outlet property="dot2" destination="tYo-E5-d2a" id="sVa-kL-JVb"/>
+                                    <outlet property="dot3" destination="PZ5-W4-OU5" id="VIB-XI-VTg"/>
+                                    <outlet property="dot4" destination="ecH-Ge-ldP" id="fLk-KS-dgI"/>
+                                    <outlet property="dot5" destination="x00-P5-bNP" id="68c-dR-cBE"/>
+                                </connections>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="bSt-7N-iNT" userLabel="Pagination View3" customClass="PaginationView">
+                                <rect key="frame" x="302" y="20" width="164" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_pagination.png" id="3J7-aD-oBf">
+                                        <rect key="frame" x="66" y="2" width="25" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_pagination.png" id="FQy-ih-dbb">
+                                        <rect key="frame" x="99" y="2" width="25" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_pagination.png" id="vqu-ia-lEL">
+                                        <rect key="frame" x="33" y="2" width="25" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dot1" destination="vqu-ia-lEL" id="anK-jb-a4a"/>
+                                    <outlet property="dot2" destination="3J7-aD-oBf" id="cvz-eV-wEZ"/>
+                                    <outlet property="dot3" destination="FQy-ih-dbb" id="2DX-2L-aiO"/>
+                                </connections>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="Ihb-X9-ssF" userLabel="Pagination View2" customClass="PaginationView">
+                                <rect key="frame" x="302" y="20" width="164" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_pagination.png" id="Zae-T7-JPz">
+                                        <rect key="frame" x="53" y="2" width="25" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_pagination.png" id="GWd-Ct-UOY">
+                                        <rect key="frame" x="86" y="2" width="25" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dot1" destination="Zae-T7-JPz" id="v9P-Sv-DoN"/>
+                                    <outlet property="dot2" destination="GWd-Ct-UOY" id="cgw-ev-xfP"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="paginate2View" destination="Ihb-X9-ssF" id="2UW-di-fB3"/>
+                        <outlet property="paginate3View" destination="bSt-7N-iNT" id="Ieu-v4-JMb"/>
+                        <outlet property="paginate5View" destination="e3b-QX-gKH" id="bvT-vB-veU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8J-Vg-9ON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1743" y="-235"/>
+            <point key="canvasLocation" x="1719" y="-313"/>
         </scene>
         <!--FindA Painting View Controller-->
         <scene sceneID="Uxd-LW-xna">
@@ -716,7 +800,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1859" y="-165"/>
+            <point key="canvasLocation" x="2127" y="-82"/>
         </scene>
         <!--Tombstone Overlay View Controller-->
         <scene sceneID="Pf1-fy-jtR">
@@ -1613,6 +1697,7 @@
         <image name="ld_learn_flatMenu.png" width="768" height="1024"/>
         <image name="ld_map.png" width="804" height="1060"/>
         <image name="ld_moa.png" width="804" height="3912"/>
+        <image name="ld_pagination.png" width="25" height="25"/>
         <image name="sg_general_Share_signout.png" width="244" height="41"/>
         <image name="sg_home_bg-findpainting.png" width="804" height="1060"/>
         <image name="sg_home_bg-home.png" width="804" height="1060"/>

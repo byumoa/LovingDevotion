@@ -156,6 +156,7 @@ const int kDonateAlertViewTag = 1;
 #pragma mark Delegate
 -(UIViewController*)transitionFromController:(UIViewController *)fromController toControllerID:(const NSString *)toControllerID fromButtonRect:(CGRect)frame withAnimType:(const NSString *)animType
 {
+    NSLog(@"transitionFromController: %@", toControllerID);
     NSString* headerName = [NSString stringWithFormat:@"header_%@", toControllerID];
     self.headerTitleImgView.image = [UIImage imageNamed:headerName];
     
@@ -245,8 +246,7 @@ const int kDonateAlertViewTag = 1;
         self.headerBlurDecoy.backgroundColor = [UIColor blackColor];
     }];
     
-//    paintingContainer.pagination2View.hidden = NO;
-//    [paintingContainer.view bringSubviewToFront:paintingContainer.pagination2View];
+    [paintingContainer updatePagination:paintingName];
     
     return paintingContainer;
 }

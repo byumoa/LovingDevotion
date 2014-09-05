@@ -96,7 +96,7 @@ const int inset = 20;
         [animationFrames addObject: [UIImage imageWithContentsOfFile:imagePath]];
     }
     self.animationImages = animationFrames;
-    [self addCircles];
+//    [self addCircles];
     self.animationDuration = 3;
 //    [self startAnimating];
 //    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(delayedStopAnimating:) userInfo:nil repeats:NO];

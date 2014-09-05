@@ -69,6 +69,8 @@
     [toController configWithPaintingName:paintingName];
     ((SGPaintingViewController*)toController).headerView = ((SGPaintingViewController*)fromController).headerView;
     
+    [self updatePagination:paintingName];
+    
     return toController;
 }
 

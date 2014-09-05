@@ -24,6 +24,74 @@
 
 @implementation SGContainerViewController
 
+- (void)updatePagination: (NSString*)paintingName
+{
+    if([paintingName isEqualToString:@"nadu_gopala1"] ){
+        self.paginate5View.hidden = NO;
+        [self.view bringSubviewToFront:self.paginate5View];
+        [self.paginate5View setDotShowing:1];
+    }
+    else if([paintingName isEqualToString:@"nadu_gopala2"] ){
+        self.paginate5View.hidden = NO;
+        [self.view bringSubviewToFront:self.paginate5View];
+        [self.paginate5View setDotShowing:2];
+    }
+    else if([paintingName isEqualToString:@"nadu_gopala3"] ){
+        self.paginate5View.hidden = NO;
+        [self.view bringSubviewToFront:self.paginate5View];
+        [self.paginate5View setDotShowing:3];
+    }
+    else if([paintingName isEqualToString:@"nadu_gopala4"] ){
+        self.paginate5View.hidden = NO;
+        [self.view bringSubviewToFront:self.paginate5View];
+        [self.paginate5View setDotShowing:4];
+    }
+    else if([paintingName isEqualToString:@"nadu_gopala5"] ){
+        self.paginate5View.hidden = NO;
+        [self.view bringSubviewToFront:self.paginate5View];
+        [self.paginate5View setDotShowing:5];
+    }
+    else{
+        self.paginate5View.hidden = YES;
+        [self.view sendSubviewToBack:self.paginate5View];
+    }
+    
+    if( [paintingName isEqualToString:@"fluting_krishna1"]){
+        self.paginate3View.hidden = NO;
+        [self.view bringSubviewToFront:self.paginate3View];
+        [self.paginate3View setDotShowing:1];
+    }
+    else if( [paintingName isEqualToString:@"fluting_krishna2"]){
+        self.paginate3View.hidden = NO;
+        [self.view bringSubviewToFront:self.paginate3View];
+        [self.paginate3View setDotShowing:2];
+    }
+    else if( [paintingName isEqualToString:@"fluting_krishna3"]){
+        self.paginate3View.hidden = NO;
+        [self.view bringSubviewToFront:self.paginate3View];
+        [self.paginate3View setDotShowing:3];
+    }
+    else{
+        self.paginate3View.hidden = YES;
+        [self.view sendSubviewToBack:self.paginate3View];
+    }
+    
+    if( [paintingName isEqualToString:@"radha1"] ){
+        self.paginate2View.hidden = NO;
+        [self.view bringSubviewToFront:self.paginate2View];
+        [self.paginate2View setDotShowing:1];
+    }
+    else if( [paintingName isEqualToString:@"radha2"] ){
+        self.paginate2View.hidden = NO;
+        [self.view bringSubviewToFront:self.paginate2View];
+        [self.paginate2View setDotShowing:2];
+    }
+    else{
+        self.paginate2View.hidden = YES;
+        [self.view sendSubviewToBack:self.paginate2View];
+    }
+}
+
 -(void)stopAudio
 {
     SGMusicManager* musicManager = [SGMusicManager sharedManager];
