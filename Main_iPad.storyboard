@@ -841,17 +841,6 @@
                                     <action selector="pressedNarration:" destination="wQF-Fi-40D" eventType="touchUpInside" id="UMX-rL-S4P"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VmQ-5f-g1Z">
-                                <rect key="frame" x="66" y="479" width="250" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="SG_General_painting-castleBtn-Bloch.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="SG_General_painting-castleBtn-Bloch-on.png"/>
-                                <connections>
-                                    <action selector="pressedCastle:" destination="wQF-Fi-40D" eventType="touchUpInside" id="4jr-vr-2dZ"/>
-                                </connections>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L12-a3-3ns">
                                 <rect key="frame" x="630" y="410" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -863,6 +852,27 @@
                                     <segue destination="CmV-5q-dg0" kind="modal" id="n0k-02-bEK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5eZ-zN-20e">
+                                <rect key="frame" x="0.0" y="452" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="map_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedMap:" destination="wQF-Fi-40D" eventType="touchUpInside" id="zqW-TF-idQ"/>
+                                    <segue destination="fL8-Dh-Niu" kind="modal" identifier="map" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Ybv-J6-fXT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mdt-qz-7VM">
+                                <rect key="frame" x="80" y="452" width="112" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="glossary_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedGlossary:" destination="wQF-Fi-40D" eventType="touchUpInside" id="QXW-Ia-diI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
@@ -871,9 +881,6 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="524"/>
-                    <connections>
-                        <outlet property="castleBtn" destination="VmQ-5f-g1Z" id="CXI-Ep-Ycv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNh-x6-hsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1317,20 +1324,33 @@
             <objects>
                 <viewController restorationIdentifier="map" storyboardIdentifier="map" id="fL8-Dh-Niu" customClass="IndiaMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eVr-ng-aTW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_map.png" id="zaT-w7-oMf">
                                 <rect key="frame" x="0.0" y="0.0" width="804" height="1060"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yO7-Or-9ge">
+                                <rect key="frame" x="0.0" y="0.0" width="122" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="SG_General_BackBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBack:" destination="fL8-Dh-Niu" eventType="touchUpInside" id="BBg-2R-dXu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="backBtn" destination="yO7-Or-9ge" id="hxr-30-RFi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2f-Pd-hjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2225" y="1060"/>
+            <point key="canvasLocation" x="2156" y="1546"/>
         </scene>
         <!--Bhakti View Controller-->
         <scene sceneID="svI-fC-k6F">
@@ -1766,12 +1786,11 @@
         <image name="SG_General_Share_tw-on.png" width="244" height="41"/>
         <image name="SG_General_Share_tw.png" width="244" height="41"/>
         <image name="SG_General_TopBar.png" width="1" height="1"/>
-        <image name="SG_General_painting-castleBtn-Bloch-on.png" width="250" height="41"/>
-        <image name="SG_General_painting-castleBtn-Bloch.png" width="250" height="41"/>
         <image name="SG_General_window_closeBtn-on.png" width="102" height="70"/>
         <image name="SG_General_window_closeBtn.png" width="102" height="70"/>
         <image name="aalborg.png" width="800" height="410"/>
         <image name="about_exhibition.png" width="804" height="1060"/>
+        <image name="glossary_btn.png" width="112" height="72"/>
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
         <image name="ld_about_flatMenu.png" width="768" height="1024"/>
         <image name="ld_bhakti.png" width="804" height="1725"/>
@@ -1785,6 +1804,7 @@
         <image name="ld_map.png" width="804" height="1060"/>
         <image name="ld_moa.png" width="804" height="3912"/>
         <image name="ld_pagination.png" width="25" height="25"/>
+        <image name="map_btn.png" width="72" height="72"/>
         <image name="sg_general_Share_signout.png" width="244" height="41"/>
         <image name="sg_home_bg-findpainting.png" width="804" height="1060"/>
         <image name="sg_home_bg-home.png" width="804" height="1060"/>

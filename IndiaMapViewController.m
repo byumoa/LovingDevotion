@@ -27,6 +27,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if( self.mapName ){
+        UIImageView* mapView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.mapName]];
+        [self.view insertSubview:mapView atIndex:1];
+    }
+    else{
+        self.backBtn.alpha = 0;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,4 +54,8 @@
 }
 */
 
+- (IBAction)pressedBack:(UIButton *)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

@@ -10,6 +10,7 @@
 #import "SGNarrationManager.h"
 #import "SGConvenienceFunctionsManager.h"
 #import "GlossaryViewControllerTableViewController.h"
+#import "IndiaMapViewController.h"
 
 const NSString* kSummarySpeakerBtnNrmStr = @"speaker_btns__narration_btn.png";
 const NSString* kSummarySpeakerBtnHilStr = @"speaker_btns__narration_btn-on.png";
@@ -21,6 +22,7 @@ const NSString* kSummaryPauseBtnHilStr = @"summary_pause_btn.png";
 @interface SGSummaryOverlayViewController ()
 {
     BOOL _narrationIsActive;
+    NSDictionary* _mapGlossaryDict;
 }
 
 - (void)setupSpeakerBtnPlay;
@@ -30,6 +32,13 @@ const NSString* kSummaryPauseBtnHilStr = @"summary_pause_btn.png";
 @end
 
 @implementation SGSummaryOverlayViewController
+
+- (IBAction)pressedMap:(UIButton *)sender {
+}
+
+- (IBAction)pressedGlossary:(UIButton *)sender {
+    
+}
 
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
@@ -87,12 +96,22 @@ const NSString* kSummaryPauseBtnHilStr = @"summary_pause_btn.png";
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
  {
-     NSLog(@"prepareForSegue");
-     GlossaryViewControllerTableViewController* glossary = [segue destinationViewController];
-     NSArray* highlightedWordsArr = [NSArray arrayWithObjects:@"Avatars", nil];
-     [glossary setHighlightWords:highlightedWordsArr];
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
+     if( [segue.identifier isEqualToString:@"glossary"] )
+     {
+         GlossaryViewControllerTableViewController* glossary = [segue destinationViewController];
+         NSArray* highlightedWordsArr = [NSArray arrayWithObjects:@"Avatars", nil];
+         [glossary setHighlightWords:highlightedWordsArr];
+     }
+     
+     else if( [segue.identifier isEqualToString:@"map"] ){
+         if( !_mapGlossaryDict ){
+             NSString* path = [[NSBundle mainBundle] pathForResource:@"map_glossary" ofType:@"plist" inDirectory:self.rootFolderPath];
+             _mapGlossaryDict = [NSDictionary dictionaryWithContentsOfFile:path];
+         }
+         
+         IndiaMapViewController* map = [segue destinationViewController];
+         NSArray* mapArr = [_mapGlossaryDict objectForKey:@"map"];
+         map.mapName = [mapArr objectAtIndex:0];
+     }
  }
-
 @end
