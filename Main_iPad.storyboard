@@ -1681,13 +1681,13 @@
                                 <rect key="frame" x="307" y="79" width="154" height="79"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3qR-A2-jQS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3qR-A2-jQS">
                                 <rect key="frame" x="126" y="189" width="516" height="835"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="CmK-RR-ffU" id="FB7-1x-ui8"/>
-                                    <outlet property="delegate" destination="CmK-RR-ffU" id="08x-0c-Qrj"/>
+                                    <outlet property="delegate" destination="CmK-RR-ffU" id="8PE-kb-xf4"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -1820,16 +1820,16 @@
         <image name="glossary_title.png" width="154" height="79"/>
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
         <image name="ld_about_flatMenu.png" width="768" height="1024"/>
-        <image name="ld_bhakti.png" width="804" height="1725"/>
+        <image name="ld_bhakti.png" width="804" height="2335"/>
         <image name="ld_bios.png" width="804" height="4855"/>
-        <image name="ld_byu.png" width="804" height="1060"/>
-        <image name="ld_donors.png" width="804" height="1060"/>
-        <image name="ld_hinduism.png" width="804" height="2990"/>
+        <image name="ld_byu.png" width="804" height="1760"/>
+        <image name="ld_donors.png" width="804" height="1125"/>
+        <image name="ld_hinduism.png" width="804" height="4905"/>
         <image name="ld_home_home_title.png" width="550" height="450"/>
-        <image name="ld_india.png" width="804" height="1458"/>
+        <image name="ld_india.png" width="804" height="2237"/>
         <image name="ld_learn_flatMenu.png" width="768" height="1024"/>
         <image name="ld_map.png" width="768" height="1024"/>
-        <image name="ld_moa.png" width="804" height="3912"/>
+        <image name="ld_moa.png" width="804" height="4140"/>
         <image name="ld_pagination.png" width="25" height="25"/>
         <image name="map_btn.png" width="72" height="72"/>
         <image name="sg_general_Share_signout.png" width="244" height="41"/>
@@ -1882,6 +1882,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="FKm-eB-dSC"/>
+        <segue reference="sGz-2s-MoD"/>
     </inferredMetricsTieBreakers>
 </document>

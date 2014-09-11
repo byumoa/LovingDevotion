@@ -135,6 +135,7 @@
     cell.textLabel.numberOfLines = 0;
     cell.backgroundColor = bgColor;
     cell.contentView.backgroundColor = bgColor;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
 //    cell.textLabel.textColor = [UIColor colorWithRed:254/255.0 green:234/255.0 blue:208/255.0 alpha:1];
     return cell;
 }
