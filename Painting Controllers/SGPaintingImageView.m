@@ -39,6 +39,7 @@ const int inset = 20;
     _followBtns = [NSMutableArray array];
     
     for (int i = 0; i < _circlesInfo.count; i++) {
+//    for (int i = 0; i < 1; i++) {
         UIButton* followBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [followBtn setImage:[UIImage imageNamed:@"ld_highlight_lg"] forState:UIControlStateNormal];
         [followBtn setImage:[UIImage imageNamed:@"ld_highlight_lg_on"] forState:UIControlStateHighlighted];
@@ -98,7 +99,7 @@ const int inset = 20;
         [animationFrames addObject: [UIImage imageWithContentsOfFile:imagePath]];
     }
     self.animationImages = animationFrames;
-//    [self addCircles];
+    [self addCircles];
     self.animationDuration = 3;
 //    [self startAnimating];
 //    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(delayedStopAnimating:) userInfo:nil repeats:NO];
