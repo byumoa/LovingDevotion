@@ -34,6 +34,8 @@
     }
     else{
         self.backBtn.alpha = 0;
+        UIImageView* mapView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"map_main"]];
+        [self.view insertSubview:mapView atIndex:1];
     }
 }
 

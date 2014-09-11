@@ -848,9 +848,6 @@
                                     <color key="titleColor" red="0.99215692280000001" green="0.91764712329999998" blue="0.8078432083" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="CmV-5q-dg0" kind="modal" identifier="glossary" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="n0k-02-bEK"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5eZ-zN-20e">
                                 <rect key="frame" x="0.0" y="452" width="72" height="72"/>
@@ -870,8 +867,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pressedGlossary:" destination="wQF-Fi-40D" eventType="touchUpInside" id="QXW-Ia-diI"/>
-                                    <segue destination="CmV-5q-dg0" kind="modal" id="Oo3-KP-Vkw"/>
+                                    <segue destination="CmK-RR-ffU" kind="modal" identifier="glossary" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="vET-OR-C3L"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -885,7 +881,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNh-x6-hsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="80"/>
+            <point key="canvasLocation" x="2610" y="46"/>
         </scene>
         <!--Music Overlay View Controller-->
         <scene sceneID="f2i-UZ-Q7R">
@@ -1325,11 +1321,11 @@
             <objects>
                 <viewController restorationIdentifier="map" storyboardIdentifier="map" id="fL8-Dh-Niu" customClass="IndiaMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eVr-ng-aTW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="524"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ld_map.png" id="zaT-w7-oMf">
-                                <rect key="frame" x="0.0" y="0.0" width="804" height="1060"/>
+                                <rect key="frame" x="-18" y="-18" width="804" height="1060"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yO7-Or-9ge">
@@ -1345,13 +1341,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="backBtn" destination="yO7-Or-9ge" id="hxr-30-RFi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2f-Pd-hjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2156" y="1546"/>
+            <point key="canvasLocation" x="2142" y="1556"/>
         </scene>
         <!--Bhakti View Controller-->
         <scene sceneID="svI-fC-k6F">
@@ -1654,33 +1651,59 @@
             </objects>
             <point key="canvasLocation" x="3995" y="2129"/>
         </scene>
-        <!--Glossary View Controller Table View Controller-->
-        <scene sceneID="bGU-qm-617">
+        <!--Glossary View Controller-->
+        <scene sceneID="Qax-71-fod">
             <objects>
-                <tableViewController id="CmV-5q-dg0" customClass="GlossaryViewControllerTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PtI-6Y-HyZ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="524"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="63r-52-DAB">
-                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                <viewController id="CmK-RR-ffU" customClass="GlossaryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZj-xY-9ef">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="glossary_bg.png" id="VVo-cz-szm">
+                                <rect key="frame" x="-18" y="0.0" width="804" height="1060"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="63r-52-DAB" id="eZg-Qs-ohR">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="CmV-5q-dg0" id="fhf-gu-Uvi"/>
-                            <outlet property="delegate" destination="CmV-5q-dg0" id="5cg-m3-6dr"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XDv-Em-Ont" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="glossary_bg_bottom.png" id="65z-VT-ccc">
+                                <rect key="frame" x="-18" y="922" width="804" height="102"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VLd-rf-uLV">
+                                <rect key="frame" x="7" y="0.0" width="122" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="SG_General_BackBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBack:" destination="CmK-RR-ffU" eventType="touchUpInside" id="Frq-TZ-QrH"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="glossary_title.png" id="mV9-Ol-yUV">
+                                <rect key="frame" x="307" y="79" width="154" height="79"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3qR-A2-jQS">
+                                <rect key="frame" x="126" y="189" width="516" height="835"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CmK-RR-ffU" id="FB7-1x-ui8"/>
+                                    <outlet property="delegate" destination="CmK-RR-ffU" id="08x-0c-Qrj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.24313725490196078" green="0.0078431372549019607" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="backgroundBottom" destination="65z-VT-ccc" id="okQ-t3-nuW"/>
+                        <outlet property="backgroundTop" destination="VVo-cz-szm" id="IBj-Xx-cG2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vww-vA-qRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4525" y="1611"/>
+            <point key="canvasLocation" x="3689" y="-368"/>
         </scene>
         <!--Twitter View Controller-->
         <scene sceneID="J9A-1F-I2H">
@@ -1791,7 +1814,10 @@
         <image name="SG_General_window_closeBtn.png" width="102" height="70"/>
         <image name="aalborg.png" width="800" height="410"/>
         <image name="about_exhibition.png" width="804" height="1060"/>
+        <image name="glossary_bg.png" width="804" height="1060"/>
+        <image name="glossary_bg_bottom.png" width="804" height="102"/>
         <image name="glossary_btn.png" width="112" height="72"/>
+        <image name="glossary_title.png" width="154" height="79"/>
         <image name="header_SacredGifts Home.png" width="1" height="1"/>
         <image name="ld_about_flatMenu.png" width="768" height="1024"/>
         <image name="ld_bhakti.png" width="804" height="1725"/>
@@ -1802,7 +1828,7 @@
         <image name="ld_home_home_title.png" width="550" height="450"/>
         <image name="ld_india.png" width="804" height="1458"/>
         <image name="ld_learn_flatMenu.png" width="768" height="1024"/>
-        <image name="ld_map.png" width="804" height="1060"/>
+        <image name="ld_map.png" width="768" height="1024"/>
         <image name="ld_moa.png" width="804" height="3912"/>
         <image name="ld_pagination.png" width="25" height="25"/>
         <image name="map_btn.png" width="72" height="72"/>
@@ -1856,7 +1882,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="n0k-02-bEK"/>
         <segue reference="FKm-eB-dSC"/>
     </inferredMetricsTieBreakers>
 </document>

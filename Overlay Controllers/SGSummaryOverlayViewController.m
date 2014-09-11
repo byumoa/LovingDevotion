@@ -9,7 +9,7 @@
 #import "SGSummaryOverlayViewController.h"
 #import "SGNarrationManager.h"
 #import "SGConvenienceFunctionsManager.h"
-#import "GlossaryViewControllerTableViewController.h"
+#import "GlossaryViewController.h"
 #import "IndiaMapViewController.h"
 
 const NSString* kSummarySpeakerBtnNrmStr = @"speaker_btns__narration_btn.png";
@@ -96,19 +96,19 @@ const NSString* kSummaryPauseBtnHilStr = @"summary_pause_btn.png";
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
  {
+     if( !_mapGlossaryDict ){
+         NSString* path = [[NSBundle mainBundle] pathForResource:@"map_glossary" ofType:@"plist" inDirectory:self.rootFolderPath];
+         _mapGlossaryDict = [NSDictionary dictionaryWithContentsOfFile:path];
+     }
+     
      if( [segue.identifier isEqualToString:@"glossary"] )
      {
-         GlossaryViewControllerTableViewController* glossary = [segue destinationViewController];
-         NSArray* highlightedWordsArr = [NSArray arrayWithObjects:@"Avatars", nil];
+         GlossaryViewController* glossary = [segue destinationViewController];
+         NSArray* highlightedWordsArr = [_mapGlossaryDict objectForKey:@"glossary"];
          [glossary setHighlightWords:highlightedWordsArr];
      }
      
      else if( [segue.identifier isEqualToString:@"map"] ){
-         if( !_mapGlossaryDict ){
-             NSString* path = [[NSBundle mainBundle] pathForResource:@"map_glossary" ofType:@"plist" inDirectory:self.rootFolderPath];
-             _mapGlossaryDict = [NSDictionary dictionaryWithContentsOfFile:path];
-         }
-         
          IndiaMapViewController* map = [segue destinationViewController];
          NSArray* mapArr = [_mapGlossaryDict objectForKey:@"map"];
          map.mapName = [mapArr objectAtIndex:0];

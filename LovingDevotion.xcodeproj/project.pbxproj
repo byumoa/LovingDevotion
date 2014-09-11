@@ -132,7 +132,6 @@
 		6193049619B94EA900775953 /* PaginationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6193049519B94EA900775953 /* PaginationView.m */; };
 		61A668F5182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A668F4182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m */; };
 		61AB06201998FA7700CC4449 /* glossary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61AB061F1998FA7700CC4449 /* glossary.plist */; };
-		61AB06231999035100CC4449 /* GlossaryViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AB06221999035100CC4449 /* GlossaryViewControllerTableViewController.m */; };
 		61C8C01E18504AB000003608 /* blackTopBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61C8C01C18504AB000003608 /* blackTopBar@2x.png */; };
 		61C8C01F18504AB000003608 /* blackTopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 61C8C01D18504AB000003608 /* blackTopBar.png */; };
 		61C8C02218507D4C00003608 /* SGMediaPlayhead.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C8C02118507D4C00003608 /* SGMediaPlayhead.m */; };
@@ -356,6 +355,21 @@
 		61E5F0B6184620AD003959C7 /* sg_general_Share_signout.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E5F0B4184620AD003959C7 /* sg_general_Share_signout.png */; };
 		61E5F0B7184620AD003959C7 /* sg_general_Share_signout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E5F0B5184620AD003959C7 /* sg_general_Share_signout@2x.png */; };
 		61E5F0B9184623F1003959C7 /* BlueOverLay.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E5F0B8184623F1003959C7 /* BlueOverLay.png */; };
+		61E7585C19C1DD5E005B7692 /* map_central_india.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7585719C1DD5E005B7692 /* map_central_india.png */; };
+		61E7585D19C1DD5E005B7692 /* map_central_india@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7585819C1DD5E005B7692 /* map_central_india@2x.png */; };
+		61E7585E19C1DD5E005B7692 /* map_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7585919C1DD5E005B7692 /* map_main.png */; };
+		61E7585F19C1DD5E005B7692 /* map_main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7585A19C1DD5E005B7692 /* map_main@2x.png */; };
+		61E7586019C1DD5E005B7692 /* maps_nadu_gopalas.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7585B19C1DD5E005B7692 /* maps_nadu_gopalas.png */; };
+		61E7586319C1DF75005B7692 /* GlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E7586219C1DF75005B7692 /* GlossaryViewController.m */; };
+		61E7588419C1E213005B7692 /* glossary_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7587E19C1E213005B7692 /* glossary_bg.png */; };
+		61E7588519C1E213005B7692 /* glossary_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7587F19C1E213005B7692 /* glossary_bg@2x.png */; };
+		61E7588619C1E213005B7692 /* glossary_bg_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7588019C1E213005B7692 /* glossary_bg_bottom.png */; };
+		61E7588719C1E213005B7692 /* glossary_bg_bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7588119C1E213005B7692 /* glossary_bg_bottom@2x.png */; };
+		61E7588819C1E213005B7692 /* glossary_bg_extend.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7588219C1E213005B7692 /* glossary_bg_extend.png */; };
+		61E7588919C1E213005B7692 /* glossary_bg_extend@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7588319C1E213005B7692 /* glossary_bg_extend@2x.png */; };
+		61E7588C19C1E341005B7692 /* glossary_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7588A19C1E341005B7692 /* glossary_title.png */; };
+		61E7588D19C1E341005B7692 /* glossary_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7588B19C1E341005B7692 /* glossary_title@2x.png */; };
+		61E7588F19C1E34E005B7692 /* glossary_sm11.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7588E19C1E34E005B7692 /* glossary_sm11.png */; };
 		61F3D63C19688DDD0039E5B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F3D63B19688DDD0039E5B8 /* AppDelegate.m */; };
 		61F5493619AC97FC00974FA7 /* ld_pagination.png in Resources */ = {isa = PBXBuildFile; fileRef = 61F5493219AC97FC00974FA7 /* ld_pagination.png */; };
 		61F5493719AC97FC00974FA7 /* ld_pagination@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61F5493319AC97FC00974FA7 /* ld_pagination@2x.png */; };
@@ -551,8 +565,6 @@
 		61A668F3182EECE300AC749E /* SGStoryOfTheExhibitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGStoryOfTheExhibitionViewController.h; sourceTree = "<group>"; };
 		61A668F4182EECE300AC749E /* SGStoryOfTheExhibitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGStoryOfTheExhibitionViewController.m; sourceTree = "<group>"; };
 		61AB061F1998FA7700CC4449 /* glossary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = glossary.plist; sourceTree = "<group>"; };
-		61AB06211999035100CC4449 /* GlossaryViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryViewControllerTableViewController.h; sourceTree = "<group>"; };
-		61AB06221999035100CC4449 /* GlossaryViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewControllerTableViewController.m; sourceTree = "<group>"; };
 		61C8C01C18504AB000003608 /* blackTopBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackTopBar@2x.png"; sourceTree = "<group>"; };
 		61C8C01D18504AB000003608 /* blackTopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackTopBar.png; sourceTree = "<group>"; };
 		61C8C02018507D4C00003608 /* SGMediaPlayhead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMediaPlayhead.h; sourceTree = "<group>"; };
@@ -817,6 +829,22 @@
 		61E5F0B4184620AD003959C7 /* sg_general_Share_signout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sg_general_Share_signout.png; sourceTree = "<group>"; };
 		61E5F0B5184620AD003959C7 /* sg_general_Share_signout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sg_general_Share_signout@2x.png"; sourceTree = "<group>"; };
 		61E5F0B8184623F1003959C7 /* BlueOverLay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueOverLay.png; sourceTree = "<group>"; };
+		61E7585719C1DD5E005B7692 /* map_central_india.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_central_india.png; sourceTree = "<group>"; };
+		61E7585819C1DD5E005B7692 /* map_central_india@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_central_india@2x.png"; sourceTree = "<group>"; };
+		61E7585919C1DD5E005B7692 /* map_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_main.png; sourceTree = "<group>"; };
+		61E7585A19C1DD5E005B7692 /* map_main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_main@2x.png"; sourceTree = "<group>"; };
+		61E7585B19C1DD5E005B7692 /* maps_nadu_gopalas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maps_nadu_gopalas.png; sourceTree = "<group>"; };
+		61E7586119C1DF74005B7692 /* GlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryViewController.h; sourceTree = "<group>"; };
+		61E7586219C1DF75005B7692 /* GlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryViewController.m; sourceTree = "<group>"; };
+		61E7587E19C1E213005B7692 /* glossary_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glossary_bg.png; sourceTree = "<group>"; };
+		61E7587F19C1E213005B7692 /* glossary_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glossary_bg@2x.png"; sourceTree = "<group>"; };
+		61E7588019C1E213005B7692 /* glossary_bg_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glossary_bg_bottom.png; sourceTree = "<group>"; };
+		61E7588119C1E213005B7692 /* glossary_bg_bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glossary_bg_bottom@2x.png"; sourceTree = "<group>"; };
+		61E7588219C1E213005B7692 /* glossary_bg_extend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glossary_bg_extend.png; sourceTree = "<group>"; };
+		61E7588319C1E213005B7692 /* glossary_bg_extend@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glossary_bg_extend@2x.png"; sourceTree = "<group>"; };
+		61E7588A19C1E341005B7692 /* glossary_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glossary_title.png; sourceTree = "<group>"; };
+		61E7588B19C1E341005B7692 /* glossary_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glossary_title@2x.png"; sourceTree = "<group>"; };
+		61E7588E19C1E34E005B7692 /* glossary_sm11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glossary_sm11.png; sourceTree = "<group>"; };
 		61F3D63A19688DDD0039E5B8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61F3D63B19688DDD0039E5B8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		61F5493219AC97FC00974FA7 /* ld_pagination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_pagination.png; sourceTree = "<group>"; };
@@ -1134,8 +1162,8 @@
 		61AB061E1998F4C600CC4449 /* GlossaryController */ = {
 			isa = PBXGroup;
 			children = (
-				61AB06211999035100CC4449 /* GlossaryViewControllerTableViewController.h */,
-				61AB06221999035100CC4449 /* GlossaryViewControllerTableViewController.m */,
+				61E7586119C1DF74005B7692 /* GlossaryViewController.h */,
+				61E7586219C1DF75005B7692 /* GlossaryViewController.m */,
 			);
 			path = GlossaryController;
 			sourceTree = "<group>";
@@ -1196,6 +1224,7 @@
 		61CD50A5180C242500D28921 /* GeneralResources */ = {
 			isa = PBXGroup;
 			children = (
+				61E7587D19C1E213005B7692 /* Glossary Backgrounds */,
 				61D13A4919BFAC320048C654 /* map */,
 				61D13A4519BFA6A50048C654 /* glossary_btn.png */,
 				61D13A4619BFA6A50048C654 /* glossary_btn@2x.png */,
@@ -1497,6 +1526,11 @@
 		61D13A4919BFAC320048C654 /* map */ = {
 			isa = PBXGroup;
 			children = (
+				61E7585719C1DD5E005B7692 /* map_central_india.png */,
+				61E7585819C1DD5E005B7692 /* map_central_india@2x.png */,
+				61E7585919C1DD5E005B7692 /* map_main.png */,
+				61E7585A19C1DD5E005B7692 /* map_main@2x.png */,
+				61E7585B19C1DD5E005B7692 /* maps_nadu_gopalas.png */,
 				61D13A4A19BFAC320048C654 /* map_bangladesh.png */,
 				61D13A4B19BFAC320048C654 /* map_bangladesh@2x.png */,
 				61D13A4C19BFAC320048C654 /* map_bengal.png */,
@@ -1537,6 +1571,22 @@
 				61E4B8241841A06F0023DEAE /* GAITracker.h */,
 			);
 			path = "GAI Library";
+			sourceTree = "<group>";
+		};
+		61E7587D19C1E213005B7692 /* Glossary Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				61E7588E19C1E34E005B7692 /* glossary_sm11.png */,
+				61E7588A19C1E341005B7692 /* glossary_title.png */,
+				61E7588B19C1E341005B7692 /* glossary_title@2x.png */,
+				61E7587E19C1E213005B7692 /* glossary_bg.png */,
+				61E7587F19C1E213005B7692 /* glossary_bg@2x.png */,
+				61E7588019C1E213005B7692 /* glossary_bg_bottom.png */,
+				61E7588119C1E213005B7692 /* glossary_bg_bottom@2x.png */,
+				61E7588219C1E213005B7692 /* glossary_bg_extend.png */,
+				61E7588319C1E213005B7692 /* glossary_bg_extend@2x.png */,
+			);
+			path = "Glossary Backgrounds";
 			sourceTree = "<group>";
 		};
 		61F5493119AC97FC00974FA7 /* PaginationButtons */ = {
@@ -1668,6 +1718,7 @@
 				61072A291822658400E8D7A2 /* summary_pause_btn.png in Resources */,
 				61CD5230180C242500D28921 /* SG_General_Media_Playhead-on@2x.png in Resources */,
 				61CD526B180C242500D28921 /* SG_General_Painting_MusicBtn-on.png in Resources */,
+				61E7585F19C1DD5E005B7692 /* map_main@2x.png in Resources */,
 				61072A2A1822658400E8D7A2 /* summary_pause_btn@2x.png in Resources */,
 				61CD5259180C242500D28921 /* SG_General_Painting_DetailMarkerBtn-on.png in Resources */,
 				61AB06201998FA7700CC4449 /* glossary.plist in Resources */,
@@ -1683,6 +1734,7 @@
 				6167205F19AB617700D238D8 /* ld_bios.png in Resources */,
 				61C9E42E19A3840B00293264 /* thumbnail16@2x.png in Resources */,
 				6167206319AB617700D238D8 /* ld_donors.png in Resources */,
+				61E7585E19C1DD5E005B7692 /* map_main.png in Resources */,
 				8A955F1D198CBBCC00478CC5 /* ld_highlight_md_blur_on@2x.png in Resources */,
 				618713B4182F0956005BC973 /* SG_General_Module_Overlay_Hofmann.png in Resources */,
 				8A955F10198B6A7F00478CC5 /* ld_highlight_sm_blur.png in Resources */,
@@ -1701,6 +1753,7 @@
 				61C8C01F18504AB000003608 /* blackTopBar.png in Resources */,
 				61C9E42919A3840B00293264 /* thumbnail14.png in Resources */,
 				61CD522B180C242500D28921 /* SG_General_Media_Playbar.png in Resources */,
+				61E7588919C1E213005B7692 /* glossary_bg_extend@2x.png in Resources */,
 				806BA1CB1989EEF000D001D1 /* ld_home_donor_title@2x.png in Resources */,
 				61CD5293180C242500D28921 /* SG_General_Share_other@2x.png in Resources */,
 				61C9E44719A3840B00293264 /* thumbnail6@2x.png in Resources */,
@@ -1730,6 +1783,7 @@
 				61D13A6D19BFAC320048C654 /* map_tamil_nadu@2x.png in Resources */,
 				6167208519AB817A00D238D8 /* ld_learn_flatMenu.png in Resources */,
 				6117E629184D3D6E00A50719 /* SG_Social_Module_Overlay_Bloch.png in Resources */,
+				61E7588D19C1E341005B7692 /* glossary_title@2x.png in Resources */,
 				8A955F1C198CBBCC00478CC5 /* ld_highlight_md_blur_on.png in Resources */,
 				613292E218325C9E00551F09 /* SG_General_painting-castleBtn-on.png in Resources */,
 				61C9E43D19A3840B00293264 /* thumbnail23.png in Resources */,
@@ -1737,11 +1791,13 @@
 				61C9E43219A3840B00293264 /* thumbnail18@2x.png in Resources */,
 				61CD529B180C242500D28921 /* SG_General_Share_tw@2x.png in Resources */,
 				61CD5260180C242500D28921 /* SG_General_Painting_DetailsBtn-on@2x.png in Resources */,
+				61E7585D19C1DD5E005B7692 /* map_central_india@2x.png in Resources */,
 				61735B39183233EE0000D837 /* SG_General_header_thanks@2x.png in Resources */,
 				61CD51FC180C242500D28921 /* sg_home_findbtn-on.png in Resources */,
 				61C9E43319A3840B00293264 /* thumbnail19.png in Resources */,
 				614E3CA2180DF631002E875B /* speaker_btns__narration_btn-on@2x.png in Resources */,
 				614E3CA1180DF631002E875B /* speaker_btns__narration_btn-on.png in Resources */,
+				61E7588F19C1E34E005B7692 /* glossary_sm11.png in Resources */,
 				61C9E43B19A3840B00293264 /* thumbnail22.png in Resources */,
 				61CD51F1180C242500D28921 /* sg_home_exhibitionbtn-on@2x.png in Resources */,
 				61CD5283180C242500D28921 /* SG_General_ScanBtn-on@2x.png in Resources */,
@@ -1750,6 +1806,7 @@
 				61C9E43E19A3840B00293264 /* thumbnail23@2x.png in Resources */,
 				61CD5242180C242500D28921 /* SG_General_Module_CloseBtn@2x.png in Resources */,
 				61CD524D180C242500D28921 /* SG_General_Painting_ChildrensBtn-on.png in Resources */,
+				61E7588719C1E213005B7692 /* glossary_bg_bottom@2x.png in Resources */,
 				6167205E19AB617700D238D8 /* ld_bhakti@2x.png in Resources */,
 				618713C1182F10AA005BC973 /* SG_General_Module_OverlayHalf_Bloch.png in Resources */,
 				61CD51FF180C242500D28921 /* sg_home_findbtn@2x.png in Resources */,
@@ -1814,6 +1871,7 @@
 				8A955F0F198B6A7F00478CC5 /* ld_highlight_sm@2x.png in Resources */,
 				618713C3182F10AA005BC973 /* SG_General_Module_OverlayHalf_Hofmann.png in Resources */,
 				6167205D19AB617700D238D8 /* ld_bhakti.png in Resources */,
+				61E7588619C1E213005B7692 /* glossary_bg_bottom.png in Resources */,
 				613292E318325C9E00551F09 /* SG_General_painting-castleBtn-on@2x.png in Resources */,
 				8A955F06198B6A7F00478CC5 /* ld_highlight_lg.png in Resources */,
 				61CD5279180C242500D28921 /* SG_General_Painting_ShareBtn.png in Resources */,
@@ -1827,13 +1885,16 @@
 				61D13A6419BFAC320048C654 /* map_kota.png in Resources */,
 				61C9E43919A3840B00293264 /* thumbnail21.png in Resources */,
 				6167206619AB617700D238D8 /* ld_hinduism@2x.png in Resources */,
+				61E7588419C1E213005B7692 /* glossary_bg.png in Resources */,
 				6143108F1984412D006D3015 /* SG_Social_Module_Overlay_Schwartz@2x.png in Resources */,
 				61CD51F3180C242500D28921 /* sg_home_exhibitionbtn@2x.png in Resources */,
 				61D13A6819BFAC320048C654 /* map_nepal.png in Resources */,
 				61735B2A183233D90000D837 /* SG_General_window_closeBtn-on.png in Resources */,
 				610554E918285D600030CCC3 /* sg_temple_btn_1880@2x.png in Resources */,
 				61CD534C180C2C1B00D28921 /* Images.xcassets in Resources */,
+				61E7588C19C1E341005B7692 /* glossary_title.png in Resources */,
 				618713C6182F10AA005BC973 /* SG_General_Module_OverlayHalf_Schwartz@2x.png in Resources */,
+				61E7588819C1E213005B7692 /* glossary_bg_extend.png in Resources */,
 				61CD522F180C242500D28921 /* SG_General_Media_Playhead-on.png in Resources */,
 				61C9E44319A3840B00293264 /* thumbnail4@2x.png in Resources */,
 				61CD5292180C242500D28921 /* SG_General_Share_other.png in Resources */,
@@ -1845,6 +1906,7 @@
 				610554E818285D600030CCC3 /* sg_temple_btn_1880.png in Resources */,
 				806BA1CA1989EEF000D001D1 /* ld_home_home_title.png in Resources */,
 				618645AF181AEEB700195384 /* childrens_btn@2x.png in Resources */,
+				61E7588519C1E213005B7692 /* glossary_bg@2x.png in Resources */,
 				61CD5211180C242500D28921 /* sg_home_meetartistsbtn-on@2x.png in Resources */,
 				613292E418325C9E00551F09 /* SG_General_painting-castleBtn.png in Resources */,
 				61CD523C180C242500D28921 /* SG_General_HomeBtn-on@2x.png in Resources */,
@@ -1855,6 +1917,7 @@
 				61CD5231180C242500D28921 /* SG_General_Media_Playhead.png in Resources */,
 				61CD5238180C242500D28921 /* SG_General_BackBtn-on@2x.png in Resources */,
 				61D13A5D19BFAC320048C654 /* map_bangladesh@2x.png in Resources */,
+				61E7585C19C1DD5E005B7692 /* map_central_india.png in Resources */,
 				61CD5289180C242500D28921 /* SG_General_Share_email-on@2x.png in Resources */,
 				61C9E44519A3840B00293264 /* thumbnail5@2x.png in Resources */,
 				61C9E44A19A3840B00293264 /* thumbnail8.png in Resources */,
@@ -1919,6 +1982,7 @@
 				61C9E43119A3840B00293264 /* thumbnail18.png in Resources */,
 				618645AD181AEEB700195384 /* childrens_btn-on@2x.png in Resources */,
 				6167206019AB617700D238D8 /* ld_bios@2x.png in Resources */,
+				61E7586019C1DD5E005B7692 /* maps_nadu_gopalas.png in Resources */,
 				61C9E43619A3840B00293264 /* thumbnail2.png in Resources */,
 				61CD5280180C242500D28921 /* SG_General_Painting_SummaryBtn.png in Resources */,
 				61CD51F2180C242500D28921 /* sg_home_exhibitionbtn.png in Resources */,
@@ -1950,6 +2014,7 @@
 			files = (
 				61CD530C180C24FD00D28921 /* SGSocialViewController.m in Sources */,
 				618B35D21818083900EEC12E /* SGAudioViewController.m in Sources */,
+				61E7586319C1DF75005B7692 /* GlossaryViewController.m in Sources */,
 				15A1585D135C9CF800C6B482 /* main.m in Sources */,
 				618B35CF1817FF3100EEC12E /* SGTextOverlayViewController.m in Sources */,
 				6167208B19AB84C700D238D8 /* IndiaViewController.m in Sources */,
@@ -1985,7 +2050,6 @@
 				6117E632184D694300A50719 /* SGIntroMovieViewController.m in Sources */,
 				6167208819AB84B900D238D8 /* DonorsViewController.m in Sources */,
 				6167207E19AB74FA00D238D8 /* MoaViewController.m in Sources */,
-				61AB06231999035100CC4449 /* GlossaryViewControllerTableViewController.m in Sources */,
 				61D606841844BA510090C77A /* SGDonateViewController.m in Sources */,
 				61CD5342180C256700D28921 /* SGHomeViewController.m in Sources */,
 				61CD5325180C253400D28921 /* SGContentViewController.m in Sources */,
