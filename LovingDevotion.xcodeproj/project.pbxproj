@@ -370,6 +370,10 @@
 		61E7588C19C1E341005B7692 /* glossary_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7588A19C1E341005B7692 /* glossary_title.png */; };
 		61E7588D19C1E341005B7692 /* glossary_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7588B19C1E341005B7692 /* glossary_title@2x.png */; };
 		61E7588F19C1E34E005B7692 /* glossary_sm11.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7588E19C1E34E005B7692 /* glossary_sm11.png */; };
+		61E7589519C20B52005B7692 /* ld_videoBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7589119C20B52005B7692 /* ld_videoBtn.png */; };
+		61E7589619C20B52005B7692 /* ld_videoBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7589219C20B52005B7692 /* ld_videoBtn@2x.png */; };
+		61E7589719C20B52005B7692 /* ld_videoBtn_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7589319C20B52005B7692 /* ld_videoBtn_on.png */; };
+		61E7589819C20B52005B7692 /* ld_videoBtn_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E7589419C20B52005B7692 /* ld_videoBtn_on@2x.png */; };
 		61F3D63C19688DDD0039E5B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F3D63B19688DDD0039E5B8 /* AppDelegate.m */; };
 		61F5493619AC97FC00974FA7 /* ld_pagination.png in Resources */ = {isa = PBXBuildFile; fileRef = 61F5493219AC97FC00974FA7 /* ld_pagination.png */; };
 		61F5493719AC97FC00974FA7 /* ld_pagination@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61F5493319AC97FC00974FA7 /* ld_pagination@2x.png */; };
@@ -845,6 +849,10 @@
 		61E7588A19C1E341005B7692 /* glossary_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glossary_title.png; sourceTree = "<group>"; };
 		61E7588B19C1E341005B7692 /* glossary_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glossary_title@2x.png"; sourceTree = "<group>"; };
 		61E7588E19C1E34E005B7692 /* glossary_sm11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glossary_sm11.png; sourceTree = "<group>"; };
+		61E7589119C20B52005B7692 /* ld_videoBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_videoBtn.png; sourceTree = "<group>"; };
+		61E7589219C20B52005B7692 /* ld_videoBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_videoBtn@2x.png"; sourceTree = "<group>"; };
+		61E7589319C20B52005B7692 /* ld_videoBtn_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_videoBtn_on.png; sourceTree = "<group>"; };
+		61E7589419C20B52005B7692 /* ld_videoBtn_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_videoBtn_on@2x.png"; sourceTree = "<group>"; };
 		61F3D63A19688DDD0039E5B8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61F3D63B19688DDD0039E5B8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		61F5493219AC97FC00974FA7 /* ld_pagination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ld_pagination.png; sourceTree = "<group>"; };
@@ -1224,6 +1232,7 @@
 		61CD50A5180C242500D28921 /* GeneralResources */ = {
 			isa = PBXGroup;
 			children = (
+				61E7589019C20B52005B7692 /* Learn more btns */,
 				61E7587D19C1E213005B7692 /* Glossary Backgrounds */,
 				61D13A4919BFAC320048C654 /* map */,
 				61D13A4519BFA6A50048C654 /* glossary_btn.png */,
@@ -1589,6 +1598,17 @@
 			path = "Glossary Backgrounds";
 			sourceTree = "<group>";
 		};
+		61E7589019C20B52005B7692 /* Learn more btns */ = {
+			isa = PBXGroup;
+			children = (
+				61E7589119C20B52005B7692 /* ld_videoBtn.png */,
+				61E7589219C20B52005B7692 /* ld_videoBtn@2x.png */,
+				61E7589319C20B52005B7692 /* ld_videoBtn_on.png */,
+				61E7589419C20B52005B7692 /* ld_videoBtn_on@2x.png */,
+			);
+			path = "Learn more btns";
+			sourceTree = "<group>";
+		};
 		61F5493119AC97FC00974FA7 /* PaginationButtons */ = {
 			isa = PBXGroup;
 			children = (
@@ -1730,6 +1750,7 @@
 				61C9E44219A3840B00293264 /* thumbnail4.png in Resources */,
 				61C9E42519A3840B00293264 /* thumbnail12.png in Resources */,
 				61CD51DC180C242500D28921 /* sg_home_bg-findpainting.png in Resources */,
+				61E7589819C20B52005B7692 /* ld_videoBtn_on@2x.png in Resources */,
 				61F5493719AC97FC00974FA7 /* ld_pagination@2x.png in Resources */,
 				6167205F19AB617700D238D8 /* ld_bios.png in Resources */,
 				61C9E42E19A3840B00293264 /* thumbnail16@2x.png in Resources */,
@@ -1745,6 +1766,7 @@
 				61CD527B180C242500D28921 /* SG_General_Painting_Summary-on@2x.png in Resources */,
 				618713AF182F0956005BC973 /* SG_General_Module_Overlay_Bloch@2x.png in Resources */,
 				61CD51DF180C242500D28921 /* sg_home_bg-home.png in Resources */,
+				61E7589619C20B52005B7692 /* ld_videoBtn@2x.png in Resources */,
 				61CD527D180C242500D28921 /* SG_General_Painting_Summary@2x.png in Resources */,
 				61CD509C180C23B100D28921 /* Main_iPad.storyboard in Resources */,
 				618713C7182F10AA005BC973 /* SG_General_Module_OverlayHalf.png in Resources */,
@@ -1794,6 +1816,7 @@
 				61E7585D19C1DD5E005B7692 /* map_central_india@2x.png in Resources */,
 				61735B39183233EE0000D837 /* SG_General_header_thanks@2x.png in Resources */,
 				61CD51FC180C242500D28921 /* sg_home_findbtn-on.png in Resources */,
+				61E7589519C20B52005B7692 /* ld_videoBtn.png in Resources */,
 				61C9E43319A3840B00293264 /* thumbnail19.png in Resources */,
 				614E3CA2180DF631002E875B /* speaker_btns__narration_btn-on@2x.png in Resources */,
 				614E3CA1180DF631002E875B /* speaker_btns__narration_btn-on.png in Resources */,
@@ -1926,6 +1949,7 @@
 				61CD5235180C242500D28921 /* SG_General_Music_PlayPause.png in Resources */,
 				618713B0182F0956005BC973 /* SG_General_Module_Overlay_Schwartz@2x.png in Resources */,
 				6167206719AB617700D238D8 /* ld_india.png in Resources */,
+				61E7589719C20B52005B7692 /* ld_videoBtn_on.png in Resources */,
 				61CD5284180C242500D28921 /* SG_General_ScanBtn.png in Resources */,
 				61C9E43A19A3840B00293264 /* thumbnail21@2x.png in Resources */,
 				618713D71830E592005BC973 /* sg_general_painting_detailmarkerbtn-on.png in Resources */,

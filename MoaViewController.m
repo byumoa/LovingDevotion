@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.scrollView.contentSize = CGSizeMake(768, 3912);
+    self.scrollView.contentSize = CGSizeMake(768, 4140  );
 }
 
 - (void)didReceiveMemoryWarning

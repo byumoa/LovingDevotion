@@ -9,5 +9,6 @@
 #import "LearnMoreMovieSpawnerViewController.h"
 
 @interface ByuAndIndiaViewController : LearnMoreMovieSpawnerViewController
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
