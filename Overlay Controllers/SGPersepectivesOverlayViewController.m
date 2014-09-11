@@ -38,7 +38,10 @@
         if( buttonPath )
         {
             UIButton* button = [self buttonForPerspectiveNumber:i atPath:folderPath];
-            CGPoint center = CGPointMake(155 + 230 * ((i-1) % 3), 125 + 170 * ((i-1)/3));
+            CGPoint center = CGPointMake(155 + 230 * ((i-1) % 3), 160 + 170 * ((i-1)/3));
+            if( i >= 4 ){
+                center.y -= 20;
+            }
             button.center = center;
             [self.view addSubview:button];
         }

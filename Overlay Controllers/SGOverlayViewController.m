@@ -74,22 +74,24 @@
 
 -(UIButton *)createCloseButton
 {
-    UIButton* closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage* closeBtnNrmImg = [UIImage imageNamed:@"SG_General_Module_CloseBtn.png"];
-    UIImage* closeBtnHilImg = [UIImage imageNamed:@"SG_General_Module_CloseBtn-on.png"];
-    
-    CGRect f = closeButton.frame;
-    f.size = closeBtnNrmImg.size;
-    f.size.width += 20;
-    f.size.height += 20;
-    closeButton.frame = f;
-    
-    [closeButton setImage:closeBtnNrmImg forState:UIControlStateNormal];
-    [closeButton setImage:closeBtnHilImg forState:UIControlStateHighlighted];
-    
-    [closeButton addTarget:self action:@selector(pressedClose:) forControlEvents:UIControlEventTouchUpInside];
-    
-    return closeButton;
+//    UIButton* closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    UIImage* closeBtnNrmImg = [UIImage imageNamed:@"SG_General_Module_CloseBtn.png"];
+//    UIImage* closeBtnHilImg = [UIImage imageNamed:@"SG_General_Module_CloseBtn-on.png"];
+//    
+//    CGRect f = closeButton.frame;
+//    f.size = closeBtnNrmImg.size;
+//    f.size.width += 20;
+//    f.size.height += 20;
+//    closeButton.frame = f;
+////    closeButton.center = CGPointMake(self.view.frame.size.width - 100, 100);
+//    
+//    [closeButton setImage:closeBtnNrmImg forState:UIControlStateNormal];
+//    [closeButton setImage:closeBtnHilImg forState:UIControlStateHighlighted];
+//    
+//    [closeButton addTarget:self action:@selector(pressedClose:) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    return closeButton;
+    return nil;
 }
 
 -(void)pressedClose:(UIButton *)sender

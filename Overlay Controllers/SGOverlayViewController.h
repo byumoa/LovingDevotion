@@ -34,6 +34,6 @@
 
 - (void)addBackgroundImgWithPath: (NSString*)bgImgPath;
 - (void)addBackgroundImgWithImgName: (NSString*)bgImgName;
-- (void)pressedClose: (UIButton*)sender;
+- (IBAction)pressedClose: (UIButton*)sender;
 
 @end
