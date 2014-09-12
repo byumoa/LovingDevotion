@@ -134,6 +134,8 @@ int const kOverlayHeight = 236;
     SGFacebookViewController* fbViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"facebook"];
     [self presentViewController:fbViewController animated:YES completion:nil];
     NSString* fbImgStr = [SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName];
+    NSLog(@"self.paintingName: %@", self.paintingName);
+    NSLog(@"fbImgStr: %@", fbImgStr);
     [fbViewController configureWebpageForURLStr:fbImgStr];
 }
 

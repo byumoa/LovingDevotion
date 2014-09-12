@@ -27,7 +27,7 @@ const NSString* kControllerIDPanoramaStr = @"panorama";
 
 NSString* const kPaintingFbUrls[] = {
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680180170/?type=3&theater",
-    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679820170/?type=3&theater"
+    @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650679820170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680215170/?type=3&theater",
     @"https://www.facebook.com/BYUmoa/photos/a.10152559559330170.1073741845.53484520169/10152654854810170/?type=3&theater",//vishnu_attendants2
     @"https://www.facebook.com/BYUmoa/photos/pb.53484520169.-2207520000.1409867573./10152650680090170/?type=3&theater",
