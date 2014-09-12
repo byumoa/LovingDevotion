@@ -62,8 +62,11 @@ NSString* const kTempleDefaultKey = @"templeVersion";
 
 @implementation SGPaintingViewController
 
+- (IBAction)directlyTapped:(id)sender{
+    [self paintingTapped:self.paintingImageView];
+}
 
--(void)paintingTapped:(SGPaintingImageView *)paintingView
+-(IBAction)paintingTapped:(SGPaintingImageView *)paintingView
 {
     if( UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) return;
     

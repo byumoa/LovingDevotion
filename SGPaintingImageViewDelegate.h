@@ -10,5 +10,5 @@
 @class SGPaintingImageView;
 
 @protocol SGPaintingImageViewDelegate <NSObject>
-- (void)paintingTapped: (SGPaintingImageView*) paintingView;
+- (IBAction)paintingTapped: (SGPaintingImageView*) paintingView;
 @end

@@ -43,6 +43,8 @@
 - (IBAction)handlePinch:(UIPinchGestureRecognizer*)recognizer;
 - (IBAction)handlePan:(UIPanGestureRecognizer*)recognizer;
 
+- (IBAction)directlyTapped:(id)sender;
+
 + (BOOL)chromeHidden;
 + (void)setChromeHidden: (BOOL)val;
 

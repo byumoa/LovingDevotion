@@ -126,6 +126,7 @@ const int inset = 20;
 
 -(void)tapRecognized:(UITapGestureRecognizer *)recognizer
 {
+    NSLog(@"tapRecognized");
     [self.delegate paintingTapped:self];
 }
 
