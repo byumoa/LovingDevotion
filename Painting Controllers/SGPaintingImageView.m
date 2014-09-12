@@ -21,6 +21,7 @@ const int inset = 20;
     NSTimer* _currentTimer;
     
     NSArray* _circlesInfo;
+    bool _goingBackDown;
 }
 - (void)tapRecognized: (UITapGestureRecognizer*)recognizer;
 - (void) addCircles;
@@ -99,10 +100,11 @@ const int inset = 20;
         [animationFrames addObject: [UIImage imageWithContentsOfFile:imagePath]];
     }
     self.animationImages = animationFrames;
-    [self addCircles];
+//    [self addCircles];
     self.animationDuration = 3;
 //    [self startAnimating];
 //    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(delayedStopAnimating:) userInfo:nil repeats:NO];
+    [self tearAnimation];
 }
 
 -(void)delayedStopAnimating:(NSTimer *)timer{
@@ -151,7 +153,8 @@ const int inset = 20;
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     if( !self.isTurnAround ) return;
-
+    
+    [_currentTimer invalidate];
     _startingPt = [(UITouch*)[touches anyObject] locationInView:self];
     _startingIndex = _currentIndex;
 }
@@ -173,18 +176,27 @@ const int inset = 20;
 }
 
 -(void)tearAnimation{
-    NSLog(@"tearAnimation");
     if( self.isTurnAround ){
         _currentTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/30.0 target:self selector:@selector(animToZero:) userInfo:nil repeats:YES];
     }
 }
 
 - (void)animToZero:(NSTimer*)timer{
-    if (_currentIndex != 0 ) {
-        [self setImage:[self.animationImages objectAtIndex:_currentIndex--]];
+    if( !_goingBackDown ){
+        if (_currentIndex != 5 ) {
+            [self setImage:[self.animationImages objectAtIndex:_currentIndex++]];
+        }
+        else{
+            _goingBackDown = YES;
+        }
     }
     else{
-        [_currentTimer invalidate];
+        if (_currentIndex != 0 ) {
+            [self setImage:[self.animationImages objectAtIndex:_currentIndex--]];
+        }
+        else{
+            [_currentTimer invalidate];
+        }
     }
 }
 
