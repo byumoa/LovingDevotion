@@ -17,6 +17,9 @@
     NSString* _paintingNameStr;
     int _currentFooterBtnX;
     BOOL _tombstoneShown;
+    
+    float _startingWidth;
+    float _zoomStarted;
 }
 
 @property (strong, nonatomic) IBOutlet SGPaintingImageView *paintingImageView;

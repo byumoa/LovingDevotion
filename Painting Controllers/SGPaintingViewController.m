@@ -216,7 +216,16 @@ static BOOL chromeHidden = NO;
 }
 
 -(void)handlePinch:(UIPinchGestureRecognizer *)recognizer{
+    if( !_zoomStarted ){
+        _startingWidth = recognizer.view.frame.size.width;
+        _zoomStarted = true;
+    }
+    
+    CGRect frameBeforeZoom = recognizer.view.frame;
     recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
+    if( recognizer.view.frame.size.width < _startingWidth * 0.9 || recognizer.view.frame.size.width > _startingWidth*3){
+        recognizer.view.frame = frameBeforeZoom;
+    }
     recognizer.scale = 1;
 }
 
