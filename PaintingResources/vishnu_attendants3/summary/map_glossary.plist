@@ -10,10 +10,23 @@
 	<array>
 		<string>vishnu</string>
 		<string>avatars</string>
-		<string>rama</string>
-		<string>balarama</string>
-		<string>buddha</string>
+		<string>conch shell</string>
+		<string>lotus blossom</string>
+		<string>mace</string>
+		<string>samhadipada</string>
+		<string>murti</string>
+		<string>darshan</string>
+		<string>matsya</string>
+		<string>kurma</string>
+		<string>vamana</string>
+		<string>varaha</string>
+		<string>narasimha</string>
 		<string>kalki</string>
+		<string>buddha</string>
+		<string>brahma</string>
+		<string>shiva</string>
+		<string>vaishnavas</string>
+		<string>lakshmi</string>
 	</array>
 </dict>
 </plist>

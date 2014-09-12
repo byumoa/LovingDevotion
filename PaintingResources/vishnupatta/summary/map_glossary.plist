@@ -13,7 +13,7 @@
 		<string>avatars</string>
 		<string>matsya</string>
 		<string>kurma</string>
-		<string>vahara</string>
+		<string>varaha</string>
 		<string>narasimha</string>
 		<string>vamana</string>
 		<string>trivikrama</string>
@@ -25,6 +25,8 @@
 		<string>lakshmi</string>
 		<string>garuda</string>
 		<string>flywhisks</string>
+		<string>vidyadhara</string>
+		<string>bhakti</string>
 	</array>
 </dict>
 </plist>
