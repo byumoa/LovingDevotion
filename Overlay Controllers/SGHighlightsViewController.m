@@ -83,15 +83,15 @@
 //    childGAIViewController.screenName = [NSString stringWithFormat:@"%@: highlights %@", self.paintingName, moduleStr];
     
     NSString* btnFolderPath = [NSString stringWithFormat:@"%@/%@_%i", self.rootFolderPath, _moduleTypeStr, sender.tag];
-//    NSString* highlightImgPath = [[NSBundle mainBundle] pathForResource:@"highlight" ofType:@"png" inDirectory:btnFolderPath];
+    NSString* highlightImgPath = [[NSBundle mainBundle] pathForResource:@"highlight" ofType:@"png" inDirectory:btnFolderPath];
     
     self.currentHighlightView = [[UIView alloc] initWithFrame:self.view.frame];
-//    self.currentHighlightView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
-//    [self.view insertSubview:self.currentHighlightView belowSubview:self.childOverlay.view];
-//    
-//    UIImageView *highlightImgView = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:highlightImgPath]];
-//    [self.currentHighlightView addSubview:highlightImgView];
-//    highlightImgView.center = self.currentHighlightView.center;
+    self.currentHighlightView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
+    [self.view insertSubview:self.currentHighlightView belowSubview:self.childOverlay.view];
+    
+    UIImageView *highlightImgView = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:highlightImgPath]];
+    [self.currentHighlightView addSubview:highlightImgView];
+    highlightImgView.center = self.currentHighlightView.center;
     
     //Accessing BlurManager
     SGBlurManager* blurManager = [SGBlurManager sharedManager];

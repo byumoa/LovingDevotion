@@ -16,7 +16,7 @@
 
 -(SGPaintingImageView *)getPaintingImageView{
     SGPaintingImageView* paintingImageView = ((SGPaintingViewController*)((SGPaintingContainerViewController*)((SGViewController*)self.window.rootViewController).currentContentController).currentContentController).paintingImageView;
-    NSLog(@"paintingImageView: %@", [paintingImageView class]);
+//    NSLog(@"paintingImageView: %@", [paintingImageView class]);
     return paintingImageView;
 }
 
