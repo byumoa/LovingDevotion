@@ -116,6 +116,7 @@ NSString* const kTempleDefaultKey = @"templeVersion";
 
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
+    NSLog(@"SGPaintingViewController willAnimateRotationToInterfaceOrientation");
     BOOL isTurningToLandscape = UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
     [self setChromeAlpha:isTurningToLandscape?0:1 isTurning:YES];
     
