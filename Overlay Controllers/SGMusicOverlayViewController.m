@@ -35,7 +35,7 @@
 {
     if( !_musicManager.player.isPlaying )return;
     CGRect frame = self.playOverlay.frame;
-    frame.origin = CGPointMake(100, 221);
+//    frame.origin = CGPointMake(100, 213);
     if( _musicManager.player.duration > 0 )
         frame.size.width = _musicManager.player.currentTime / _musicManager.player.duration * 635.0;
     self.playOverlay.frame = frame;

@@ -916,20 +916,21 @@
         <scene sceneID="f2i-UZ-Q7R">
             <objects>
                 <viewController restorationIdentifier="music" storyboardIdentifier="music" id="9nI-4S-Qna" customClass="SGMusicOverlayViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VZr-XD-eeZ" customClass="SGOverlayView">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="VZr-XD-eeZ" customClass="SGOverlayView">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="278"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar.png" id="g5H-MS-52i">
-                                <rect key="frame" x="100" y="221" width="635" height="9"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="100" y="213" width="635" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar_Overlay.png" id="hXV-lf-BbQ">
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="SG_General_Media_Playbar_Overlay.png" id="bV8-I6-5xj">
+                                <rect key="frame" x="100" y="213" width="635" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Ey-Se-eNL">
-                                <rect key="frame" x="11" y="187" width="96" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="11" y="179" width="96" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="SG_General_Music_PlayPause-on.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -958,8 +959,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="278"/>
                     <connections>
-                        <outlet property="playOverlay" destination="hXV-lf-BbQ" id="TFr-nA-kf6"/>
+                        <outlet property="playOverlay" destination="bV8-I6-5xj" id="IAm-Rr-M0q"/>
                         <outlet property="playPauseButton" destination="4Ey-Se-eNL" id="LA1-zZ-Ll9"/>
+                        <outlet property="playUnderlay" destination="g5H-MS-52i" id="eJE-uW-SIq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFU-g6-Ogu" userLabel="First Responder" sceneMemberID="firstResponder"/>
