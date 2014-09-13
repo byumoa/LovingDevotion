@@ -39,6 +39,7 @@ CGRect const kMovieFrameLandscapeLM = {0, 0, 1024, 768};
 
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
+    NSLog(@"LearnMoreMovieViewController willAnimateRotationToInterfaceOrientation");
     if( UIInterfaceOrientationIsLandscape(toInterfaceOrientation))
     {
         self.moviePlayer.view.frame = kMovieFrameLandscapeLM;
