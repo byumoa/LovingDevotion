@@ -217,23 +217,43 @@ static BOOL chromeHidden = NO;
 }
 
 -(void)handlePinch:(UIPinchGestureRecognizer *)recognizer{
+
+//    if( self.spinPath != NULL ) return;
+//    
 //    if( !_zoomStarted ){
 //        _startingWidth = recognizer.view.frame.size.width;
 //        _zoomStarted = true;
 //    }
 //    
 //    CGRect frameBeforeZoom = recognizer.view.frame;
+//    
+//    CGPoint touchLoc = [recognizer locationInView:recognizer.view];
+//    CGPoint offset = CGPointMake(recognizer.view.center.x - touchLoc.x, recognizer.view.center.y - touchLoc.y);
+//    
+//    recognizer.view.transform = CGAffineTransformTranslate(recognizer.view.transform, -offset.x, -offset.y);
 //    recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
-//    if( recognizer.view.frame.size.width < _startingWidth * 0.9 || recognizer.view.frame.size.width > _startingWidth*3){
+//    recognizer.view.transform = CGAffineTransformTranslate(recognizer.view.transform, offset.x, offset.y);
+//    if( recognizer.view.frame.size.width < _startingWidth || recognizer.view.frame.size.width > _startingWidth*3){
 //        recognizer.view.frame = frameBeforeZoom;
 //    }
 //    recognizer.scale = 1;
 }
 
 -(void)handlePan:(UIPanGestureRecognizer *)recognizer{
-    CGPoint translation = [recognizer translationInView:self.view];
-    recognizer.view.center = CGPointMake(recognizer.view.center.x+translation.x, recognizer.view.center.y+translation.y);
-    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+//    if( self.spinPath != NULL ) return;
+//    
+//    CGPoint centerBeforeZoom = recognizer.view.center;
+//    CGPoint translation = [recognizer translationInView:self.view];
+//    recognizer.view.center = CGPointMake(recognizer.view.center.x+translation.x, recognizer.view.center.y+translation.y);
+//    CGRect f = recognizer.view.frame;
+//    if(f.origin.x > 0 || f.origin.x + f.size.width < self.view.frame.size.width ||
+//       f.origin.y > 0 || f.origin.y + f.size.height < self.view.frame.size.height){
+//       [UIView animateWithDuration:0.5 animations:^{
+//           recognizer.view.center = self.view.center;
+//       }];
+////        recognizer.view.center = centerBeforeZoom;
+//    }
+//    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
 }
 
 -(void)addFooterButtonsForPainting:(NSString *)paintingNameStr

@@ -701,8 +701,6 @@
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="mch-51-zpd" appends="YES" id="ED7-dz-Bai"/>
-                                    <outletCollection property="gestureRecognizers" destination="bDW-45-6aq" appends="YES" id="unH-pE-5Ms"/>
                                     <outletCollection property="gestureRecognizers" destination="anW-pf-wTc" appends="YES" id="If2-LK-Wmd"/>
                                     <outletCollection property="gestureRecognizers" destination="BM6-Va-Mij" appends="YES" id="6zU-SR-fQ2"/>
                                     <outletCollection property="gestureRecognizers" destination="ztr-VE-H2D" appends="YES" id="1Uj-dn-JJ1"/>
@@ -804,7 +802,7 @@
                         <action selector="handlePinch:" destination="4y1-Fu-WWq" id="pD3-zJ-bm6"/>
                     </connections>
                 </pinchGestureRecognizer>
-                <panGestureRecognizer enabled="NO" minimumNumberOfTouches="1" id="BM6-Va-Mij">
+                <panGestureRecognizer cancelsTouchesInView="NO" minimumNumberOfTouches="1" id="BM6-Va-Mij">
                     <connections>
                         <action selector="handlePan:" destination="4y1-Fu-WWq" id="kkk-zQ-2ad"/>
                     </connections>
