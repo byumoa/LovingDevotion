@@ -22,7 +22,7 @@ NSString* const kEmailAutofill = @"Enjoying this example of #lovingdevotion at t
 NSString* const kTwitterAutofill = @"Enjoying this example of #lovingdevotion at the BYU Museum of Art.";
 NSString* const kFacebookAutofill = @"Enjoying this example of #lovingdevotion at the BYU Museum of Art.";
 
-NSString* const kAppStoreURL = @"https://itunes.apple.com/us/app/sacred-gifts-brigham-young/id723165787?ls=1&mt=8";
+NSString* const kAppStoreURL = @"https://itunes.apple.com/us/app/loving-devotion-visions-vishnu/id903698348?ls=1&mt=8";
 NSString* const kTwitterPrefillTweet = @"https://twitter.com/intent/tweet?text=Enjoying this example of #lovingdevotion at the BYU Museum of Art. %@";
 
 int const kOverlayHeight = 236;
@@ -96,7 +96,7 @@ int const kOverlayHeight = 236;
             
             MFMailComposeViewController *mailController = [[MFMailComposeViewController alloc] init];
             [mailController setMailComposeDelegate:self];
-            [mailController setSubject:@"Sacred Gifts"];
+            [mailController setSubject:@"Loving Devotion"];
             [mailController setMessageBody:autofillStr isHTML:NO];
             [self presentViewController:mailController animated:YES completion:^{}];
             NSData *myData = UIImageJPEGRepresentation(thumbnail, 1.0);
