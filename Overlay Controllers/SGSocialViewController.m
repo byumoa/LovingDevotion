@@ -57,34 +57,34 @@ int const kOverlayHeight = 236;
     {
         case SocialMediaTypeFacebook:
         {
-            /*
+            
             NSString* autofillStr = kFacebookAutofill;
             
             SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
             [socialSheet setInitialText:autofillStr];
             [socialSheet addImage:thumbnail];
-//            [socialSheet addURL:[NSURL URLWithString:[SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName]]];
-//            [socialSheet addURL:[NSURL URLWithString:kAppStoreURL]];
+            [socialSheet addURL:[NSURL URLWithString:[SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName]]];
+            [socialSheet addURL:[NSURL URLWithString:kAppStoreURL]];
             [self presentViewController:socialSheet animated:YES completion:^{}];
             
             mediaType = @"facebook";
-             */
-            [self doInMuseumFBPostWithImage:thumbnail];
+             
+//            [self doInMuseumFBPostWithImage:thumbnail];
         }
             break;
         case SocialMediaTypeTwitter:
         {
-            /*
+            
             SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
             [socialSheet setInitialText:(NSString*)kTwitterAutofill];
             [socialSheet addImage:thumbnail];
-//            [socialSheet addURL:[NSURL URLWithString:[SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName]]];
-//            [socialSheet addURL:[NSURL URLWithString:kAppStoreURL]];
+            [socialSheet addURL:[NSURL URLWithString:[SGConvenienceFunctionsManager getFBURLStrForModule:self.paintingName]]];
+            [socialSheet addURL:[NSURL URLWithString:kAppStoreURL]];
             [self presentViewController:socialSheet animated:YES completion:^{}];
             
             mediaType = @"twitter";
-             */
-            [self doInMuseumTWPostWithImage:thumbnail];
+            
+//            [self doInMuseumTWPostWithImage:thumbnail];
         }
             break;
         case SocialMediaTypeEmail:
