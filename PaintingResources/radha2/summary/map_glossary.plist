@@ -5,16 +5,18 @@
 	<key>map</key>
 	<array>
 		<string>map_bengal</string>
+		<string>map_vrindavan</string>
 	</array>
 	<key>glossary</key>
 	<array>
-		<string>krishna</string>
 		<string>venugopala</string>
-		<string>gopis</string>
+		<string>krishna</string>
 		<string>vrindavan</string>
+		<string>gopis</string>
 		<string>radha</string>
 		<string>bhakti</string>
 		<string>gita govinda</string>
+		<string>lotus</string>
 		<string>rasa</string>
 	</array>
 </dict>
