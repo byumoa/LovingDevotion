@@ -813,7 +813,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2127" y="-82"/>
+            <point key="canvasLocation" x="1719" y="144"/>
         </scene>
         <!--Tombstone Overlay View Controller-->
         <scene sceneID="Pf1-fy-jtR">
@@ -832,7 +832,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wS-qT-saf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2528" y="437"/>
+            <point key="canvasLocation" x="2528" y="414"/>
         </scene>
         <!--Summary Overlay View Controller-->
         <scene sceneID="e9N-v8-aZb">
@@ -1149,7 +1149,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AUD-OZ-vkS">
-                                <rect key="frame" x="376" y="36" width="244" height="41"/>
+                                <rect key="frame" x="376" y="66" width="244" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="SG_General_Share_fb.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1160,7 +1160,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ori-R2-Dtk">
-                                <rect key="frame" x="376" y="98" width="244" height="41"/>
+                                <rect key="frame" x="376" y="128" width="244" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="SG_General_Share_tw.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1170,7 +1170,7 @@
                                     <action selector="pressedSocialBtn:" destination="n9h-Kx-tEQ" eventType="touchUpInside" id="FTm-Lq-RAv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oIt-eA-odc">
+                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oIt-eA-odc">
                                 <rect key="frame" x="376" y="161" width="244" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="SG_General_Share_email.png">
@@ -1186,7 +1186,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Nf-Oi-9cm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Nf-Oi-9cm">
                                 <rect key="frame" x="645" y="189" width="250" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="sg_general_Share_signout.png">
@@ -1222,7 +1222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KJ-T6-uSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2631" y="420"/>
+            <point key="canvasLocation" x="2599" y="475"/>
         </scene>
         <!--Parent View Controller-->
         <scene sceneID="9GC-qj-ULx">
@@ -1934,7 +1934,7 @@
         <image name="SG_General_window_closeBtn-on.png" width="102" height="70"/>
         <image name="SG_General_window_closeBtn.png" width="102" height="70"/>
         <image name="aalborg.png" width="800" height="410"/>
-        <image name="about_exhibition.png" width="804" height="1060"/>
+        <image name="about_exhibition.png" width="804" height="1160"/>
         <image name="glossary_bg.png" width="804" height="1060"/>
         <image name="glossary_bg_bottom.png" width="804" height="102"/>
         <image name="glossary_btn.png" width="112" height="72"/>

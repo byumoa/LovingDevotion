@@ -59,7 +59,7 @@ int const kOverlayHeight = 236;
         {
             
             NSString* autofillStr = kFacebookAutofill;
-            
+            /*
             SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
             [socialSheet setInitialText:autofillStr];
             [socialSheet addImage:thumbnail];
@@ -68,13 +68,13 @@ int const kOverlayHeight = 236;
             [self presentViewController:socialSheet animated:YES completion:^{}];
             
             mediaType = @"facebook";
-             
-//            [self doInMuseumFBPostWithImage:thumbnail];
+             */
+            [self doInMuseumFBPostWithImage:thumbnail];
         }
             break;
         case SocialMediaTypeTwitter:
         {
-            
+            /*
             SLComposeViewController *socialSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
             [socialSheet setInitialText:(NSString*)kTwitterAutofill];
             [socialSheet addImage:thumbnail];
@@ -83,8 +83,8 @@ int const kOverlayHeight = 236;
             [self presentViewController:socialSheet animated:YES completion:^{}];
             
             mediaType = @"twitter";
-            
-//            [self doInMuseumTWPostWithImage:thumbnail];
+            */
+            [self doInMuseumTWPostWithImage:thumbnail];
         }
             break;
         case SocialMediaTypeEmail:
